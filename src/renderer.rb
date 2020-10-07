@@ -30,7 +30,7 @@ class Renderer
 			denom_id = values.keys.first
 			denom_data = values[denom_id]
 			@themes << Theme.new(denom_data)
-			@chips.push(Variant.hydrate(denom_id, denom_data))
+			@chips.push(Variant.hydrate(@themes.last, denom_id, denom_data))
 		end
 	end
 	

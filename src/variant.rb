@@ -12,18 +12,20 @@ class Variant
 	attr_accessor :inlay_text_color
 	attr_accessor :inlay_text_size
 	attr_accessor :inlay_notes
+	attr_accessor :theme
 	
-	def self.hydrate(id, denom_data)
+	def self.hydrate(theme, id, denom_data)
 		results = []
 		proof = denom_data['proof']
 		name = denom_data['name']['en']
 		denom_data['variants'].each_with_index do |vdata, index|
-			results << Variant.new(id, index + 1, name, proof, vdata)
+			results << Variant.new(theme, id, index + 1, name, proof, vdata)
 		end
 		return results
 	end
 
-	def initialize(denom, v, name, proof, values)
+	def initialize(theme, denom, v, name, proof, values)
+		self.theme = theme
 		self.denom = denom
 		self.variant = v
 		self.name = name

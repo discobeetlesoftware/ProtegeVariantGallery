@@ -53,7 +53,7 @@
   	<% @chips.each do |variants| %>
   	<%= header_if_needed(variants) %>
 	  
-	<tbody class="<%= variants.first.unique_class %>">
+	<tbody class="<%= variants.first.theme.key %>">
 	<% variants.each do |chip| %>
 	  <tr>
 		<td><%= chip.denom %></td>
