@@ -25,13 +25,20 @@ th, td {
 	text-align: center;
 }
 
-td:nth-child(1), td:nth-child(3) {
-	font: 20px;
+td:nth-child(1) {
+	font-size: 22px;
+	font-weight: bold;
 }
+
+td:nth-child(1), td:nth-child(2) {
+	font-size: 20px;
+	font-weight: bold;
+}
+
 
 td:nth-child(6) {
 }
-td:nth-child(7), td:nth-child(8), td:nth-child(9) {
+td:nth-child(8), td:nth-child(9) {
 	background-color: #f3f3f3;
 }
 
@@ -47,5 +54,5 @@ table { border-collapse: collapse; border-spacing: 0; }   /* cellspacing="0" */
 table { margin: 0 auto; }
 
 tbody {
-	border: 1px solid #dfdfdf;
+	border: 1px solid #a1a1a1;
 }
