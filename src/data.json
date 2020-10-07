@@ -654,7 +654,7 @@
 			}
 		},
 		{		
-			"Variable Orange": {
+			"Non-denom Orange": {
 				"proof": "variable_orange_proof.jpg",
 				"name": {
 					"en": "non-denom orange"
@@ -697,7 +697,7 @@
 			}
 		},
 		{		
-			"Variable White": {
+			"Non-denom White": {
 				"proof": "variable_white_proof.jpg",
 				"name": {
 					"en": "non-denom white"
@@ -718,7 +718,7 @@
 			}
 		},
 		{		
-			"Variable Blue": {
+			"Non-denom Blue": {
 				"proof": "variable_blue_proof.jpg",
 				"name": {
 					"en": "non-denom blue"
@@ -739,7 +739,7 @@
 			}
 		},
 		{		
-			"Variable Red": {
+			"Non-denom Red": {
 				"proof": "variable_red_proof.jpg",
 				"name": {
 					"en": "non-denom red"
@@ -760,7 +760,7 @@
 			}
 		},
 		{		
-			"Variable Green": {
+			"Non-denom Green": {
 				"proof": "variable_green_proof.jpg",
 				"name": {
 					"en": "non-denom green"
@@ -781,7 +781,7 @@
 			}
 		},
 		{		
-			"Variable Black": {
+			"Non-denom Black": {
 				"proof": "variable_black_proof.jpg",
 				"name": {
 					"en": "non-denom black"
