@@ -10,12 +10,12 @@
 					{
 						"image": "5cent_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 9,
+						"rarity": 9, "notes": "",
 						"clay_color": {
-							"base": "Pink", "spot": "Purple", "notes": "Only variant"
+							"base": "Lilac", "spot": "Dark Purple", "notes": "Only variant"
 						},
 						"inlay": {
-							"text_color": "Pink", "text_size": "Normal", "notes": ""
+							"text_color": "Lilac", "text_size": "Normal"
 						}
 					}
 				]
@@ -31,9 +31,9 @@
 					{
 						"image": "10cent_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 10,
+						"rarity": 10, "notes": "Only variant",
 						"clay_color": {
-							"base": "Lime Green", "spot": "Yellow", "notes": "Only variant"
+							"base": "Lime Green", "spot": "Yellow"
 						},
 						"inlay": {
 							"text_color": "Lime Green", "text_size": "Normal", "notes": ""
@@ -52,9 +52,9 @@
 					{
 						"image": "25cent_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 10,
+						"rarity": 10, "notes": "",
 						"clay_color": {
-							"base": "Pink tint", "spot": "Dark Red", "notes": ""
+							"base": "Pink tint", "spot": "Dark Red"
 						},
 						"inlay": {
 							"text_color": "Hot Pink", "text_size": "Normal", "notes": ""
@@ -63,9 +63,9 @@
 					{
 						"image": "25cent_v2.jpg",
 						"group": "Primary",
-						"rarity": 1,
+						"rarity": 1, "notes": "",
 						"clay_color": {
-							"base": "Pink tint", "spot": "Dark Red", "notes": ""
+							"base": "Pink tint", "spot": "Dark Red"
 						},
 						"inlay": {
 							"text_color": "Black", "text_size": "Large", "notes": "Light background"
@@ -74,9 +74,9 @@
 					{
 						"image": "25cent_v3.jpg",
 						"group": "Primary",
-						"rarity": 3,
+						"rarity": 3, "notes": "",
 						"clay_color": {
-							"base": "White", "spot": "Dark Red", "notes": ""
+							"base": "White", "spot": "Dark Red"
 						},
 						"inlay": {
 							"text_color": "Dark Pink", "text_size": "Normal", "notes": "Text color inconsistencies"
@@ -85,9 +85,9 @@
 					{
 						"image": "25cent_v4.jpg",
 						"group": "Primary",
-						"rarity": 3,
+						"rarity": 3, "notes": "",
 						"clay_color": {
-							"base": "Pink tint", "spot": "Dark Red", "notes": ""
+							"base": "Pink tint", "spot": "Dark Red"
 						},
 						"inlay": {
 							"text_color": "Dark Pink", "text_size": "Normal", "notes": "Text color inconsistencies"
@@ -96,9 +96,9 @@
 					{
 						"image": "25cent_v5.jpg",
 						"group": "Primary",
-						"rarity": 1,
+						"rarity": 1, "notes": "",
 						"clay_color": {
-							"base": "Pink tint", "spot": "Dark Red", "notes": ""
+							"base": "Pink tint", "spot": "Dark Red"
 						},
 						"inlay": {
 							"text_color": "Black", "text_size": "Large", "notes": "High contrast background"
@@ -107,20 +107,20 @@
 					{
 						"image": "25cent_v6.jpg",
 						"group": "Primary",
-						"rarity": 10,
+						"rarity": 10, "notes": "",
 						"clay_color": {
 							"base": "White", "spot": "Dark Red", "notes": "Under-diameter"
 						},
 						"inlay": {
-							"text_color": "Black", "text_size": "Large", "notes": ""
+							"text_color": "Black", "text_size": "Large"
 						}
 					},
 					{
 						"image": "25cent_v7.jpg",
 						"group": "Primary",
-						"rarity": 3,
+						"rarity": 3, "notes": "",
 						"clay_color": {
-							"base": "White", "spot": "Dark Red", "notes": ""
+							"base": "White", "spot": "Dark Red"
 						},
 						"inlay": {
 							"text_color": "Black", "text_size": "Large", "notes": ""
@@ -129,9 +129,9 @@
 					{
 						"image": "25cent_v8.jpg",
 						"group": "Primary",
-						"rarity": 3,
+						"rarity": 3, "notes": "67.7mm rack only. Otherwise v5",
 						"clay_color": {
-							"base": "White", "spot": "Dark Red", "notes": "67.7mm rack only. Otherwise v5"
+							"base": "White", "spot": "Dark Red"
 						},
 						"inlay": {
 							"text_color": "Black", "text_size": "Large", "notes": ""
@@ -150,9 +150,9 @@
 					{
 						"image": "50cent_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 10,
+						"rarity": 10, "notes": "Only variant",
 						"clay_color": {
-							"base": "Purple", "spot": "Pink", "notes": "Only variant"
+							"base": "Purple", "spot": "Pink"
 						},
 						"inlay": {
 							"text_color": "Purple", "text_size": "Normal", "notes": ""
@@ -171,9 +171,9 @@
 					{
 						"image": "dollar_v1.jpg",
 						"group": "Primary",
-						"rarity": 2,
+						"rarity": 2, "notes": "",
 						"clay_color": {
-							"base": "Sky Blue", "spot": "White", "notes": ""
+							"base": "Sky Blue", "spot": "White"
 						},
 						"inlay": {
 							"text_color": "Blue", "text_size": "Normal", "notes": ""
@@ -182,9 +182,9 @@
 					{
 						"image": "dollar_v2.jpg",
 						"group": "Primary",
-						"rarity": 3,
+						"rarity": 3, "notes": "",
 						"clay_color": {
-							"base": "Sky Blue", "spot": "White", "notes": ""
+							"base": "Sky Blue", "spot": "White"
 						},
 						"inlay": {
 							"text_color": "Dark Blue", "text_size": "Normal", "notes": ""
@@ -193,9 +193,9 @@
 					{
 						"image": "dollar_v3.jpg",
 						"group": "Primary",
-						"rarity": 1,
+						"rarity": 1, "notes": "",
 						"clay_color": {
-							"base": "Sky Blue", "spot": "White", "notes": ""
+							"base": "Sky Blue", "spot": "White"
 						},
 						"inlay": {
 							"text_color": "Black", "text_size": "Large", "notes": ""
@@ -214,9 +214,9 @@
 					{
 						"image": "2dollar_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 9.5,
+						"rarity": 9.5, "notes": "Only variant",
 						"clay_color": {
-							"base": "Light Brown", "spot": "Dark Red", "notes": "Only variant"
+							"base": "Light Brown", "spot": "Dark Red"
 						},
 						"inlay": {
 							"text_color": "Light Brown", "text_size": "Normal", "notes": ""
@@ -233,11 +233,11 @@
 				},
 				"variants": [
 					{
-						"image": "snapper_v1.jpg",
+						"image": "snapper_v1.png",
 						"group": "Supplemental",
-						"rarity": 10,
+						"rarity": 10, "notes": "Only variant",
 						"clay_color": {
-							"base": "Hot Pink", "spot": "Light Pink, Cherry Red", "notes": "Only variant"
+							"base": "Hot Pink", "spot": "Light Pink, Cherry Red"
 						},
 						"inlay": {
 							"text_color": "Hot Pink", "text_size": "Normal", "notes": ""
@@ -256,9 +256,9 @@
 					{
 						"image": "5dollar_v1.jpg",
 						"group": "Primary",
-						"rarity": 6,
+						"rarity": 6, "notes": "",
 						"clay_color": {
-							"base": "Red", "spot": "Tan", "notes": ""
+							"base": "Red", "spot": "Tan"
 						},
 						"inlay": {
 							"text_color": "Red", "text_size": "Normal", "notes": ""
@@ -267,9 +267,9 @@
 					{
 						"image": "5dollar_v2.jpg",
 						"group": "Primary",
-						"rarity": 5,
+						"rarity": 5, "notes": "",
 						"clay_color": {
-							"base": "Deep Red", "spot": "Tan", "notes": ""
+							"base": "Deep Red", "spot": "Tan"
 						},
 						"inlay": {
 							"text_color": "Deep Red", "text_size": "Large", "notes": ""
@@ -278,9 +278,9 @@
 					{
 						"image": "5dollar_v3.jpg",
 						"group": "Primary",
-						"rarity": 10,
+						"rarity": 10, "notes": "67.7mm rack only. Otherwise ~v2",
 						"clay_color": {
-							"base": "Deep Red", "spot": "Tan", "notes": "67.7mm rack only. Otherwise ~v2"
+							"base": "Deep Red", "spot": "Tan"
 						},
 						"inlay": {
 							"text_color": "Deep Red", "text_size": "Large", "notes": ""
@@ -299,9 +299,9 @@
 					{
 						"image": "10dollar_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 10,
+						"rarity": 10, "notes": "Only variant",
 						"clay_color": {
-							"base": "Orange", "spot": "Light Blue, Blue", "notes": "Only variant"
+							"base": "Orange", "spot": "Light Blue, Blue"
 						},
 						"inlay": {
 							"text_color": "Blue", "text_size": "Normal", "notes": ""
@@ -320,9 +320,9 @@
 					{
 						"image": "20dollar_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 7,
+						"rarity": 7, "notes": "Only variant",
 						"clay_color": {
-							"base": "Green Tint", "spot": "Dark Green, Pink", "notes": "Only variant"
+							"base": "Green Tint", "spot": "Dark Green, Pink"
 						},
 						"inlay": {
 							"text_color": "Dark Green", "text_size": "Normal", "notes": ""
@@ -341,9 +341,9 @@
 					{
 						"image": "25dollar_v1.jpg",
 						"group": "Primary",
-						"rarity": 2,
+						"rarity": 2, "notes": "",
 						"clay_color": {
-							"base": "Green", "spot": "Light Green, Dark Green", "notes": ""
+							"base": "Green", "spot": "Light Green, Dark Green"
 						},
 						"inlay": {
 							"text_color": "Green", "text_size": "Normal", "notes": ""
@@ -363,9 +363,9 @@
 					{
 						"image": "25dollar_v3.jpg",
 						"group": "Primary",
-						"rarity": 2,
+						"rarity": 2, "notes": "",
 						"clay_color": {
-							"base": "Dark Green", "spot": "Light Green, Dark Green", "notes": ""
+							"base": "Dark Green", "spot": "Light Green, Dark Green"
 						},
 						"inlay": {
 							"text_color": "Black", "text_size": "Large", "notes": ""
@@ -374,9 +374,9 @@
 					{
 						"image": "25dollar_v4.jpg",
 						"group": "Primary",
-						"rarity": 2,
+						"rarity": 2, "notes": "Base color is slightly paler than v1",
 						"clay_color": {
-							"base": "Green", "spot": "Light Green, Dark Green", "notes": "Base color is slightly paler than v1"
+							"base": "Green", "spot": "Light Green, Dark Green"
 						},
 						"inlay": {
 							"text_color": "Dark Green", "text_size": "Normal", "notes": ""
@@ -385,9 +385,9 @@
 					{
 						"image": "25dollar_v5.jpg",
 						"group": "Supplemental",
-						"rarity": 8,
+						"rarity": 8, "notes": "Slightly over diameter",
 						"clay_color": {
-							"base": "Deep Green", "spot": "Light Green, Dark Green", "notes": "Slightly over diameter"
+							"base": "Deep Green", "spot": "Light Green, Dark Green"
 						},
 						"inlay": {
 							"text_color": "Bright Green", "text_size": "Normal", "notes": ""
@@ -406,9 +406,9 @@
 					{
 						"image": "50dollar_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 8,
+						"rarity": 8, "notes": "Only variant",
 						"clay_color": {
-							"base": "Light Blue", "spot": "Dark Blue, Blue", "notes": "Only variant"
+							"base": "Light Blue", "spot": "Dark Blue, Blue"
 						},
 						"inlay": {
 							"text_color": "Light Blue", "text_size": "Normal", "notes": ""
@@ -427,9 +427,9 @@
 					{
 						"image": "100dollar_v1.jpg",
 						"group": "Primary",
-						"rarity": 1,
+						"rarity": 1, "notes": "",
 						"clay_color": {
-							"base": "Black", "spot": "Red, Green, Purple", "notes": ""
+							"base": "Black", "spot": "Red, Green, Purple"
 						},
 						"inlay": {
 							"text_color": "Black", "text_size": "Normal", "notes": ""
@@ -438,9 +438,9 @@
 					{
 						"image": "100dollar_v2.jpg",
 						"group": "Primary",
-						"rarity": 3,
+						"rarity": 3, "notes": "",
 						"clay_color": {
-							"base": "Black", "spot": "Red, Green, Purple", "notes": ""
+							"base": "Black", "spot": "Red, Green, Purple"
 						},
 						"inlay": {
 							"text_color": "Black", "text_size": "Large", "notes": "Minor inconsistencies"
@@ -459,9 +459,9 @@
 					{
 						"image": "500dollar_v1.jpg",
 						"group": "Primary",
-						"rarity": 2,
+						"rarity": 2, "notes": "",
 						"clay_color": {
-							"base": "Purple", "spot": "White, Orange", "notes": ""
+							"base": "Purple", "spot": "White, Orange"
 						},
 						"inlay": {
 							"text_color": "Black", "text_size": "Normal", "notes": ""
@@ -470,9 +470,9 @@
 					{
 						"image": "500dollar_v2.jpg",
 						"group": "Primary",
-						"rarity": 1,
+						"rarity": 1, "notes": "",
 						"clay_color": {
-							"base": "Purple", "spot": "White, Orange", "notes": ""
+							"base": "Purple", "spot": "White, Orange"
 						},
 						"inlay": {
 							"text_color": "Black", "text_size": "Large", "notes": ""
@@ -492,9 +492,9 @@
 					{
 						"image": "500dollar_v4.jpg",
 						"group": "Primary",
-						"rarity": 5,
+						"rarity": 5, "notes": "",
 						"clay_color": {
-							"base": "Bright Purple", "spot": "White, Orange", "notes": ""
+							"base": "Bright Purple", "spot": "White, Orange"
 						},
 						"inlay": {
 							"text_color": "Hot Pink", "text_size": "Normal", "notes": ""
@@ -513,9 +513,9 @@
 					{
 						"image": "1000dollar_v1.jpg",
 						"group": "Primary",
-						"rarity": 8,
+						"rarity": 8, "notes": "",
 						"clay_color": {
-							"base": "Pale Yellow", "spot": "Light Blue, Dark Blue", "notes": ""
+							"base": "Pale Yellow", "spot": "Light Blue, Dark Blue"
 						},
 						"inlay": {
 							"text_color": "Gray Blue", "text_size": "Normal", "notes": ""
@@ -524,9 +524,9 @@
 					{
 						"image": "1000dollar_v2.jpg",
 						"group": "Primary",
-						"rarity": 7,
+						"rarity": 7, "notes": "Initial run",
 						"clay_color": {
-							"base": "Bold Yellow", "spot": "Light Blue, Dark Blue", "notes": "Initial run"
+							"base": "Bold Yellow", "spot": "Light Blue, Dark Blue"
 						},
 						"inlay": {
 							"text_color": "Yellow", "text_size": "Normal", "notes": "Low contrast inlay; deemed 'error'"
@@ -535,9 +535,9 @@
 					{
 						"image": "1000dollar_v3.jpg",
 						"group": "Primary",
-						"rarity": 7,
+						"rarity": 7, "notes": "",
 						"clay_color": {
-							"base": "Yellow", "spot": "Light Blue, Dark Blue", "notes": ""
+							"base": "Yellow", "spot": "Light Blue, Dark Blue"
 						},
 						"inlay": {
 							"text_color": "Blue", "text_size": "Normal", "notes": ""
@@ -546,9 +546,9 @@
 					{
 						"image": "1000dollar_v4.jpg",
 						"group": "Primary",
-						"rarity": 8,
+						"rarity": 8, "notes": "Second production run",
 						"clay_color": {
-							"base": "Bold Yellow", "spot": "Light Blue, Dark Blue", "notes": "Second production run"
+							"base": "Bold Yellow", "spot": "Light Blue, Dark Blue"
 						},
 						"inlay": {
 							"text_color": "Black", "text_size": "Normal", "notes": ""
@@ -557,9 +557,9 @@
 					{
 						"image": "1000dollar_v5.jpg",
 						"group": "Primary",
-						"rarity": 7,
+						"rarity": 7, "notes": "",
 						"clay_color": {
-							"base": "Yellow", "spot": "Light Blue, Dark Blue", "notes": ""
+							"base": "Yellow", "spot": "Light Blue, Dark Blue"
 						},
 						"inlay": {
 							"text_color": "Blue", "text_size": "Normal", "notes": "White background"
@@ -578,9 +578,9 @@
 					{
 						"image": "5000dollar_v1.jpg",
 						"group": "Primary",
-						"rarity": 8,
+						"rarity": 8, "notes": "Minor spot color inconsistencies",
 						"clay_color": {
-							"base": "Red", "spot": "Ivory", "notes": "Minor spot color inconsistencies"
+							"base": "Brick", "spot": "Ivory"
 						},
 						"inlay": {
 							"text_color": "Black", "text_size": "Large", "notes": ""
@@ -589,9 +589,9 @@
 					{
 						"image": "5000dollar_v2.jpg",
 						"group": "Primary",
-						"rarity": 8,
+						"rarity": 8, "notes": "Minor spot color inconsistencies",
 						"clay_color": {
-							"base": "Red", "spot": "Ivory", "notes": "Minor spot color inconsistencies"
+							"base": "Brick", "spot": "Ivory"
 						},
 						"inlay": {
 							"text_color": "Dark Red", "text_size": "Normal", "notes": ""
@@ -600,9 +600,9 @@
 					{
 						"image": "5000dollar_v3.jpg",
 						"group": "Primary",
-						"rarity": 8,
+						"rarity": 8, "notes": "Minor spot color inconsistencies",
 						"clay_color": {
-							"base": "Red", "spot": "Ivory", "notes": "Minor spot color inconsistencies"
+							"base": "Brick", "spot": "Ivory"
 						},
 						"inlay": {
 							"text_color": "Light Brown", "text_size": "Normal", "notes": ""
@@ -621,9 +621,9 @@
 					{
 						"image": "25000dollar_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 8,
+						"rarity": 8, "notes": "Only variant",
 						"clay_color": {
-							"base": "Pink", "spot": "White, Red", "notes": "Only variant"
+							"base": "Pink", "spot": "White, Red"
 						},
 						"inlay": {
 							"text_color": "Pink", "text_size": "Normal", "notes": "Oversize"
@@ -642,9 +642,9 @@
 					{
 						"image": "100000dollar_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 9,
+						"rarity": 9, "notes": "Only variant",
 						"clay_color": {
-							"base": "Navy Blue", "spot": "White, Red", "notes": "Only variant"
+							"base": "Navy Blue", "spot": "White, Red"
 						},
 						"inlay": {
 							"text_color": "Navy Blue", "text_size": "Normal", "notes": "Oversize"
@@ -663,9 +663,9 @@
 					{
 						"image": "variable_orange_v1.jpg",
 						"group": "Primary",
-						"rarity": 6,
+						"rarity": 6, "notes": "",
 						"clay_color": {
-							"base": "Bright Orange", "spot": "Light Blue, Dark Blue", "notes": ""
+							"base": "Bright Orange", "spot": "Light Blue, Dark Blue"
 						},
 						"inlay": {
 							"text_color": "Black", "text_size": "Normal", "notes": ""
@@ -674,9 +674,9 @@
 					{
 						"image": "variable_orange_v2.jpg",
 						"group": "Primary",
-						"rarity": 6,
+						"rarity": 6, "notes": "",
 						"clay_color": {
-							"base": "Orange", "spot": "Light Blue, Dark Blue", "notes": ""
+							"base": "Orange", "spot": "Light Blue, Dark Blue"
 						},
 						"inlay": {
 							"text_color": "Black", "text_size": "Large", "notes": ""
@@ -685,9 +685,9 @@
 					{
 						"image": "variable_orange_v3.jpg",
 						"group": "Supplemental",
-						"rarity": 9,
+						"rarity": 9, "notes": "",
 						"clay_color": {
-							"base": "Light Orange", "spot": "Light Blue, Dark Blue", "notes": ""
+							"base": "Light Orange", "spot": "Light Blue, Dark Blue"
 						},
 						"inlay": {
 							"text_color": "Orange", "text_size": "Normal", "notes": ""
@@ -706,9 +706,9 @@
 					{
 						"image": "variable_white_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 10,
+						"rarity": 10, "notes": "Only variant",
 						"clay_color": {
-							"base": "Pink tint", "spot": "Dark Red", "notes": "Only variant"
+							"base": "Pink tint", "spot": "Dark Red"
 						},
 						"inlay": {
 							"text_color": "Pink", "text_size": "Normal", "notes": ""
@@ -727,9 +727,9 @@
 					{
 						"image": "variable_blue_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 10,
+						"rarity": 10, "notes": "Only variant",
 						"clay_color": {
-							"base": "Sky Blue", "spot": "White", "notes": "Only variant"
+							"base": "Sky Blue", "spot": "White"
 						},
 						"inlay": {
 							"text_color": "Sky Blue", "text_size": "Normal", "notes": ""
@@ -748,9 +748,9 @@
 					{
 						"image": "variable_red_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 10,
+						"rarity": 10, "notes": "Only variant",
 						"clay_color": {
-							"base": "Red", "spot": "Tan", "notes": "Only variant"
+							"base": "Red", "spot": "Tan"
 						},
 						"inlay": {
 							"text_color": "Red", "text_size": "Normal", "notes": ""
@@ -769,9 +769,9 @@
 					{
 						"image": "variable_green_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 10,
+						"rarity": 10, "notes": "Only variant",
 						"clay_color": {
-							"base": "Deep Green", "spot": "Light Green, Dark Green", "notes": "Only variant"
+							"base": "Deep Green", "spot": "Light Green, Dark Green"
 						},
 						"inlay": {
 							"text_color": "Green", "text_size": "Normal", "notes": ""
@@ -790,9 +790,9 @@
 					{
 						"image": "variable_black_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 10,
+						"rarity": 10, "notes": "Only variant",
 						"clay_color": {
-							"base": "Black", "spot": "Purple, Green, Red", "notes": "Only variant"
+							"base": "Black", "spot": "Purple, Green, Red"
 						},
 						"inlay": {
 							"text_color": "Black", "text_size": "Normal", "notes": ""

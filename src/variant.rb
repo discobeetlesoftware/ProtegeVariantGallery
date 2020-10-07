@@ -8,7 +8,7 @@ class Variant
 	attr_accessor :rarity
 	attr_accessor :clay_color_base
 	attr_accessor :clay_color_spot
-	attr_accessor :clay_color_notes
+	attr_accessor :notes
 	attr_accessor :inlay_text_color
 	attr_accessor :inlay_text_size
 	attr_accessor :inlay_notes
@@ -34,13 +34,13 @@ class Variant
 		clay_color = values['clay_color']
 		self.clay_color_base = clay_color['base']
 		self.clay_color_spot = clay_color['spot']
-		self.clay_color_notes = clay_color['notes']
+		self.notes = values['notes']
 		inlay = values['inlay']
 		self.inlay_text_color = inlay['text_color']
 		self.inlay_text_size = inlay['text_size']
 		self.inlay_notes = inlay['notes']
 	end
-	
+
 	def variant_img_tag
 		path = File.join('images', 'variants', image)
 		"<img src=\"#{path}\" alt=\"#{name} v#{variant} variant\" width=\"150\" />"

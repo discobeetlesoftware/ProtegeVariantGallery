@@ -53,14 +53,14 @@
 	<% variants.each do |chip| %>
 	  <tr>
 		<td><%= chip.denom %></td>
-		<td><%= chip.proof_img_tag %></td>
 		<td>v<%= chip.variant %></td>
+		<td><%= chip.proof_img_tag %></td>
 		<td><%= chip.variant_img_tag %></td>
 		<td><%= chip.group %></td>
 		<td><%= chip.rarity %></td>
+		<td><%= chip.notes %></td>
 		<td><%= chip.clay_color_base %></td>
 		<td><%= chip.clay_color_spot %></td>
-		<td><%= chip.clay_color_notes %></td>
 		<td><%= chip.inlay_text_color %></td>
 		<td><%= chip.inlay_text_size %></td>
 		<td><%= chip.inlay_notes %></td>
