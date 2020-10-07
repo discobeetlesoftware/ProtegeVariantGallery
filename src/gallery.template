@@ -1,0 +1,73 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>BCC Protégé Variants</title>
+  <meta name="description" content="Blue Chip Company Protégé Variants">
+  <meta name="author" content="Joe Harris@pokerchipforum.com">
+
+  <link rel="stylesheet" href="./include/main.css?v=1.0">
+  <style></style>
+</head>
+
+<body>
+  <div>
+	<h1>Blue Chip Company Protégé Variants</h1>
+
+		<h2>What makes a variant?</h2>
+		<p>
+		  The primary goal when determining variants was to make classifications based on chips that an average player would be able to identify as 'different'. This means that a chipper may identify discrepancies within a variant, but perhaps only when looking for them. This can manifest both in slight inconsistencies in the color of the clay, as well as varying qualities of print for the inlay.   
+		</p>
+		<p>
+			Any deviation from standard sizing also constitutes a new variant. This is primarily manifested in diameter discrepancies, but there are also less concerning deviations with thickness which require 67.7mm racks. While the average player probably would not notice either problem, it is presumed that a chipper looking for consistency within a set of these chips would find variance of chip size to be a deal breaker. Happily, these types of error chips are relatively uncommon and not present in large quantities when encountered. 
+		</p>
+			
+		<h2>Random tidbits</h2>
+		<p>
+		  <ul>
+			<li>Final design by William R. Coughlan (<code>Magus_23</code>).</li>
+			<li>The final design was a collaborative effort which took place on ChipTalk.net.</li>
+			<li>Design process took approximately 9 months.</li>
+			<li>Produced by Blue Chip Company for <a href='http://sidepot.com/'>Sidepot</a>.</li>
+			<li>Supplemental variants were produced a single time. All the primary chips had multiple production runs.</li>
+			<li>Features the Cigar & Snifter mold.</li>
+			<li>Almost every variant will fit snugly in 66.7mm racks. Some require 67.7mm - those are noted.</li>
+		  </ul>
+		</p>
+		
+		<p>
+		  <h2>Resources</h2>
+		  <ol>
+			  <li><a href="https://web.archive.org/web/20111026191803/http://www.buypokerchips.com/Protege-Clay-Poker-Chips-p/set-protege.htm">Archive of Sidepot purchase page</a></li>
+			  <li><a href="https://www.pokerchipforum.com/threads/the-prot%C3%A9g%C3%A9-thread.22963/">The Protégé Thread</a></li>
+		  </ol>
+		</p>
+  </div>
+  <table>
+  	<% @chips.each do |variants| %>
+  	<%= header_if_needed(variants) %>
+	  
+	<tbody>
+	<% variants.each do |chip| %>
+	  <tr>
+		<td><%= chip.denom %></td>
+		<td><%= chip.proof_img_tag %></td>
+		<td>v<%= chip.variant %></td>
+		<td><%= chip.variant_img_tag %></td>
+		<td><%= chip.group %></td>
+		<td><%= chip.rarity %></td>
+		<td><%= chip.clay_color_base %></td>
+		<td><%= chip.clay_color_spot %></td>
+		<td><%= chip.clay_color_notes %></td>
+		<td><%= chip.inlay_text_color %></td>
+		<td><%= chip.inlay_text_size %></td>
+		<td><%= chip.inlay_notes %></td>
+	  </tr>
+	  <% end %>
+	  </tbody>
+	<% end %>
+  </table>
+  </body>
+</html>
