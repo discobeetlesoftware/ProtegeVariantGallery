@@ -49,6 +49,7 @@
 		  </ol>
 		</p>
   </div>
+  <h2>Known Variants</h2>
   <table>
   	<% @chips.each do |variants| %>
   	<%= header_if_needed(variants) %>
