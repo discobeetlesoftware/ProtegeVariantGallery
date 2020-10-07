@@ -6,6 +6,7 @@
 				"name": {
 					"en": "nickel"
 				},
+				"color": "#CE9CBA",
 				"variants": [
 					{
 						"image": "5cent_v1.jpg",
@@ -27,6 +28,7 @@
 				"name": {
 					"en": "dime"
 				},
+				"color": "#63C774",
 				"variants": [
 					{
 						"image": "10cent_v1.jpg",
@@ -48,6 +50,7 @@
 				"name": {
 					"en": "quarter"
 				},
+				"color": "#EDDAC7",
 				"variants": [
 					{
 						"image": "25cent_v1.jpg",
@@ -146,6 +149,7 @@
 				"name": {
 					"en": "half dollar"
 				},
+				"color": "#325485",
 				"variants": [
 					{
 						"image": "50cent_v1.jpg",
@@ -167,6 +171,7 @@
 				"name": {
 					"en": "dollar"
 				},
+				"color": "#4083B0",
 				"variants": [
 					{
 						"image": "dollar_v1.jpg",
@@ -210,6 +215,7 @@
 				"name": {
 					"en": "two dollar"
 				},
+				"color": "#CBB18B",
 				"variants": [
 					{
 						"image": "2dollar_v1.jpg",
@@ -231,6 +237,7 @@
 				"name": {
 					"en": "snapper"
 				},
+				"color": "#F2598D",
 				"variants": [
 					{
 						"image": "snapper_v1.png",
@@ -252,6 +259,7 @@
 				"name": {
 					"en": "five dollar"
 				},
+				"color": "#AD0F1F",
 				"variants": [
 					{
 						"image": "5dollar_v1.jpg",
@@ -295,6 +303,7 @@
 				"name": {
 					"en": "ten dollar"
 				},
+				"color": "#EF9450",
 				"variants": [
 					{
 						"image": "10dollar_v1.jpg",
@@ -316,6 +325,7 @@
 				"name": {
 					"en": "twenty dollar"
 				},
+				"color": "#E6DAC4",
 				"variants": [
 					{
 						"image": "20dollar_v1.jpg",
@@ -337,6 +347,7 @@
 				"name": {
 					"en": "twenty-five dollar"
 				},
+				"color": "#417038",
 				"variants": [
 					{
 						"image": "25dollar_v1.jpg",
@@ -402,6 +413,7 @@
 				"name": {
 					"en": "fifty dollar"
 				},
+				"color": "#DBDACF",
 				"variants": [
 					{
 						"image": "50dollar_v1.jpg",
@@ -423,6 +435,7 @@
 				"name": {
 					"en": "hundred dollar"
 				},
+				"color": "#36352F",
 				"variants": [
 					{
 						"image": "100dollar_v1.jpg",
@@ -455,6 +468,7 @@
 				"name": {
 					"en": "five-hundred dollar"
 				},
+				"color": "#7A58AF",
 				"variants": [
 					{
 						"image": "500dollar_v1.jpg",
@@ -509,6 +523,7 @@
 				"name": {
 					"en": "thousand dollar"
 				},
+				"color": "#E5B304",
 				"variants": [
 					{
 						"image": "1000dollar_v1.jpg",
@@ -574,6 +589,7 @@
 				"name": {
 					"en": "five thousand dollar"
 				},
+				"color": "#B1482D",
 				"variants": [
 					{
 						"image": "5000dollar_v1.jpg",
@@ -617,6 +633,7 @@
 				"name": {
 					"en": "twenty-five thousand dollar"
 				},
+				"color": "#F65253",
 				"variants": [
 					{
 						"image": "25000dollar_v1.jpg",
@@ -638,6 +655,7 @@
 				"name": {
 					"en": "one hundred thousand dollar"
 				},
+				"color": "#0F1F41",
 				"variants": [
 					{
 						"image": "100000dollar_v1.jpg",
@@ -659,6 +677,7 @@
 				"name": {
 					"en": "non-denom orange"
 				},
+				"color": "#E77727",
 				"variants": [
 					{
 						"image": "variable_orange_v1.jpg",
@@ -702,6 +721,7 @@
 				"name": {
 					"en": "non-denom white"
 				},
+				"color": "#BDB2B6",
 				"variants": [
 					{
 						"image": "variable_white_v1.jpg",
@@ -723,6 +743,7 @@
 				"name": {
 					"en": "non-denom blue"
 				},
+				"color": "#5FB2D8",
 				"variants": [
 					{
 						"image": "variable_blue_v1.jpg",
@@ -744,6 +765,7 @@
 				"name": {
 					"en": "non-denom red"
 				},
+				"color": "#98303E",
 				"variants": [
 					{
 						"image": "variable_red_v1.jpg",
@@ -765,6 +787,7 @@
 				"name": {
 					"en": "non-denom green"
 				},
+				"color": "#31492F",
 				"variants": [
 					{
 						"image": "variable_green_v1.jpg",
@@ -786,6 +809,7 @@
 				"name": {
 					"en": "non-denom black"
 				},
+				"color": "#1D1B1C",
 				"variants": [
 					{
 						"image": "variable_black_v1.jpg",

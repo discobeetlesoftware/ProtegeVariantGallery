@@ -6,6 +6,7 @@ require 'erb'
 require 'json'
 require 'date'
 require_relative 'variant'
+require_relative 'theme'
 
 class Renderer
 	include ERB::Util
@@ -24,9 +25,11 @@ class Renderer
 		data_file = File.join(__dir__, 'data.json')
 		data = JSON.parse(File.open(data_file, 'r').read)
 		@chips = []
+		@themes = []
 		data['chips'].each do |values|
 			denom_id = values.keys.first
 			denom_data = values[denom_id]
+			@themes << Theme.new(denom_data)
 			@chips.push(Variant.hydrate(denom_id, denom_data))
 		end
 	end

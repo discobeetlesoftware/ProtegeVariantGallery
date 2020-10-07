@@ -9,7 +9,11 @@
   <meta name="author" content="Joe Harris at pokerchipforum.com">
 
   <link rel="stylesheet" href="./include/main.css?v=1.0">
-  <style></style>
+  <style>
+  	<% @themes.each do |theme| %>
+	  tbody.<%= theme.key %> td:nth-child(1) { background-image: linear-gradient(to right, <%= theme.color %> 0%, <%= theme.color %> 5%, white 100%); }
+  	<% end %>
+  </style>
 </head>
 
 <body>
@@ -49,7 +53,7 @@
   	<% @chips.each do |variants| %>
   	<%= header_if_needed(variants) %>
 	  
-	<tbody>
+	<tbody class="<%= variants.first.unique_class %>">
 	<% variants.each do |chip| %>
 	  <tr>
 		<td><%= chip.denom %></td>
