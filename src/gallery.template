@@ -1,25 +1,21 @@
 <!doctype html>
-
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-
-  <title>BCC Protégé Variants</title>
-  <meta name="description" content="Blue Chip Company Protégé Variants">
-  <meta name="author" content="Joe Harris at pokerchipforum.com">
-
-  <link rel="stylesheet" href="./include/main.css?v=1.0">
-  <style>
+	<meta charset="utf-8">
+	<title>BCC Protégé Variants</title>
+	<meta name="description" content="Blue Chip Company Protégé Variants">
+	<meta name="author" content="Joe Harris at pokerchipforum.com">
 	<meta name="robots" content="all">
 	<meta name="generator" content="https://github.com/discobeetlesoftware/ProtegeVariantGallery/">
 	<meta name="keywords" content="sidepot,protege,protégé,poker chip,bcc,blue chip company,variants,variation,plaque,dealer button,pokerchipforum,discobeetle">
 	<meta name="theme-color" content="normal">
+	<link rel="stylesheet" href="./include/main.css">
+    <style>
   	<% @themes.each do |theme| %>
 	  tbody.<%= theme.key %> td:nth-child(1) { background-image: linear-gradient(to right, <%= theme.color %> 0%, <%= theme.color %> 5%, white 100%); }
   	<% end %>
-  </style>
+  	</style>
 </head>
-
 <body>
   <div>
 	<h1>Blue Chip Company Protégé Variants</h1>
