@@ -38,6 +38,9 @@
 			<li>Supplemental variants were produced a single time. All the primary chips had multiple production runs.</li>
 			<li>Features the Cigar & Snifter mold.</li>
 			<li>Almost every variant will fit snugly in 66.7mm racks. Some require 67.7mm - those are noted.</li>
+			<li><%= @chips.count %> chip denominations.</li>
+			<li><%= @chips.reduce(0) { |sum, list| sum + list.count } %> known chip variants.</li>
+			<li>Sidepot sold chips for $1.29 USD each and plaques for $5.95 USD each.</li>
 		  </ul>
 		</p>
 		
