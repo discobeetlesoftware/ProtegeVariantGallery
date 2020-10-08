@@ -1,8 +1,8 @@
 <thead>
   <tr>
-	<th class="denom" rowspan="2">Denom</th>
+	<th rowspan="2">Denom</th>
 	<th rowspan="2">Variant</th>
-	<th class="denom" rowspan="2">Design</th>
+	<th rowspan="2">Design</th>
 	<th rowspan="2">Image</th>
 	<th rowspan="2">Group</th>
 	<th rowspan="2">Rarity</th>
