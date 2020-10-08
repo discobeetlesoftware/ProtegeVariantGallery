@@ -31,7 +31,7 @@ class Accessory
 	def variant_img_tag
 		return "🚫" if image == ""
 		path = File.join('images', 'variants', image)
-		"<img src=\"#{path}\" alt=\"#{name} v#{variant} variant\" width=\"150\" />"
+		"<img src=\"#{path}\" alt=\"#{name} v#{variant} variant\" width=\"250\" />"
 	end
 	
 	def proof_img_tag
