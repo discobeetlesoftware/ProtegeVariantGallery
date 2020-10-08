@@ -45,11 +45,13 @@
 		  <h2>Resources</h2>
 		  <ol>
 			  <li><a href="https://web.archive.org/web/20111026191803/http://www.buypokerchips.com/Protege-Clay-Poker-Chips-p/set-protege.htm">Archive of Sidepot purchase page</a></li>
+			  <li><a href = "https://web.archive.org/web/20111103013621/http://www.buypokerchips.com/Ceramic-Plaques-for-Poker-p/set-plaq-ptg.htm">Archive of Sidepot plaque purchase page</a></li>
 			  <li><a href="https://www.pokerchipforum.com/threads/the-prot%C3%A9g%C3%A9-thread.22963/">The Protégé Thread</a></li>
 		  </ol>
 		</p>
   </div>
-  <h2>Known Variants</h2>
+  
+  <h2>Known Chip Variants</h2>
   <table>
   	<% @chips.each do |variants| %>
   	<%= header_if_needed(variants) %>
@@ -73,6 +75,25 @@
 	  <% end %>
 	  </tbody>
 	<% end %>
+  </table>
+  
+  <h2>Other Items</h2>
+  <table>
+	  <% @accessories.each do |variants| %>
+		<%= accessory_header_if_needed(variants) %>
+		<tbody class="<%= variants.first.theme.key %>">
+		<% variants.each do |accessory| %>
+		<tr>
+			<td><%= accessory.denom %></td>
+			<td>v<%= accessory.variant %></td>
+			<td><%= accessory.proof_img_tag %></td>
+			<td><%= accessory.variant_img_tag %></td>
+			<td><%= accessory.origin %></td>
+		</tr>
+		<% end %>
+		</tbody>
+	  <% end %>
+	  
   </table>
   </body>
 </html>

@@ -7,6 +7,7 @@ require 'json'
 require 'date'
 require_relative 'variant'
 require_relative 'theme'
+require_relative 'accessory'
 
 class Renderer
 	include ERB::Util
@@ -19,11 +20,10 @@ class Renderer
 	def initialize(arguments = "")
 		@arguments = arguments
 		@options = OpenStruct.new
-		template = File.join(__dir__, 'gallery.template')
-		@template = File.open(template).read
-		@thead = File.open(File.join(__dir__, 'thead.template')).read
-		data_file = File.join(__dir__, 'data.json')
-		data = JSON.parse(File.open(data_file, 'r').read)
+		@template = template('gallery')
+		@thead_chip = template('thead_chip')
+		@thead_accessory = template('thead_accessory')
+		data = read_data
 		@chips = []
 		@themes = []
 		data['chips'].each do |values|
@@ -31,6 +31,13 @@ class Renderer
 			denom_data = values[denom_id]
 			@themes << Theme.new(denom_data)
 			@chips.push(Variant.hydrate(@themes.last, denom_id, denom_data))
+		end
+		@accessories = []
+		data['accessories'].each do |values|
+			denom_id = values.keys.first
+			accessory_data = values[denom_id]
+			@themes << Theme.new(accessory_data)
+			@accessories.push(Accessory.hydrate(@themes.last, denom_id, accessory_data))
 		end
 	end
 	
@@ -42,12 +49,31 @@ class Renderer
 			output_usage
 		end
 	end
+	
+	def read_data
+		data_file = File.join(__dir__, 'data.json')
+		contents = File.open(data_file, 'r').read
+		JSON.parse(contents)
+	end
+	
+	def template(name)
+		path = File.join(__dir__, "#{name}.template")
+		File.open(path, 'r').read
+	end
 
+	def accessory_header_if_needed(accessory)
+		headerAccessories = [
+			"Dealer Button v1"
+		]
+		return @thead_accessory if headerAccessories.include?(accessory.first.to_s)
+		""
+	end
+	
 	def header_if_needed(chip)
 		headerChips = [
 			"5¢ v1", "50¢ v1", "$20 v1", "$500 v1", "$25k v1"
 		]
-		return @thead if headerChips.include?(chip.first.to_s)
+		return @thead_chip if headerChips.include?(chip.first.to_s)
 		""
 	end
 	
