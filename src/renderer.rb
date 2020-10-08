@@ -61,19 +61,11 @@ class Renderer
 		File.open(path, 'r').read
 	end
 
-	def accessory_header_if_needed(accessory)
-		headerAccessories = [
-			"Dealer Button v1"
-		]
-		return @thead_accessory if headerAccessories.include?(accessory.first.to_s)
-		""
-	end
-	
-	def header_if_needed(chip)
-		headerChips = [
-			"5¢ v1", "50¢ v1", "$20 v1", "$500 v1", "$25k v1"
-		]
-		return @thead_chip if headerChips.include?(chip.first.to_s)
+	def header_if_needed(element)
+		headerChips = [ "5¢ v1", "50¢ v1", "$20 v1", "$500 v1", "$25k v1" ] 
+		return @thead_chip if headerChips.include?(element.first.to_s)
+		headerAccessories = [ "Dealer Button v1" ]
+		return @thead_accessory if headerAccessories.include?(element.first.to_s)
 		""
 	end
 	

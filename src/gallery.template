@@ -98,7 +98,7 @@
 			
 			<table>
 				  <% @accessories.each do |variants| %>
-				  	<%= accessory_header_if_needed(variants) %>
+				  	<%= header_if_needed(variants) %>
 				  	<tbody class="<%= variants.first.theme.key %>">
 				 	<% variants.each do |accessory| %>
 					 <tr>
