@@ -23,14 +23,15 @@
 		<div>
 			<h2>What makes a variant?</h2>
 			
-			<p>The primary goal when determining variants was to make classifications based on chips that an average player would be able to identify as 'different'. This means that a chipper may identify discrepancies within a variant, but perhaps only when looking for them. This can manifest both in slight inconsistencies in the color of the clay, as well as varying qualities of print for the inlay.</p>
+			<p>The primary goal when determining variants was to make classifications based on what an average player would be able to identify as 'different'. This means that a chipper may identify discrepancies within a variant, but perhaps only when looking for them. This can manifest both in inconsistencies in the color of the clay, as well as varying print quality in the inlay.</p>
 			
-			<p>Any deviation from standard sizing also constitutes a new variant. This is primarily manifested in diameter discrepancies, but there are also less concerning deviations with thickness which require 67.7mm racks. While the average player probably would not notice either problem, it is presumed that a chipper looking for consistency within a set of these chips would find variance of chip size to be a deal breaker. Happily, these types of error chips are relatively uncommon and not present in large quantities when encountered.</p>
+			<p>Any deviation from standard sizing also constitutes a new variant. This is primarily manifested in diameter discrepancies, but there are also less concerning deviations with thickness which require 67.7mm racks. While the average player probably would not notice either problem, it is presumed that a chipper looking for consistency within a set of these chips would find any variance of chip size to be a deal breaker. Happily, these types of error chips are relatively uncommon and not present in large quantities when encountered.</p>
+			
+			<p>The colors referenced in the table below are approximately relative to each other. They are not meant as references to official BCC color names.</p>
 		</div>
 		
 		<div>
-			<h2>Random tidbits</h2>
-			
+			<h2>Factoids</h2>
 			<ul>
 				<li>Final design by William R. Coughlan (<code>Magus_23</code>).</li>
 				<li>Design process was a collaborative effort which took place on ChipTalk.net over approximately 9 months.</li>
@@ -66,11 +67,9 @@
 		
 		<div>
 			<h2>Known Chip Variants</h2>
-			
 			<table>
 			  	<% @chips.each do |variants| %>
 			  	<%= header_if_needed(variants) %>
-				  
 				<tbody class="<%= variants.first.theme.key %>">
 				<% variants.each do |chip| %>
 				  <tr>
@@ -95,7 +94,6 @@
 		
 		<div>
 			<h2>Other Items</h2>
-			
 			<table>
 				  <% @accessories.each do |variants| %>
 				  	<%= header_if_needed(variants) %>
