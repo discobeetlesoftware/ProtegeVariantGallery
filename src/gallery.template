@@ -10,6 +10,10 @@
 
   <link rel="stylesheet" href="./include/main.css?v=1.0">
   <style>
+	<meta name="robots" content="all">
+	<meta name="generator" content="https://github.com/discobeetlesoftware/ProtegeVariantGallery/">
+	<meta name="keywords" content="sidepot,protege,protégé,poker chip,bcc,blue chip company,variants,variation,plaque,dealer button,pokerchipforum,discobeetle">
+	<meta name="theme-color" content="normal">
   	<% @themes.each do |theme| %>
 	  tbody.<%= theme.key %> td:nth-child(1) { background-image: linear-gradient(to right, <%= theme.color %> 0%, <%= theme.color %> 5%, white 100%); }
   	<% end %>
