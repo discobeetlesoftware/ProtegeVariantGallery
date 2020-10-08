@@ -44,7 +44,7 @@ class Variant
 	end
 
 	def variant_img_tag
-		path = File.join('images', 'variants', image)
+		path = File.join('images', 'variants', 'thumbs', image)
 		"<img src=\"#{path}\" alt=\"#{name} v#{variant} variant\" width=\"150\" />"
 	end
 	
