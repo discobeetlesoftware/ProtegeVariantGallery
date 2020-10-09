@@ -342,7 +342,7 @@
 					{
 						"image": "2dollar_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 9.5, "notes": "Only variant",
+						"rarity": 10, "notes": "Only variant",
 						"clay_color": {
 							"base": "Light Brown", "spot": "Dark Red"
 						},
@@ -452,7 +452,7 @@
 					{
 						"image": "20dollar_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 7, "notes": "Only variant",
+						"rarity": 8, "notes": "Only variant",
 						"clay_color": {
 							"base": "Green Tint", "spot": "Dark Green, Pink"
 						},
@@ -474,7 +474,7 @@
 					{
 						"image": "25dollar_v1.jpg",
 						"group": "Primary",
-						"rarity": 2, "notes": "",
+						"rarity": 3, "notes": "",
 						"clay_color": {
 							"base": "Green", "spot": "Light Green, Dark Green"
 						},
@@ -485,7 +485,7 @@
 					{
 						"image": "25dollar_v2.jpg",
 						"group": "Primary",
-						"rarity": 2,
+						"rarity": 1,
 						"clay_color": {
 							"base": "Green", "spot": "Light Green, Dark Green", "notes": ""
 						},
@@ -496,7 +496,7 @@
 					{
 						"image": "25dollar_v3.jpg",
 						"group": "Primary",
-						"rarity": 2, "notes": "",
+						"rarity": 1, "notes": "",
 						"clay_color": {
 							"base": "Dark Green", "spot": "Light Green, Dark Green"
 						},
@@ -507,7 +507,7 @@
 					{
 						"image": "25dollar_v4.jpg",
 						"group": "Primary",
-						"rarity": 2, "notes": "Base color is slightly paler than v1",
+						"rarity": 3, "notes": "Base color is slightly paler than v1",
 						"clay_color": {
 							"base": "Green", "spot": "Light Green, Dark Green"
 						},
