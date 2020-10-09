@@ -70,7 +70,22 @@ class Renderer
 	end
 	
 	protected
-
+	def each_variant_image
+		index = 0
+		@chips.each do |variants|
+			variants.each do |variant|
+				yield variant, index += 1
+			end
+		end
+		
+		@accessories.each do |variants|
+			variants.each do |variant|
+				next if variant.image == ""
+				yield variant, index += 1
+			end
+		end
+	end
+		
 	def parsed_options?
 		opts = OptionParser.new
 		opts.on('-v', '--version') { output_version; exit }
