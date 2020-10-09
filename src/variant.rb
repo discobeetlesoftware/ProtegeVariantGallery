@@ -31,7 +31,7 @@ class Variant < Element
 		legendary = Range.new(10,10)
 		
 		ranges = [common, uncommon, rare, legendary]
-		description = ['common', 'uncommon', 'rare', 'legendary']
+		description = ['Common', 'Uncommon', 'Rare', 'Legendary']
 		results = ranges.select.with_index do |range, index|
 			range.include?(scale)
 		end
