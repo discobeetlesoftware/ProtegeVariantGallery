@@ -16,9 +16,6 @@ table {
 	border-spacing: 5px; 
 }
 
-thead th {
-}
-
 th, td { 
 	padding: 5px; 
 	font-size: 18px;
@@ -35,21 +32,12 @@ td:nth-child(1), td:nth-child(2) {
 	font-weight: bold;
 }
 
-
-td:nth-child(6) {
-}
 td:nth-child(8), td:nth-child(9) {
 	background-color: #f3f3f3;
 }
 
-td:nth-child(10), td:nth-child(11), td:nth-child(12) {
-	
-}
-
-/* cellspacing */
-table { border-collapse: separate; border-spacing: 5px; } /* cellspacing="5" */
-table { border-collapse: collapse; border-spacing: 0; }   /* cellspacing="0" */
-
+table { border-collapse: separate; border-spacing: 5px; }
+table { border-collapse: collapse; border-spacing: 0; }
 
 tbody {
 	border: 1px solid #a1a1a1;
