@@ -133,7 +133,7 @@
 					{
 						"image": "5cent_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 9, "notes": "",
+						"rarity": 9, "notes": "Only variant",
 						"clay_color": {
 							"base": "Lilac", "spot": "Dark Purple", "notes": "Only variant"
 						},
