@@ -25,26 +25,36 @@ class Element
 		self.thumb_width = 150
 	end
 	
+	def proof_path
+		File.join('images', 'designs', proof_image)
+	end
+	
+	def thumb_path
+		File.join('images', 'variants', 'thumbs', image)
+	end
+	
+	def variant_path
+		File.join('images', 'variants', image)
+	end
+	
 	def variant_img_tag
 		return "🚫" if image == ""
-		path = File.join('images', 'variants', image)
-		"<img src=\"#{path}\" alt=\"#{name} v#{variant} variant\" width=\"#{thumb_width}\" />"
+		index = yield
+		alt = "#{name} v#{variant} variant"
+		%{<img src="#{thumb_path}" alt="#{alt}" width="#{thumb_width}" onclick="openLightbox();currentSlide(#{index})" class="hover-shadow" />}
 	end
 	
 	def proof_img_tag
 		return "🚫" if proof_image == ""
-		path = File.join('images', 'designs', proof_image)
-		"<img src=\"#{path}\" alt=\"#{name} design\" width=\"#{thumb_width}\" />"
+		%{<img src="#{proof_path}" alt="#{proof_alt}" width="#{thumb_width}" />}
 	end
 		
 	def lightbox_thumb_img_tag(index)
-		path = File.join('images', 'variants', 'thumbs', image)
-		%{<img class="wheel" src="#{path}" onclick="currentSlide(#{index})" alt="#{to_s}" />}
+		%{<img class="wheel" src="#{thumb_path}" onclick="currentSlide(#{index})" alt="#{to_s}" />}
 	end
 	
 	def lightbox_img_tag
-		path = File.join('images', 'variants', image)
-		%{<img src="#{path}" style="width:100%">}
+		%{<img src="#{variant_path}" style="width:100%" />}
 	end
 
 	def proof_alt

@@ -87,10 +87,10 @@
 			  </div>
 		</div>
 		
+		<% count = 0 %>
 		<div>
 			<h2>Known Chip Variants</h2>
 			<table>
-				<% count = 0 %>
 			  	<% @chips.each do |variants| %>
 			  	<%= header_if_needed(variants) %>
 				<tbody class="<%= variants.first.theme.key %>">
@@ -99,7 +99,7 @@
 						<td><%= chip.denom %></td>
 						<td>v<%= chip.variant %></td>
 						<td><%= chip.proof_img_tag %></td>
-						<td><%= chip.variant_img_tag(count+=1) %></td>
+						<td><%= chip.variant_img_tag { count += 1 } %></td>
 						<td><%= chip.group %></td>
 						<td><%= chip.rarity %></td>
 						<td><%= chip.notes %></td>
@@ -126,7 +126,7 @@
 						<td><%= accessory.denom %></td>
 						<td>v<%= accessory.variant %></td>
 						<td><%= accessory.proof_img_tag %></td>
-						<td><%= accessory.variant_img_tag %></td>
+						<td><%= accessory.variant_img_tag { count += 1 } %></td>
 						<td><%= accessory.origin %></td>
 					</tr>
 				<% end %>

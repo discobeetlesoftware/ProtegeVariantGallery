@@ -23,9 +23,4 @@ class Variant < Element
 		self.inlay_notes = inlay['notes']
 	end
 
-	def variant_img_tag(index)
-		path = File.join('images', 'variants', 'thumbs', image)
-		alt = "#{name} v#{variant} variant"
-		%{<img src="#{path}" alt="#{alt}" width="#{thumb_width}" onclick="openLightbox();currentSlide(#{index})" class="hover-shadow" />}
-	end
 end
