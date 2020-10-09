@@ -39,11 +39,12 @@ class Renderer
 			@themes << Theme.new(accessory_data)
 			@accessories.push(Accessory.hydrate(@themes.last, denom_id, accessory_data))
 		end
+		@chipVariantCount = @chips.reduce(0) { |sum, list| sum + list.count }
+		@accessoryVariantCount = @accessories.reduce(0) { |sum, list| sum + list.reduce(0) { |s, v| s + (v.image == "" ? 0 : 1) } }
 	end
 	
 	def run
 		if parsed_options?
-			# configure_environment
 			execute
 		else
 			output_usage

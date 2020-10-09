@@ -41,7 +41,7 @@
 				<li>The primary denominations produced with the supplementals are sometimes identifiable because of their inlay differences.</li>
 				<li>Almost every variant will fit snugly in 66.7mm racks. Some require 67.7mm - those are noted.</li>
 				<li><%= @chips.count %> chip denominations.</li>
-				<li><%= @chips.reduce(0) { |sum, list| sum + list.count } %> known chip variants.</li>
+				<li><%= @chipVariantCount %> known chip variants.</li>
 				<li>Sidepot sold chips for $1.29 USD each and plaques for $5.95 USD each.</li>
 			</ul>
 			
