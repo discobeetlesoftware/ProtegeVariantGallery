@@ -43,14 +43,24 @@ class Variant
 		self.inlay_notes = inlay['notes']
 	end
 
-	def variant_img_tag
+	def variant_img_tag(index)
 		path = File.join('images', 'variants', 'thumbs', image)
-		"<img src=\"#{path}\" alt=\"#{name} v#{variant} variant\" width=\"150\" />"
+		%{<img src="#{path}" alt="#{name} v#{variant} variant" width="150" onclick="openLightbox();currentSlide(#{index})" class="hover-shadow" />}
 	end
 	
 	def proof_img_tag
 		path = File.join('images', 'designs', proof_image)
 		"<img src=\"#{path}\" alt=\"#{name} design\" />"
+	end
+	
+	def lightbox_thumb_img_tag(index)
+		path = File.join('images', 'variants', 'thumbs', image)
+		%{<img class="wheel" src="#{path}" onclick="currentSlide(#{index})" alt="#{to_s}">}
+	end
+	
+	def lightbox_img_tag
+		path = File.join('images', 'variants', image)
+		%{<img src="#{path}" style="width:100%">}
 	end
 
 	def proof_alt

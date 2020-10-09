@@ -10,6 +10,7 @@
 	<meta name="keywords" content="sidepot,protege,protégé,poker chip,bcc,blue chip company,variants,variation,plaque,dealer button,pokerchipforum,discobeetle">
 	<meta name="theme-color" content="normal">
 	<link rel="stylesheet" href="./include/main.css">
+	<link rel="stylesheet" href="./include/lightbox.css">
     <style>
   	<% @themes.each do |theme| %>
 	  tbody.<%= theme.key %> td:nth-child(1) { background-image: linear-gradient(to right, <%= theme.color %> 0%, <%= theme.color %> 5%, white 100%); }
@@ -65,9 +66,31 @@
 			</ul>
 		</div>
 		
+		<div id="lightbox" class="modal"><span class="close cursor" onclick="closeLightbox()">&times;</span>
+			<div class="modal-content">
+				<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<% each_variant_image do |v, i| %>
+				<div class="slide">
+					<div class="slideIndex"><%= i %> / <%= @chipVariantCount + @accessoryVariantCount %></div>
+					<%= v.lightbox_img_tag %>
+				</div>				
+			<% end %>
+			
+				<div class="caption-container">
+					<p id="caption"></p>
+				</div>
+				
+				<% each_variant_image do |v, i| %>
+				<div class="column" style="display:none;"><%= v.lightbox_thumb_img_tag(i) %></div>
+				<% end %>
+			  </div>
+		</div>
+		
 		<div>
 			<h2>Known Chip Variants</h2>
 			<table>
+				<% count = 0 %>
 			  	<% @chips.each do |variants| %>
 			  	<%= header_if_needed(variants) %>
 				<tbody class="<%= variants.first.theme.key %>">
@@ -76,7 +99,7 @@
 						<td><%= chip.denom %></td>
 						<td>v<%= chip.variant %></td>
 						<td><%= chip.proof_img_tag %></td>
-						<td><%= chip.variant_img_tag %></td>
+						<td><%= chip.variant_img_tag(count+=1) %></td>
 						<td><%= chip.group %></td>
 						<td><%= chip.rarity %></td>
 						<td><%= chip.notes %></td>
@@ -111,5 +134,6 @@
 				<% end %>  
 			  </table>
 		</div>
+		<script type="text/javascript" charset="utf8" src="./include/lightbox.js"></script>
 		</body>
 		</html>

@@ -39,7 +39,17 @@ class Accessory
 		path = File.join('images', 'designs', proof_image)
 		"<img src=\"#{path}\" alt=\"#{name} design\" width=\"250\" />"
 	end
+		
+	def lightbox_thumb_img_tag(index)
+		path = File.join('images', 'variants', 'thumbs', image)
+		%{<img class="wheel" src="#{path}" onclick="currentSlide(#{index}" alt="#{to_s}">}
+	end
 	
+	def lightbox_img_tag
+		path = File.join('images', 'variants', image)
+		%{<img src="#{path}" style="width:100%">}
+	end
+
 	def to_s
 		"#{denom} v#{variant}"
 	end
