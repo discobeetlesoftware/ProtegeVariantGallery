@@ -1,6 +1,10 @@
 require_relative 'element'
 
 class Variant < Element
+	def self.key 
+		'chips'
+	end
+	
 	attr_accessor :group, :rarity, :notes
 	attr_accessor :clay_color_base, :clay_color_spot
 	attr_accessor :inlay_text_color, :inlay_text_size, :inlay_notes

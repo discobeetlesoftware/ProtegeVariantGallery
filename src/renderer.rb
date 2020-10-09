@@ -24,23 +24,21 @@ class Renderer
 		@thead_chip = template('thead_chip')
 		@thead_accessory = template('thead_accessory')
 		data = read_data
-		@chips = []
 		@themes = []
-		data['chips'].each do |values|
+		@chips = hydrate(data, Variant)
+		@accessories = hydrate(data, Accessory)
+
+		@chipVariantCount = @chips.reduce(0) { |sum, list| sum + list.count }
+		@accessoryVariantCount = @accessories.reduce(0) { |sum, list| sum + list.reduce(0) { |s, v| s + (v.image == "" ? 0 : 1) } }
+	end
+	
+	def hydrate(data, type)
+		data[type.key].map do |values|
 			denom_id = values.keys.first
 			denom_data = values[denom_id]
 			@themes << Theme.new(denom_data)
-			@chips.push(Variant.hydrate(@themes.last, denom_id, denom_data))
+			type.hydrate(@themes.last, denom_id, denom_data)
 		end
-		@accessories = []
-		data['accessories'].each do |values|
-			denom_id = values.keys.first
-			accessory_data = values[denom_id]
-			@themes << Theme.new(accessory_data)
-			@accessories.push(Accessory.hydrate(@themes.last, denom_id, accessory_data))
-		end
-		@chipVariantCount = @chips.reduce(0) { |sum, list| sum + list.count }
-		@accessoryVariantCount = @accessories.reduce(0) { |sum, list| sum + list.reduce(0) { |s, v| s + (v.image == "" ? 0 : 1) } }
 	end
 	
 	def run

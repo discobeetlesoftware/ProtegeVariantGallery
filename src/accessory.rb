@@ -1,6 +1,10 @@
 require_relative 'element'
 
 class Accessory < Element 
+	def self.key 
+		'accessories'
+	end
+	
 	attr_accessor :origin
 	
 	def initialize(theme, denom, v, name, proof, image, values)
