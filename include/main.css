@@ -46,3 +46,7 @@ tbody {
 th.small {
 	font-size: 12px;
 }
+
+table a {
+	color: black;
+}

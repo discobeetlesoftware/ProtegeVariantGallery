@@ -25,6 +25,10 @@ class Element
 		self.thumb_width = 150
 	end
 	
+	def anchor
+		"#{name}_v#{variant}".gsub(" ", "_").gsub("-", "_")
+	end
+	
 	def proof_path
 		File.join('images', 'designs', proof_image)
 	end

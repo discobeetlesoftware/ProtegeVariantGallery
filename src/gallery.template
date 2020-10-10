@@ -94,9 +94,9 @@
 			  	<%= header_if_needed(variants) %>
 				<tbody class="<%= variants.first.theme.key %>">
 				<% variants.each do |chip| %>
-				  <tr>
+				  <tr id="<%= chip.anchor %>">
 						<td><%= chip.denom %></td>
-						<td>v<%= chip.variant %></td>
+						<td><a href="https://discobeetlesoftware.github.io/ProtegeVariantGallery#<%= chip.anchor %>">v<%= chip.variant %></a></td>
 						<td><%= chip.proof_img_tag %></td>
 						<td><%= chip.variant_img_tag { count += 1 } %></td>
 						<td><%= chip.group %></td>
@@ -123,7 +123,7 @@
 				 	<% variants.each do |accessory| %>
 					 <tr>
 						<td><%= accessory.denom %></td>
-						<td>v<%= accessory.variant %></td>
+						<td><a href="https://discobeetlesoftware.github.io/ProtegeVariantGallery#<%= accessory.anchor %>">v<%= accessory.variant %></a></td>
 						<td><%= accessory.proof_img_tag %></td>
 						<td><%= accessory.variant_img_tag { count += 1 } %></td>
 						<td><%= accessory.origin %></td>
