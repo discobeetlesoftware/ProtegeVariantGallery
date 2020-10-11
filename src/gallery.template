@@ -121,7 +121,7 @@
 				  	<%= header_if_needed(variants) %>
 				  	<tbody class="<%= variants.first.theme.key %>">
 				 	<% variants.each do |accessory| %>
-					 <tr>
+					 <tr id="<%= accessory.anchor %>">
 						<td><%= accessory.denom %></td>
 						<td><a href="https://discobeetlesoftware.github.io/ProtegeVariantGallery#<%= accessory.anchor %>">v<%= accessory.variant %></a></td>
 						<td><%= accessory.proof_img_tag %></td>
