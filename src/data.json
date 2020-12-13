@@ -397,7 +397,7 @@
 					{
 						"image": "5dollar_v2.jpg",
 						"group": "Primary",
-						"rarity": 5, "notes": "",
+						"rarity": 5, "notes": "Base color inconsistencies",
 						"clay_color": {
 							"base": "Deep Red", "spot": "Tan"
 						},
