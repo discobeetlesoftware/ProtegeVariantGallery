@@ -11,6 +11,10 @@
 					{
 						"origin": "Unknown",
 						"image": "dealer_button_v1.jpg"
+					},
+					{
+						"origin": "Unknown",
+						"image": "dealer_button_v2.jpg"
 					}
 				]
 			}
@@ -452,7 +456,18 @@
 					{
 						"image": "20dollar_v1.jpg",
 						"group": "Supplemental",
-						"rarity": 8, "notes": "Only variant",
+						"rarity": 8, "notes": "",
+						"clay_color": {
+							"base": "Green Tint", "spot": "Dark Green, Pink"
+						},
+						"inlay": {
+							"text_color": "Dark Green", "text_size": "Normal", "notes": ""
+						}
+					},
+					{
+						"image": "20dollar_v2.jpg",
+						"group": "Supplemental",
+						"rarity": 10, "notes": "Slightly over diameter",
 						"clay_color": {
 							"base": "Green Tint", "spot": "Dark Green, Pink"
 						},
