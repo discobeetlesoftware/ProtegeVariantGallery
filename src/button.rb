@@ -5,14 +5,14 @@ class Button < Element
 		'buttons'
 	end
 	
-	attr_accessor :origin, :finish, :edge, :produced
+	attr_accessor :origin, :finish, :edge, :total
 	
 	def initialize(theme, denom, v, name, proof, image, values)
 		super(theme, denom, v, name, proof, image)
 		self.origin = values['origin']
 		self.finish = values['finish']
 		self.edge = values['edge']
-		self.produced = values['produced']
+		self.total = values['total']
 		self.thumb_width = 250
 	end
 end

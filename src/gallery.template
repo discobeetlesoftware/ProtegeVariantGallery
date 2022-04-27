@@ -134,7 +134,7 @@
 						<td><%= button.origin %></td>
 						<td><%= button.finish %></td>
 						<td><%= button.edge %></td>
-						<td><%= button.produced %></td>
+						<td><%= button.total %></td>
 					</tr>
 				<% end %>
 				</tbody>
