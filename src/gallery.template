@@ -49,7 +49,9 @@
 				<h2>Resources</h2>
 				<ol>
 					<li><a href="https://web.archive.org/web/20111026191803/http://www.buypokerchips.com/Protege-Clay-Poker-Chips-p/set-protege.htm">Archive of Sidepot purchase page</a></li>
-					<li><a href = "https://web.archive.org/web/20111103013621/http://www.buypokerchips.com/Ceramic-Plaques-for-Poker-p/set-plaq-ptg.htm">Archive of Sidepot plaque purchase page</a></li>
+					<li><a href="https://web.archive.org/web/20111103013621/http://www.buypokerchips.com/Ceramic-Plaques-for-Poker-p/set-plaq-ptg.htm">Archive of Sidepot plaque purchase page</a></li>
+					<li><a href="https://web.archive.org/web/20081015125257/http://www.chiptalk.net/forum/group-buy-discussion/24596-closed-sold-out-protege-limited-edition-dealer-button-group-buy.html">Archive of Dealer Button Group Buy (2006)</a></li>
+					<li><a href="https://web.archive.org/web/20090304125528/http://www.chiptalk.net/forum/group-buy-discussion/53230-protege-paulson-noir-dealer-button-group-buy.html">Archive of Dealer Button Group Buy (2008)</a></li>
 					<li><a href="https://www.pokerchipforum.com/threads/the-prot%C3%A9g%C3%A9-thread.22963/">The Protégé Thread</a></li>
 					<li><a href='<%= File.join('images', '5dollar_v1_vs_v4.jpg') %>'>$5 diameter differences</a>
 					<li><a href='<%= File.join('images', '500dollar_v3_compare.jpg') %>'>$500 diameter differences</a>
