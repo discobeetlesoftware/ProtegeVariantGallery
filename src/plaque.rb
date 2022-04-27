@@ -1,8 +1,8 @@
 require_relative 'element'
 
-class Accessory < Element 
+class Plaque < Element 
 	def self.key 
-		'accessories'
+		'plaques'
 	end
 	
 	attr_accessor :origin

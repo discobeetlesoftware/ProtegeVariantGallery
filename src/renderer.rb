@@ -7,7 +7,8 @@ require 'json'
 require 'date'
 require_relative 'variant'
 require_relative 'theme'
-require_relative 'accessory'
+require_relative 'button'
+require_relative 'plaque'
 
 class Renderer
 	include ERB::Util
@@ -22,14 +23,17 @@ class Renderer
 		@options = OpenStruct.new
 		@template = template('gallery')
 		@thead_chip = template('thead_chip')
-		@thead_accessory = template('thead_accessory')
+		@thead_plaque = template('thead_plaque')
+		@thead_button = template('thead_button')
 		data = read_data
 		@themes = []
 		@chips = hydrate(data, Variant)
-		@accessories = hydrate(data, Accessory)
+		@buttons = hydrate(data, Button)
+		@plaques = hydrate(data, Plaque)
 
 		@chipVariantCount = @chips.reduce(0) { |sum, list| sum + list.count }
-		@accessoryVariantCount = @accessories.reduce(0) { |sum, list| sum + list.reduce(0) { |s, v| s + (v.image == "" ? 0 : 1) } }
+		@buttonVariantCount = @buttons.reduce(0) { |sum, list| sum + list.reduce(0) { |s, v| s + (v.image == "" ? 0 : 1) } }
+		@plaquesVariantCount = @plaques.reduce(0) { |sum, list| sum + list.reduce(0) { |s, v| s + (v.image == "" ? 0 : 1) } }
 	end
 	
 	def hydrate(data, type)
@@ -64,23 +68,30 @@ class Renderer
 		headerChips = [ "5¢ v1", "50¢ v1", "$10 v1", "$500 v1", "$25k v1" ] 
 		return @thead_chip if headerChips.include?(element.first.to_s)
 		headerAccessories = [ "Dealer Button v1" ]
-		return @thead_accessory if headerAccessories.include?(element.first.to_s)
+		return @thead_button if headerAccessories.include?(element.first.to_s)
 		""
 	end
 	
 	protected
 	def each_variant_image
-		index = 0
+		image_index = 0
 		@chips.each do |variants|
 			variants.each do |variant|
-				yield variant, index += 1
+				yield variant, image_index += 1
 			end
 		end
 		
-		@accessories.each do |variants|
+		@buttons.each do |variants|
 			variants.each do |variant|
 				next if variant.image == ""
-				yield variant, index += 1
+				yield variant, image_index += 1
+			end
+		end
+
+		@plaques.each do |variants|
+			variants.each do |variant|
+				next if variant.image == ""
+				yield variant, image_index += 1
 			end
 		end
 	end

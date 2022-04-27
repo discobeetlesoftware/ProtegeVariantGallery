@@ -76,7 +76,7 @@
 				<a class="next" onclick="plusSlides(1)">&#10095;</a>
 				<% each_variant_image do |v, i| %>
 				<div class="slide">
-					<div class="slideIndex"><%= i %> / <%= @chipVariantCount + @accessoryVariantCount %></div>
+					<div class="slideIndex"><%= i %> / <%= @chipVariantCount + @buttonVariantCount + @plaquesVariantCount %></div>
 					<%= v.lightbox_img_tag %>
 				</div>				
 			<% end %>
@@ -120,24 +120,47 @@
 		</div>
 		
 		<div>
-			<h2>Other Items</h2>
+			<h2>Buttons</h2>
 			<table>
-				  <% @accessories.each do |variants| %>
+				  <% @buttons.each do |variants| %>
 				  	<%= header_if_needed(variants) %>
 				  	<tbody class="<%= variants.first.theme.key %>">
-				 	<% variants.each do |accessory| %>
-					 <tr id="<%= accessory.anchor %>">
-						<td><%= accessory.denom %></td>
-						<td><a href="https://discobeetlesoftware.github.io/ProtegeVariantGallery#<%= accessory.anchor %>">v<%= accessory.variant %></a></td>
-						<td><%= accessory.proof_img_tag %></td>
-						<td><%= accessory.variant_img_tag { count += 1 } %></td>
-						<td><%= accessory.origin %></td>
+				 	<% variants.each do |button| %>
+					 <tr id="<%= button.anchor %>">
+						<td><%= button.denom %></td>
+						<td><a href="https://discobeetlesoftware.github.io/ProtegeVariantGallery#<%= button.anchor %>">v<%= button.variant %></a></td>
+						<td><%= button.proof_img_tag %></td>
+						<td><%= button.variant_img_tag { count += 1 } %></td>
+						<td><%= button.origin %></td>
+						<td><%= button.finish %></td>
+						<td><%= button.edge %></td>
+						<td><%= button.produced %></td>
 					</tr>
 				<% end %>
 				</tbody>
 				<% end %>  
 			  </table>
 		</div>
+		<div>
+			<h2>Plaques</h2>
+			<table>
+				  <% @plaques.each do |variants| %>
+				  	<%= header_if_needed(variants) %>
+				  	<tbody class="<%= variants.first.theme.key %>">
+				 	<% variants.each do |plaque| %>
+					 <tr id="<%= plaque.anchor %>">
+						<td><%= plaque.denom %></td>
+						<td><a href="https://discobeetlesoftware.github.io/ProtegeVariantGallery#<%= plaque.anchor %>">v<%= plaque.variant %></a></td>
+						<td><%= plaque.proof_img_tag %></td>
+						<td><%= plaque.variant_img_tag { count += 1 } %></td>
+						<td><%= plaque.origin %></td>
+					</tr>
+				<% end %>
+				</tbody>
+				<% end %>  
+			  </table>
+		</div>
+
 		<script type="text/javascript" charset="utf8" src="./include/lightbox.js"></script>
 		</body>
 		</html>

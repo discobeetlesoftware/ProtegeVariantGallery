@@ -1,22 +1,5 @@
 {
-    "accessories": [{
-            "Dealer Button": {
-                "proof": "",
-                "name": {
-                    "en": "dealer button"
-                },
-                "color": "#D9B796",
-                "variants": [{
-                        "origin": "Unknown",
-                        "image": "dealer_button_v1.jpg"
-                    },
-                    {
-                        "origin": "Unknown",
-                        "image": "dealer_button_v2.jpg"
-                    }
-                ]
-            }
-        },
+    "plaques": [
         {
             "$10 Plaque": {
                 "proof": "",
@@ -109,7 +92,55 @@
             }
         }
     ],
-    "chips": [{
+    "buttons": [
+        {
+            "Dealer Button": {
+                "proof": "",
+                "name": {
+                    "en": "dealer button"
+                },
+                "color": "#D9B796",
+                "variants": [{
+                        "origin": "ChipTalk Group Buy",
+                        "image": "dealer_button_v1.jpg",
+                        "total": "92",
+                        "finish": "Glossy",
+                        "edge": "Unaligned"
+                    },
+                    {
+                        "origin": "Unknown",
+                        "image": "dealer_button_v2.jpg",
+                        "total": "Unknown",
+                        "finish": "Matte",
+                        "edge": "Unaligned"
+                    },
+                    {
+                        "origin": "Unknown",
+                        "image": "dealer_button_v3.jpg",
+                        "total": "Unknown",
+                        "finish": "Matte",
+                        "edge": "Aligned horizontal"
+                    },
+                    {
+                        "origin": "Sidepot (circa 2013)",
+                        "image": "dealer_button_v4.jpg",
+                        "total": "Unknown",
+                        "finish": "Matte",
+                        "edge": "Aligned vertical"
+                    },
+                    {
+                        "origin": "Sidepot (circa 2015)",
+                        "image": "dealer_button_v5.jpg",
+                        "total": "Unknown",
+                        "finish": "Matte",
+                        "edge": "Unaligned"
+                    }
+                ]
+            }
+        }
+    ],
+    "chips": [
+        {
             "5¢": {
                 "proof": "5cent_proof.jpg",
                 "name": {
@@ -480,6 +511,21 @@
                             "text_size": "Normal",
                             "notes": ""
                         }
+                    },
+                    {
+                        "image": "5dollar_v5.jpg",
+                        "group": "Primary",
+                        "rarity": 9,
+                        "notes": "",
+                        "clay_color": {
+                            "base": "Red",
+                            "spot": "Mud"
+                        },
+                        "inlay": {
+                            "text_color": "Red",
+                            "text_size": "Normal",
+                            "notes": ""
+                        }
                     }
                 ]
             }
@@ -738,10 +784,10 @@
                         "image": "500dollar_v3.jpg",
                         "group": "Primary",
                         "rarity": 6,
+                        "notes": "Slightly over diameter",
                         "clay_color": {
                             "base": "Purple",
-                            "spot": "White, Orange",
-                            "notes": "Slightly over diameter"
+                            "spot": "White, Orange"
                         },
                         "inlay": {
                             "text_color": "Hot Pink",
