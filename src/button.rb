@@ -14,5 +14,9 @@ class Button < Element
 		self.edge = values['edge']
 		self.total = values['total']
 		self.thumb_width = 250
+    
+    if self.proof_image == "" && !values['proof'].nil?
+      self.proof_image = values['proof']
+    end
 	end
 end

@@ -42,7 +42,9 @@
 				<li>The primary denominations produced with the supplementals are sometimes identifiable because of their inlay differences.</li>
 				<li>Almost every variant will fit snugly in 66.7mm racks. Some require 67.7mm - those are noted.</li>
 				<li><%= @chips.count %> chip denominations.</li>
-				<li><%= @chipVariantCount %> known chip variants.</li>
+				<li><%= @chipVariantCount %> known <a href="https://discobeetlesoftware.github.io/ProtegeVariantGallery#chip_variants">chip variants.</a></li>
+				<li><%= @buttonVariantCount %> known <a href="https://discobeetlesoftware.github.io/ProtegeVariantGallery#button_variants">button variants.</a></li>
+				<li><%= @plaquesVariantCount %> known <a href="https://discobeetlesoftware.github.io/ProtegeVariantGallery#ceramic_plaque_variants">plaque variants.</a></li>
 			</ul>
 			
 			<div>
@@ -94,7 +96,7 @@
 		</div>
 		
 		<% count = 0 %>
-		<div>
+		<div id='chip_variants'>
 			<h2>Known Chip Variants</h2>
 			<table>
 			  	<% @chips.each do |variants| %>
@@ -121,7 +123,7 @@
 		    </table>
 		</div>
 		
-		<div>
+		<div id="button_variants">
 			<h2>Buttons</h2>
 			<table>
 				  <% @buttons.each do |variants| %>
@@ -143,8 +145,8 @@
 				<% end %>  
 			  </table>
 		</div>
-		<div>
-			<h2>Plaques</h2>
+		<div id="ceramic_plaque_variants">
+			<h2>Ceramic Plaques</h2>
 			<table>
 				  <% @plaques.each do |variants| %>
 				  	<%= header_if_needed(variants) %>
@@ -161,6 +163,27 @@
 				</tbody>
 				<% end %>  
 			  </table>
+		</div>
+		<div id="matsui_plaque_variants">  
+  			<h2>Matsui Plaques</h2>
+  			<table>
+  				  <% @matsui_plaques.each do |variants| %>
+  				  	<%= header_if_needed(variants) %>
+  				  	<tbody class="<%= variants.first.theme.key %>">
+  				 	<% variants.each do |plaque| %>
+  					 <tr id="<%= plaque.anchor %>">
+  						<td><%= plaque.denom %></td>
+  						<td><a href="https://discobeetlesoftware.github.io/ProtegeVariantGallery#<%= plaque.anchor %>">v<%= plaque.variant %></a></td>
+  						<td><%= plaque.proof_img_tag %></td>
+  						<td><%= plaque.variant_img_tag { count += 1 } %></td>
+  						<td><%= plaque.origin %></td>
+  						<td><%= plaque.total %></td>
+  						<td><%= plaque.size %></td>
+  					</tr>
+  				<% end %>
+  				</tbody>
+  				<% end %>  
+  			  </table>
 		</div>
 
 		<script type="text/javascript" charset="utf8" src="./include/lightbox.js"></script>

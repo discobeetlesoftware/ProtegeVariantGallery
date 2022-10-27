@@ -9,6 +9,7 @@ require_relative 'variant'
 require_relative 'theme'
 require_relative 'button'
 require_relative 'plaque'
+require_relative 'matsui_plaque'
 
 class Renderer
 	include ERB::Util
@@ -25,15 +26,19 @@ class Renderer
 		@thead_chip = template('thead_chip')
 		@thead_plaque = template('thead_plaque')
 		@thead_button = template('thead_button')
+    @thead_matsui_plaque = template('thead_matsui_plaque')
 		data = read_data
 		@themes = []
 		@chips = hydrate(data, Variant)
 		@buttons = hydrate(data, Button)
 		@plaques = hydrate(data, Plaque)
+    @matsui_plaques = hydrate(data, MatsuiPlaque)
 
 		@chipVariantCount = @chips.reduce(0) { |sum, list| sum + list.count }
 		@buttonVariantCount = @buttons.reduce(0) { |sum, list| sum + list.reduce(0) { |s, v| s + (v.image == "" ? 0 : 1) } }
-		@plaquesVariantCount = @plaques.reduce(0) { |sum, list| sum + list.reduce(0) { |s, v| s + (v.image == "" ? 0 : 1) } }
+		ceramic_plaque_count = @plaques.reduce(0) { |sum, list| sum + list.count }
+    matsui_plaque_count = @matsui_plaques.reduce(0) { |sum, list| sum + list.count }
+    @plaquesVariantCount = ceramic_plaque_count + matsui_plaque_count
 	end
 	
 	def hydrate(data, type)
@@ -69,6 +74,10 @@ class Renderer
 		return @thead_chip if headerChips.include?(element.first.to_s)
 		headerAccessories = [ "Dealer Button v1" ]
 		return @thead_button if headerAccessories.include?(element.first.to_s)
+    ceramicPlaques = [ "$10 Plaque v1" ]
+		return @thead_plaque if ceramicPlaques.include?(element.first.to_s)
+    matsuiPlaques = [ "$20 Plaque (Matsui) v1" ]
+		return @thead_matsui_plaque if matsuiPlaques.include?(element.first.to_s)
 		""
 	end
 	
@@ -89,6 +98,13 @@ class Renderer
 		end
 
 		@plaques.each do |variants|
+			variants.each do |variant|
+				next if variant.image == ""
+				yield variant, image_index += 1
+			end
+		end
+    
+		@matsui_plaques.each do |variants|
 			variants.each do |variant|
 				next if variant.image == ""
 				yield variant, image_index += 1

@@ -1,4 +1,102 @@
 {
+	"matsui_plaques": [
+        {
+            "$20 Plaque": {
+                "proof": "plaque_matsui_20.jpg",
+                "name": {
+                    "en": "twenty dollar plaque (Matsui)"
+                },
+                "color": "#FEDD00",
+                "variants": [{
+                    "origin": "Matsui",
+                    "image": "plaque_matsui_20dollar_v1.jpg",
+					"material": "Plastic",
+					"total": "141",
+					"size": "82x57mm"
+                }]
+            }
+        },
+        {
+            "$100 Plaque": {
+                "proof": "plaque_matsui_100.jpg",
+                "name": {
+                    "en": "one hundred dollar plaque (Matsui)"
+                },
+                "color": "#333F48",
+                "variants": [{
+                    "origin": "Matsui",
+                    "image": "plaque_matsui_100dollar_v1.jpg",
+					"material": "Plastic",
+					"total": "201",
+					"size": "95x66mm"
+                }]
+            }
+        },
+        {
+            "$500 Plaque": {
+                "proof": "plaque_matsui_500.jpg",
+                "name": {
+                    "en": "five hundred dollar plaque (Matsui)"
+                },
+                "color": "#7d26cd",
+                "variants": [{
+                    "origin": "Matsui",
+                    "image": "plaque_matsui_500dollar_v1.jpg",
+					"material": "Plastic",
+					"total": "73",
+					"size": "102x70mm"
+                }]
+            }
+        },
+        {
+            "$1k Plaque": {
+                "proof": "plaque_matsui_1000.jpg",
+                "name": {
+                    "en": "one thousand dollar plaque (Matsui)"
+                },
+                "color": "#FEDD00",
+                "variants": [{
+                    "origin": "Matsui",
+                    "image": "plaque_matsui_1000dollar_v1.jpg",
+					"material": "Plastic",
+					"total": "54",
+					"size": "108x75mm"
+                }]
+            }
+        },
+        {
+            "$5k Plaque": {
+                "proof": "plaque_matsui_5000.jpg",
+                "name": {
+                    "en": "five thousand dollar plaque (Matsui)"
+                },
+                "color": "#FF8200",
+                "variants": [{
+                    "origin": "Matsui",
+                    "image": "plaque_matsui_5000dollar_v1.jpg",
+					"material": "Plastic",
+					"total": "28",
+					"size": "119x82mm"
+                }]
+            }
+        },
+        {
+            "$100k Plaque": {
+                "proof": "plaque_matsui_500000.jpg",
+                "name": {
+                    "en": "five hundred thousand dollar plaque (Matsui)"
+                },
+                "color": "#FFFFFF",
+                "variants": [{
+                    "origin": "Matsui",
+                    "image": "plaque_matsui_100000dollar_v1.jpg",
+					"material": "Plastic",
+					"total": "60",
+					"size": "108x75mm"
+                }]
+            }
+        }
+	],
     "plaques": [
         {
             "$10 Plaque": {
@@ -9,7 +107,9 @@
                 "color": "#F9D2AD",
                 "variants": [{
                     "origin": "Unknown",
-                    "image": "plaque_10dollar_v1.jpg"
+                    "image": "plaque_10dollar_v1.jpg",
+					"material": "Ceramic",
+					"total": "Unknown"
                 }]
             }
         },
@@ -22,7 +122,9 @@
                 "color": "#F8CE51",
                 "variants": [{
                     "origin": "Sidepot",
-                    "image": ""
+                    "image": "",
+					"material": "Ceramic",
+					"total": "Unknown"
                 }]
             }
         },
@@ -35,7 +137,9 @@
                 "color": "#7F3E4F",
                 "variants": [{
                     "origin": "Sidepot",
-                    "image": "plaque_5k_v1.jpg"
+                    "image": "plaque_5k_v1.jpg",
+					"material": "Ceramic",
+					"total": "Unknown"
                 }]
             }
         },
@@ -48,7 +152,9 @@
                 "color": "#E88437",
                 "variants": [{
                     "origin": "Sidepot",
-                    "image": "plaque_25k_v1.jpg"
+                    "image": "plaque_25k_v1.jpg",
+					"material": "Ceramic",
+					"total": "Unknown"
                 }]
             }
         },
@@ -61,7 +167,9 @@
                 "color": "#5991C5",
                 "variants": [{
                     "origin": "Sidepot",
-                    "image": ""
+                    "image": "",
+					"material": "Ceramic",
+					"total": "Unknown"
                 }]
             }
         },
@@ -74,7 +182,9 @@
                 "color": "#68A05B",
                 "variants": [{
                     "origin": "Sidepot",
-                    "image": ""
+                    "image": "",
+					"material": "Ceramic",
+					"total": "Unknown"
                 }]
             }
         },
@@ -87,7 +197,9 @@
                 "color": "#424373",
                 "variants": [{
                     "origin": "Sidepot",
-                    "image": ""
+                    "image": "",
+					"material": "Ceramic",
+					"total": "Unknown"
                 }]
             }
         }
@@ -134,6 +246,30 @@
                         "total": "Unknown",
                         "finish": "Matte",
                         "edge": "Unaligned"
+                    },
+                    {
+                        "origin": "Matsui (circa 2022)",
+                        "proof": "dealer_button_v6.jpg",
+						"image": "dealer_button_v6.jpg",
+                        "total": "70",
+                        "finish": "Pearlized Plastic",
+                        "edge": "White"
+                    },
+                    {
+                        "origin": "BrPro Poker (circa 2022)",
+                        "proof": "dealer_button_v7.jpg",
+                        "image": "dealer_button_v7.jpg",
+                        "total": "54",
+                        "finish": "Matte",
+                        "edge": "Uniform"
+                    },
+                    {
+                        "origin": "BrPro Poker (circa 2022)",
+                        "proof": "dealer_button_v8.jpg",
+                        "image": "dealer_button_v8.jpg",
+                        "total": "57",
+                        "finish": "Matte",
+                        "edge": "Uniform"
                     }
                 ]
             }

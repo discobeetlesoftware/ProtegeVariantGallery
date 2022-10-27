@@ -4,7 +4,7 @@ class Theme
 	
 	def initialize(values)
 		name = values['name']['en']
-		self.key = name.gsub(" ", "_").gsub("-", "_")
+		self.key = name.gsub(" ", "_").gsub("-", "_").gsub("(", "").gsub(")", "")
 		self.color = values['color']
 	end
 end
