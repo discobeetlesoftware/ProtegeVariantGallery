@@ -231,7 +231,7 @@
                         "image": "dealer_button_v3.jpg",
                         "total": "Unknown",
                         "finish": "Matte",
-                        "edge": "Aligned horizontal"
+                        "edge": "Unaligned"
                     },
                     {
                         "origin": "Sidepot (circa 2013)",
@@ -258,8 +258,7 @@
                     {
                         "origin": "BrPro Poker (circa 2022)",
                         "proof": "dealer_button_v7.jpg",
-                        "image": "",
-                        "image_": "dealer_button_v7.jpg",
+                        "image": "dealer_button_v7.jpg",
                         "total": "54",
                         "finish": "Matte",
                         "edge": "Uniform"
@@ -267,8 +266,7 @@
                     {
                         "origin": "BrPro Poker (circa 2022)",
                         "proof": "dealer_button_v8.jpg",
-                        "image": "",
-                        "image_": "dealer_button_v8.jpg",
+                        "image": "dealer_button_v8.jpg",
                         "total": "57",
                         "finish": "Matte",
                         "edge": "Uniform"
@@ -1087,6 +1085,21 @@
                             "text_size": "Normal",
                             "notes": ""
                         }
+                    },
+                    {
+                        "image": "5000dollar_v4.jpg",
+                        "group": "Primary",
+                        "rarity": 10,
+                        "notes": "Slightly over diameter, otherwise ~v3",
+                        "clay_color": {
+                            "base": "Brick",
+                            "spot": "Ivory"
+                        },
+                        "inlay": {
+                            "text_color": "Light Brown",
+                            "text_size": "Normal",
+                            "notes": ""
+                        }
                     }
                 ]
             }
@@ -1102,7 +1115,7 @@
                     "image": "25000dollar_v1.jpg",
                     "group": "Supplemental",
                     "rarity": 8,
-                    "notes": "Only variant",
+                    "notes": "67.7mm rack only",
                     "clay_color": {
                         "base": "Pink",
                         "spot": "White, Red"
@@ -1126,7 +1139,7 @@
                     "image": "100000dollar_v1.jpg",
                     "group": "Supplemental",
                     "rarity": 9,
-                    "notes": "Only variant",
+                    "notes": "67.7mm rack only",
                     "clay_color": {
                         "base": "Navy Blue",
                         "spot": "White, Red"
@@ -1180,7 +1193,7 @@
                         "image": "variable_orange_v3.jpg",
                         "group": "Supplemental",
                         "rarity": 9,
-                        "notes": "",
+                        "notes": "Slightly over diameter",
                         "clay_color": {
                             "base": "Light Orange",
                             "spot": "Light Blue, Dark Blue"
