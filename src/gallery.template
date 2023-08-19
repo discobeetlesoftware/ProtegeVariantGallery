@@ -7,7 +7,7 @@
 	<meta name="author" content="Joe Harris at pokerchipforum.com">
 	<meta name="robots" content="all">
 	<meta name="generator" content="https://github.com/discobeetlesoftware/ProtegeVariantGallery/">
-	<meta name="keywords" content="sidepot,protege,protégé,poker chip,bcc,blue chip company,variants,variation,plaque,dealer button,pokerchipforum,discobeetle">
+	<meta name="keywords" content="sidepot,protege,protégé,poker chip,bcc,blue chip company,variants,variation,plaque,dealer button,pokerchipforum,discobeetle,allyn bauer">
 	<meta name="theme-color" content="normal">
 	<link rel="stylesheet" href="./include/main.css">
 	<link rel="stylesheet" href="./include/lightbox.css">
@@ -23,10 +23,14 @@
 		
 		<div>
 			<h2>What makes a variant?</h2>
+			<p>The primary goal when determining variants was to make classifications based on what an average player would readily identify as 'different'. This means that a chipper may identify discrepancies within a variant. These variant-local discrepancies manifest primarily in the following ways: 
+            <ul>
+                <li>Minor inconsistencies in the color of the clay</li>
+                <li>Varying print quality in the inlay</li>
+            </ul>
+            </p>
 			
-			<p>The primary goal when determining variants was to make classifications based on what an average player would be able to identify as 'different'. This means that a chipper may identify discrepancies within a variant, but perhaps only when looking for them. This can manifest both in inconsistencies in the color of the clay, as well as varying print quality in the inlay.</p>
-			
-			<p>Any deviation from standard sizing also constitutes a new variant. This is primarily manifested in <a href='<%= File.join('images', '5dollar_v1_vs_v4.jpg') %>'>diameter discrepancies</a>, but there are also less concerning deviations with thickness which require 67.7mm racks. While the average player probably would not notice either problem, it is presumed that a chipper looking for consistency within a set of these chips would find any variance of chip size to be a deal breaker. Happily, these types of error chips are relatively uncommon and not present in large quantities when encountered.</p>
+			<p>Any deviation from standard sizing also constitutes a new variant, regardless of the other characteristics. The most obvious manifestation of this is <a href='<%= File.join('images', '5dollar_v1_vs_v4.jpg') %>'>diameter discrepancies</a>. There also exist examples of deviations in chip thickness which mandate 67.7mm racks. While the average player probably would not notice either problem, it is presumed that a chipper looking for consistency within a set of Protégé would find any size variations to be a deal breaker.</p>
 			
 			<p>The colors referenced in the table below are approximately relative to each other. They are not meant as references to official BCC color names.</p>
 		</div>
@@ -35,12 +39,12 @@
 			<h2>Info</h2>
 			<ul>
 				<li>Final design by William R. Coughlan (<code>Magus_23</code>).</li>
-				<li>Design process was a collaborative effort which took place on ChipTalk.net over approximately 9 months.</li>
+				<li>Design process was 'by committee' comprising of members from ChipTalk.net. The design process took approximately 9 months.</li>
 				<li>Produced by Blue Chip Company for <a href='http://sidepot.com/'>Sidepot</a>.</li>
 				<li>Features the Cigar & Snifter mold.</li>
 				<li>Supplemental variants were produced a single time. All the primary chips had multiple production runs.</li>
 				<li>The primary denominations produced with the supplementals are sometimes identifiable because of their inlay differences.</li>
-				<li>Almost every variant will fit snugly in 66.7mm racks. Some require 67.7mm - those are noted.</li>
+				<li>Almost every variant will fit snugly in 66.7mm racks. Those requiring 67.7mm are noted.</li>
 				<li><%= @chips.count %> chip denominations.</li>
 				<li><%= @chipVariantCount %> known <a href="https://discobeetlesoftware.github.io/ProtegeVariantGallery#chip_variants">chip variants.</a></li>
 				<li><%= @buttonVariantCount %> known <a href="https://discobeetlesoftware.github.io/ProtegeVariantGallery#button_variants">button variants.</a></li>
