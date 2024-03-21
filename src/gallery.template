@@ -26,7 +26,7 @@
 			<p>The primary goal when determining variants was to make classifications based on what an average player would readily identify as 'different'. This means that a chipper may identify discrepancies within a variant. These variant-local discrepancies manifest primarily in the following ways: 
             <ul>
                 <li>Minor inconsistencies in the color of the clay</li>
-                <li>Varying print quality in the inlay</li>
+                <li><a href='<%= File.join('images', '2dollar_inlay.jpg') %>'>Varying print quality in the inlay</a></li>
 				<li>Minor inconsistencies of inlay shape</li>
             </ul>
             </p>
@@ -62,7 +62,6 @@
 					<li><a href="https://www.pokerchipforum.com/threads/the-prot%C3%A9g%C3%A9-thread.22963/">The Protégé Thread</a></li>
 					<li><a href='<%= File.join('images', '5dollar_v1_vs_v4.jpg') %>'>$5 diameter differences</a>
 					<li><a href='<%= File.join('images', '500dollar_v3_compare.jpg') %>'>$500 diameter differences</a>
-					<li><a href='<%= File.join('images', '2dollar_inlay.jpg') %>'>Inlay quality differences</a> 
 					<li><a href='<%= File.join('images', 'rainbow.jpg') %>'>Skittles</a>
 				</ol>
 			</div>
