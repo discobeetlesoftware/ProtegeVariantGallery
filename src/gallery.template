@@ -31,7 +31,7 @@
             </ul>
             </p>
 			
-			<p>Any deviation from standard sizing also constitutes a new variant, regardless of the other characteristics. The most obvious manifestation of this is <a href='<%= File.join('images', '5dollar_v1_vs_v4.jpg') %>'>diameter discrepancies</a>. There also exist examples of deviations in chip thickness which mandate 67.7mm racks. While the average player probably would not notice either problem, it is presumed that a chipper looking for consistency within a set of Protégé would find any size variations to be a deal breaker.</p>
+			<p>Any deviation from standard sizing also constitutes a new variant, regardless of the other characteristics. The most obvious manifestation of this is <a href='<%= File.join('images', '5dollar_v1_vs_v4.jpg') %>'>diameter discrepancies</a>. There also exist examples of deviations in chip thickness which mandate 67.7mm racks. While the average player probably would not notice either problem, it is presumed that a chipper may consider size variants to be 'error' chips, and therefore a dedicated variant was determined necessary.</p>
 			
 			<p>The colors referenced in the table below are approximately relative to each other. They are not meant as references to official BCC color names.</p>
 		</div>
