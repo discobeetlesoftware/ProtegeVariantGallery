@@ -1,9 +1,30 @@
 
-  function openLightbox() {
+let touchstartX = 0
+let touchendX = 0
+
+function checkDirection() {
+	if (touchendX < touchstartX) {
+		plusSlides(-1);
+	}
+	if (touchendX > touchstartX) {
+		plusSlides(1);
+	}
+}
+
+document.addEventListener('touchstart', e => {
+	touchstartX = e.changedTouches[0].screenX
+});
+
+document.addEventListener('touchend', e => {
+	touchendX = e.changedTouches[0].screenX
+	checkDirection()
+});
+
+function openLightbox() {
 	document.getElementById("lightbox").style.display = "block";
 }
-  
-  function closeLightbox() {
+
+function closeLightbox() {
 	document.getElementById("lightbox").style.display = "none";
 }
 
@@ -25,15 +46,15 @@ function showSlides(n) {
 	if (n > slides.length) {
 		slideIndex = 1
 	}
-	
+
 	if (n < 1) {
 		slideIndex = slides.length
 	}
-	
+
 	for (i = 0; i < slides.length; i++) {
 		slides[i].style.display = "none";
 	}
-	
+
 	var thumbIndex = slideIndex - 1;
 	var minActive = 0;
 	var maxActive = slides.length - 1;
@@ -47,7 +68,7 @@ function showSlides(n) {
 		minActive = thumbIndex - 2;
 		maxActive = thumbIndex + 2;
 	}
-	
+
 	for (i = 0; i < dots.length; i++) {
 		dots[i].className = dots[i].className.replace(" active", "");
 		if (i >= minActive && i <= maxActive) {
@@ -56,7 +77,7 @@ function showSlides(n) {
 			dots[i].parentElement.style.display = "none";
 		}
 	}
-	
+
 	slides[slideIndex - 1].style.display = "block";
 	dots[slideIndex - 1].className += " active";
 	captionText.innerHTML = dots[slideIndex - 1].alt;

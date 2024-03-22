@@ -1,52 +1,61 @@
 html {
-	font-family: "Lucida Grande", Lucida, Verdana, sans-serif;
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
 }
 
 table {
-	cellspacing: 0;
+    cellspacing: 0;
 }
 
 thead {
-	background-color: #000000;
-	color: #ffffff;
+    background-color: #000000;
+    color: #ffffff;
 }
 
-table { 
-	border-collapse: separate; 
-	border-spacing: 5px; 
+table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    font-weight: 400;
 }
 
-th, td { 
-	padding: 5px; 
-	font-size: 18px;
-	text-align: center;
+th,
+td {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
 }
 
-td:nth-child(1) {
-	font-size: 22px;
-	font-weight: bold;
+td:nth-child(1),
+td:nth-child(2) {
+    font-size: 20px;
+    font-weight: 700;
 }
 
-td:nth-child(1), td:nth-child(2) {
-	font-size: 20px;
-	font-weight: bold;
+td:nth-child(8),
+td:nth-child(9) {
+    background-color: #f3f3f3;
 }
 
-td:nth-child(8), td:nth-child(9) {
-	background-color: #f3f3f3;
+table {
+    border-collapse: separate;
+    border-spacing: 5px;
 }
-
-table { border-collapse: separate; border-spacing: 5px; }
-table { border-collapse: collapse; border-spacing: 0; }
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
 
 tbody {
-	border: 1px solid #a1a1a1;
+    border: 1px solid #a1a1a1;
 }
 
 th.small {
-	font-size: 12px;
+    font-size: 12px;
+    font-weight: 400;
 }
 
 table a {
-	color: black;
+    color: black;
 }
