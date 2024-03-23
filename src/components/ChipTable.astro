@@ -1,0 +1,21 @@
+---
+import { type Chip } from '../models';
+import ChipTableDenom from './ChipTableDenom.astro';
+
+interface Props {
+    chips: Chip[];
+}
+
+const { chips } = Astro.props;
+---
+
+<div id='chip_variants'>
+<h2>Known Chip Variants</h2>
+<table>
+    {
+        chips.map((chip) => (
+            <ChipTableDenom chip={chip} />
+        ))
+    }
+</table>
+</div>

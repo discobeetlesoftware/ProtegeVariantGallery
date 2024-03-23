@@ -1,0 +1,28 @@
+---
+import LocalImage from './LocalImage.astro';
+
+interface Props {
+    imageName: string;
+    variantName: string;
+    width?: number;
+}
+
+const { imageName, variantName, width } = Astro.props;
+const hasImage = imageName.length > 0;
+---
+
+{
+    hasImage && <a 
+    href="#"
+    class='gallery-item' 
+    data-sub-html={`<h3>${variantName}</h3>`}
+    data-src={`/ProtegeVariantGallery/images/variants/${imageName}`}
+>
+        <LocalImage subdir='thumbs' key={imageName} alt={`${variantName} image`} width={width} />
+</a>
+
+}
+
+{
+    !hasImage && <span>🚫</span>
+}

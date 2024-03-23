@@ -9,43 +9,96 @@ const { title } = Astro.props;
 <!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta charset="utf-8" />
+		<meta name="description" content="Blue Chip Company Protégé Variants">
+		<meta name="author" content="Joe Harris at pokerchipforum.com">
+		<meta name="robots" content="all">
 		<meta name="generator" content={Astro.generator} />
+		<meta name="keywords" content="sidepot,protege,protégé,poker chip,bcc,blue chip company,variants,variation,plaque,dealer button,pokerchipforum,discobeetle,allyn bauer">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+		<link type="text/css" rel="stylesheet" href="/ProtegeVariantGallery/lightGallery/css/lightgallery.css" />
+    	<link type="text/css" rel="stylesheet" href="/ProtegeVariantGallery/lightGallery/css/lg-thumbnail.css" />
 		<title>{title}</title>
 	</head>
 	<body>
 		<slot />
+		<script is:inline src="/ProtegeVariantGallery/lightGallery/lightgallery.min.js"></script>
+    	<script is:inline src="/ProtegeVariantGallery/lightGallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+		<script type="text/javascript">
+		lightGallery(document.getElementById('gallery-container'), {
+			selector: '.gallery-item',
+			speed: 100,
+  			plugins: [lgThumbnail],
+			licenseKey: '42'
+		});
+		</script>
 	</body>
 </html>
+
 <style is:global>
-	:root {
-		--accent: 136, 58, 234;
-		--accent-light: 224, 204, 250;
-		--accent-dark: 49, 10, 101;
-		--accent-gradient: linear-gradient(
-			45deg,
-			rgb(var(--accent)),
-			rgb(var(--accent-light)) 30%,
-			white 60%
-		);
-	}
 	html {
-		font-family: system-ui, sans-serif;
-		background: #13151a;
-		background-size: 224px;
-	}
-	code {
-		font-family:
-			Menlo,
-			Monaco,
-			Lucida Console,
-			Liberation Mono,
-			DejaVu Sans Mono,
-			Bitstream Vera Sans Mono,
-			Courier New,
-			monospace;
-	}
+    font-family: "Rubik", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+table {
+    cellspacing: 0;
+}
+
+thead {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 5px;
+    font-weight: 400;
+}
+
+th,
+td {
+    padding: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+td:nth-child(1),
+td:nth-child(2) {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+td:nth-child(8),
+td:nth-child(9) {
+    background-color: #f3f3f3;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 5px;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+tbody {
+    border: 1px solid #a1a1a1;
+}
+
+th.small {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+table a {
+    color: black;
+}
+
 </style>
