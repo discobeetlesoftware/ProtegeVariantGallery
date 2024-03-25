@@ -13,15 +13,23 @@ interface Props {
 const { chip, variant, index } = Astro.props;
 const variantName = `${chip.name.en} v${index}`;
 const anchor = Controller.anchor(variantName);
+const rarity = Controller.convertRarity(variant.rarity);
 ---
 
 <tr id={anchor}>
     <td>{chip.denom}</td>
-    <td><a href={`#${anchor}`}>v{index}</a></td>
     <td><LocalImage subdir='proofs' key={chip.proof} alt={`${chip.name.en} proof`} /></td>
     <td><GalleryElement imageName={variant.image} variantName={`${chip.denom} v${index}`} /></td>
+    <td class={Controller.classForRarity(rarity)} 
+        style={{padding: 0, verticalAlign:'top', borderLeft: '1px solid #a1a1a1', borderRight: '1px solid #a1a1a1'}}>
+        <div class='rarity_title'>
+            {Controller.descriptionForRarity(rarity)}
+        </div>
+        <span style={{backgroundColor: 'red', verticalAlign: 'baseline'}}>
+            <a href={`#${anchor}`}>v{index}</a>
+        </span>
+    </td>    
     <td>{variant.group}</td>
-    <td>{Controller.convertRange(variant.rarity)}</td>
     <td>{variant.notes}</td>
     <td>{variant.clay_color.base}</td>
     <td>{variant.clay_color.spot}</td>

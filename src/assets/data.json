@@ -9,7 +9,7 @@
             "color": "#FEDD00",
             "variants": [
                 {
-                    "origin": "Matsui",
+                    "origin": "Matsui (2022)",
                     "image": "plaque_matsui_20_v1.jpg",
                     "material": "Plastic",
                     "total": 141,
@@ -26,7 +26,7 @@
             "color": "#333F48",
             "variants": [
                 {
-                    "origin": "Matsui",
+                    "origin": "Matsui (2022)",
                     "image": "plaque_matsui_100_v1.jpg",
                     "material": "Plastic",
                     "total": 201,
@@ -43,7 +43,7 @@
             "color": "#7d26cd",
             "variants": [
                 {
-                    "origin": "Matsui",
+                    "origin": "Matsui (2022)",
                     "image": "plaque_matsui_500_v1.jpg",
                     "material": "Plastic",
                     "total": 73,
@@ -60,7 +60,7 @@
             "color": "#FEDD00",
             "variants": [
                 {
-                    "origin": "Matsui",
+                    "origin": "Matsui (2022)",
                     "image": "plaque_matsui_1k_v1.jpg",
                     "material": "Plastic",
                     "total": 54,
@@ -77,7 +77,7 @@
             "color": "#FF8200",
             "variants": [
                 {
-                    "origin": "Matsui",
+                    "origin": "Matsui (2022)",
                     "image": "plaque_matsui_5k_v1.jpg",
                     "material": "Plastic",
                     "total": 28,
@@ -94,7 +94,7 @@
             "color": "#FFFFFF",
             "variants": [
                 {
-                    "origin": "Matsui",
+                    "origin": "Matsui (2022)",
                     "image": "plaque_matsui_500k_v1.jpg",
                     "material": "Plastic",
                     "total": 60,
@@ -250,7 +250,7 @@
                 "en": "dealer button"
             },
             "color": "#D9B796",
-            "origin": "Sidepot (circa 2013)",
+            "origin": "Sidepot (2013)",
             "image": "dealer_button_v4.jpg",
             "finish": "Matte",
             "edge": "Aligned vertical"
@@ -261,7 +261,7 @@
                 "en": "dealer button"
             },
             "color": "#D9B796",
-            "origin": "Sidepot (circa 2015)",
+            "origin": "Sidepot (2015)",
             "image": "dealer_button_v5.jpg",
             "finish": "Matte",
             "edge": "Unaligned"
@@ -272,7 +272,7 @@
                 "en": "dealer button"
             },
             "color": "#D9B796",
-            "origin": "Matsui (circa 2022)",
+            "origin": "Matsui (2022)",
             "image": "dealer_button_v6.jpg",
             "total": 70,
             "finish": "Pearlized Plastic",
@@ -284,7 +284,7 @@
                 "en": "dealer button"
             },
             "color": "#D9B796",
-            "origin": "BrPro Poker (circa 2022)",
+            "origin": "BrPro Poker (2022)",
             "image": "dealer_button_v7.jpg",
             "total": 54,
             "finish": "Matte",
@@ -296,7 +296,7 @@
                 "en": "dealer button"
             },
             "color": "#D9B796",
-            "origin": "BrPro Poker (circa 2022)",
+            "origin": "BrPro Poker (2022)",
             "image": "dealer_button_v8.jpg",
             "total": 57,
             "finish": "Matte",

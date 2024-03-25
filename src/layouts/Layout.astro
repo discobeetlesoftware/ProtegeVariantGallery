@@ -38,11 +38,37 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
-	html {
+html {
     font-family: "Rubik", sans-serif;
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
+}
+
+.rarity_title {
+	background-color: rgba(0, 0, 0, 0.1);
+	font-size: 14px;
+    font-weight: 600;
+	width: 100%;
+	display: inline-block;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+
+.rarity_common {
+	background-color: #B5C0D0;
+}
+
+.rarity_uncommon {
+	background-color: #CCD3CA;
+}
+
+.rarity_rare {
+	background-color: #F5E8DD;
+}
+
+.rarity_legendary {
+	background-color: #EED3D9;
 }
 
 table {

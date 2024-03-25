@@ -62,3 +62,10 @@ export type PlaqueVariant = {
     total?: number;
     size?: string;
 };
+
+export enum Rarity {
+    common,
+    uncommon,
+    rare,
+    legendary,
+}

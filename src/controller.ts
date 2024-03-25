@@ -1,3 +1,5 @@
+import { Rarity } from "./models";
+
 export class Controller {
     static anchor(source: string): string {
         return source.replace(/[(]|[)]|[-]|\s/g, "_");
@@ -7,17 +9,43 @@ export class Controller {
         return source.replace(/[(]|[)]|[-]|\s/g, "");
     }
 
-    static convertRange(value: number): string {
+    static convertRarity(value: number): Rarity {
         if (value <= 4) {
-            return "Common";
+            return Rarity.common;
         }
         if (value <= 7) {
-            return "Uncommon";
+            return Rarity.uncommon;
         }
         if (value <= 9) {
-            return "Rare";
+            return Rarity.rare;
         }
-        return "Legendary";
+        return Rarity.legendary;
+    }
+
+    static descriptionForRarity(rarity: Rarity): string {
+        switch (rarity) {
+            case Rarity.common:
+                return "Common";
+            case Rarity.uncommon:
+                return "Uncommon";
+            case Rarity.rare:
+                return "Rare";
+            case Rarity.legendary:
+                return "Legendary";
+        }
+    }
+
+    static classForRarity(rarity: Rarity): string {
+        switch (rarity) {
+            case Rarity.common:
+                return "rarity_common";
+            case Rarity.uncommon:
+                return "rarity_uncommon";
+            case Rarity.rare:
+                return "rarity_rare";
+            case Rarity.legendary:
+                return "rarity_legendary";
+        }
     }
 
     static linkImage(imageName: string): string {
