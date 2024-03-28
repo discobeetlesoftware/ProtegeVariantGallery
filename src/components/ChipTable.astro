@@ -10,12 +10,15 @@ const { chips } = Astro.props;
 ---
 
 <div id='chip_variants'>
-<h2>Known Chip Variants</h2>
-<table>
-    {
-        chips.map((chip) => (
-            <ChipTableDenom chip={chip} />
-        ))
-    }
-</table>
+    <h2>Known Chip Variants</h2>
+    <p>
+        The colors referenced in the table below are approximately relative to each other. They are not meant as references to official BCC color names.
+    </p>
+    <table>
+        {
+            chips.map((chip) => (
+                <ChipTableDenom chip={chip} />
+            ))
+        }
+    </table>
 </div>
