@@ -1,0 +1,23 @@
+---
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+    subdir: string;
+    key: string;
+    alt: string;
+    width?: number;
+}
+
+const { subdir, key, alt, width } = Astro.props;
+const images = import.meta.glob<{ default: ImageMetadata }>('/src/assets/images/**/*.{jpeg,jpg,png,gif}');
+const path = `/src/assets/images/${subdir}/${key}`;
+const hasImage = !!images[path];
+---
+
+{
+    hasImage && <Image src={images[path]()} alt={alt} width={width} />
+}
+{
+    !hasImage && <span>🚫</span>
+}

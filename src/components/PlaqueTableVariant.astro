@@ -1,0 +1,26 @@
+---
+import { Controller } from '../controller';
+import { type Plaque } from '../models';
+import PlaqueTableRow from './PlaqueTableRow.astro';
+
+interface Props {
+    plaque: Plaque;
+    isExtended: boolean;
+}
+
+const { plaque, isExtended } = Astro.props;
+---
+
+<tbody class={Controller.themeKey(plaque.name.en)}>
+    {
+        plaque.variants.map((variant, index) => (
+            <PlaqueTableRow plaque={plaque} isExtended={isExtended} variant={variant} index={index + 1} />
+        ))
+    }
+</tbody>
+
+<style define:vars={{ color: plaque.color }}>
+	  tbody :global(td:nth-child(1)) { 
+        background-image: linear-gradient(to right, var(--color) 0%, var(--color) 5%, white 100%); 
+    }
+</style>

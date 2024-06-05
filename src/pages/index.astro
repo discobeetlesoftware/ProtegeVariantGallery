@@ -1,0 +1,47 @@
+---
+import payload from '../assets/data.json';
+import Layout from '../layouts/Layout.astro';
+import Description from '../components/Description.astro';
+import Info from '../components/Info.astro';
+import Resources from '../components/Resources.astro';
+import ChipTable from '../components/ChipTable.astro';
+import ButtonTable from '../components/ButtonTable.astro';
+import PlaqueTable from '../components/PlaqueTable.astro';
+import RarityScale from '../components/RarityScale.astro';
+import { Controller } from '../controller';
+
+const chips = payload['chips'];
+const buttons = payload['buttons'];
+const ceramicPlaques = payload['ceramic_plaques'];
+const matsuiPlaques = payload['matsui_plaques'];
+
+const rarityCounts = [0, 0, 0, 0];
+
+chips.forEach(chip => {
+	chip.variants.forEach(variant => {
+		let rarity = Controller.convertRarity(variant.rarity);
+		rarityCounts[rarity] += 1;
+	});
+});
+
+const variantCount = chips.reduce((count, chip) => {
+	return count + chip.variants.length;
+}, 0);
+
+const plaqueCount = ceramicPlaques.length + matsuiPlaques.length;
+---
+
+<Layout title="BCC Protégé Variants">
+	<main>
+		<Description />
+		<Info denominationCount={chips.length} plaqueCount={plaqueCount} buttonCount={buttons.length} variantCount={variantCount} />
+		<Resources />
+		<RarityScale counts={rarityCounts} />
+		<div id="gallery-container">
+			<ChipTable chips={chips} />
+			<ButtonTable buttons={buttons} />
+			<PlaqueTable prefix='Ceramic' isExtended={false} plaques={ceramicPlaques} />
+			<PlaqueTable prefix='Matsui' isExtended={true} plaques={matsuiPlaques} />
+		</div>
+	</main>
+</Layout>

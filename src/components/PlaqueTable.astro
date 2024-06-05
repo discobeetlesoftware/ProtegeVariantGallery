@@ -1,0 +1,34 @@
+---
+import { type Plaque } from '../models';
+import PlaqueTableVariant from './PlaqueTableVariant.astro';
+
+interface Props {
+    prefix: string;
+    isExtended: boolean;
+    plaques: Plaque[];
+}
+
+const { prefix, isExtended, plaques } = Astro.props;
+---
+
+<div id='ceramic_plaque_variants'>
+<h2>{prefix} Plaques</h2>
+<table>
+    <thead>
+        <tr>
+            <th>Item</th>
+            <th>Variant</th>
+            <th>Design</th>
+            <th>Image</th>
+            <th>Origin</th>
+            {isExtended && <th>Total Produced</th>}
+            {isExtended && <th>Size</th>}
+        </tr>
+    </thead>
+    {
+        plaques.map((plaque) => (
+            <PlaqueTableVariant plaque={plaque} isExtended={isExtended} />
+        ))
+    }
+</table>
+</div>

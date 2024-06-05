@@ -1,0 +1,31 @@
+---
+import { Controller } from '../controller';
+import { type Chip } from '../models';
+import ChipRow from './ChipRow.astro';
+import ChipTableRowHeader from './ChipTableRowHeader.astro';
+
+interface Props {
+    chip: Chip;
+}
+
+const { chip } = Astro.props;
+const headerChips = [ "5¢", "50¢", "$10", "$500", "$25k" ];
+---
+
+{
+    headerChips.includes(chip.denom) && <ChipTableRowHeader />
+}
+
+<tbody class={Controller.themeKey(chip.name.en)}>
+{
+    chip.variants.map((variant, index) => (
+        <ChipRow chip={chip} variant={variant} index={index + 1} />
+    ))
+}
+</tbody>
+
+<style define:vars={{ color: chip.color }}>
+	  tbody :global(td:nth-child(1)) { 
+        background-image: linear-gradient(to right, var(--color) 0%, var(--color) 5%, white 100%); 
+    }
+</style>

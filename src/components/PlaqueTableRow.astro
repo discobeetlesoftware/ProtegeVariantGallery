@@ -1,0 +1,35 @@
+---
+import { Controller } from '../controller';
+import { type Plaque, type PlaqueVariant } from '../models';
+import LocalImage from './LocalImage.astro';
+import GalleryElement from './GalleryElement.astro';
+
+interface Props {
+    plaque: Plaque;
+    variant: PlaqueVariant;
+    index: number;
+    isExtended: boolean;
+}
+
+const { plaque, index, variant, isExtended } = Astro.props;
+const name = `${plaque.name.en} v${index}`;
+const anchor = Controller.anchor(name);
+---
+
+<tbody class={Controller.themeKey(plaque.name.en)}>
+    <tr id={anchor}>
+        <td>{plaque.denom} plaque</td>
+        <td><a href={`#${anchor}`}>v{index}</a></td>
+        <td><LocalImage subdir='proofs' key={plaque.proof} alt={`${name} proof`} width={250} /></td>
+        <td><GalleryElement imageName={variant.image} variantName={`${plaque.denom} plaque (${variant.material}) v${index}`} width={250} /></td>
+        <td>{variant.origin}</td>
+        {isExtended && <td>{variant.total ?? 'Unknown'}</td>}
+        {isExtended && <td>{variant.size ?? 'Unknown'}</td>}
+    </tr>
+</tbody>
+
+<style define:vars={{ color: plaque.color }}>
+	  tbody :global(td:nth-child(1)) { 
+        background-image: linear-gradient(to right, var(--color) 0%, var(--color) 5%, white 100%); 
+    }
+</style>

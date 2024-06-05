@@ -1,0 +1,33 @@
+---
+import { type Button } from '../models';
+import ButtonTableRow from './ButtonTableRow.astro';
+
+interface Props {
+    buttons: Button[];
+}
+
+const { buttons } = Astro.props;
+---
+
+<div id="button_variants">
+    <h2>Buttons</h2>
+    <table>
+        <thead>
+        <tr>
+            <th>Item</th>
+            <th>Variant</th>
+            <th>Design</th>
+            <th>Image</th>
+            <th>Origin</th>
+            <th>Finish</th>
+            <th>Edge</th>
+            <th>Total Produced</th>
+        </tr>
+        </thead>
+        {
+            buttons.map((button, index) => (
+                <ButtonTableRow button={button} index={index + 1} />
+            ))
+        }
+    </table>
+</div>

@@ -1,0 +1,36 @@
+---
+import { type Chip, type Variant } from '../models';
+import LocalImage from './LocalImage.astro';
+import GalleryElement from './GalleryElement.astro';
+import { Controller } from '../controller';
+
+interface Props {
+    chip: Chip;
+    variant: Variant;
+    index: number;
+}
+
+const { chip, variant, index } = Astro.props;
+const variantName = `${chip.name.en} v${index}`;
+const anchor = Controller.anchor(variantName);
+const rarity = Controller.convertRarity(variant.rarity);
+---
+
+<tr id={anchor}>
+    <td>{chip.denom}</td>
+    <td><LocalImage subdir='proofs' key={chip.proof} alt={`${chip.name.en} proof`} /></td>
+    <td><GalleryElement imageName={variant.image} variantName={`${chip.denom} v${index}`} /></td>
+    <td>
+        <div class={Controller.classForRarity(rarity)} style={{display: 'flex', flexDirection: 'column', justifyContent: 'center'}}>
+            <div class='rarity_title'>{Controller.descriptionForRarity(rarity)}</div>
+            <div><a href={`#${anchor}`}>v{index}</a></div>
+        </div>
+    </td>    
+    <td>{variant.group}</td>
+    <td>{variant.notes}</td>
+    <td>{variant.clay_color.base}</td>
+    <td>{variant.clay_color.spot}</td>
+    <td>{variant.inlay.text_color}</td>
+    <td>{variant.inlay.text_size}</td>
+    <td>{variant.inlay.notes}</td>
+</tr>
