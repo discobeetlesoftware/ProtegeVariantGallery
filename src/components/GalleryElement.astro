@@ -12,14 +12,15 @@ const hasImage = imageName.length > 0;
 ---
 
 {
-    hasImage && <a 
-    href="#"
-    class='gallery-item' 
-    data-sub-html={`<h3>${variantName}</h3>`}
-    data-src={`/ProtegeVariantGallery/images/variants/${imageName}`}
->
+    hasImage && 
+    <a 
+        href="#"
+        class='gallery-item' 
+        data-sub-html={`<h3>${variantName}</h3>`}
+        data-src={`/ProtegeVariantGallery/images/variants/${imageName}`}
+    >
         <LocalImage subdir='thumbs' key={imageName} alt={`${variantName}`} width={width} />
-</a>
+    </a>
 
 }
 
