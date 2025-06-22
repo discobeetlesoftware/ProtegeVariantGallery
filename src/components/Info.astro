@@ -1,4 +1,6 @@
 ---
+import { Controller } from '../controller';
+
 interface Props {
     denominationCount: number;
     variantCount: number;
@@ -9,12 +11,13 @@ interface Props {
 const { denominationCount, variantCount, buttonCount, plaqueCount } = Astro.props;
 ---
 
+
 <div>
     <h2>Info</h2>
     <ul>
-        <li>Final design by William R. Coughlan (<code>Magus_23</code>).</li>
+        <li>Final design by William R. Coughlan (<code><a href={Controller.linkImage('tournament_result.jpg')}>Magus_23</a></code>).</li>
         <li>Design process was 'by committee' comprising of members from ChipTalk.net. The design process took approximately 9 months.</li>
-        <li>Produced by Blue Chip Company for <a href='http://sidepot.com/'>Sidepot</a>.</li>
+        <li>Produced by Blue Chip Company for <a href='https://buypokerchips.com/'>Sidepot</a>.</li>
         <li>Features the Cigar & Snifter mold.</li>
         <li>Supplemental variants were produced a single time. All the primary chips had multiple production runs.</li>
         <li>The primary denominations produced with the supplementals are sometimes identifiable because of their inlay differences.</li>
