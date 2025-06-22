@@ -1,21 +1,18 @@
 {
-    "matsui_plaques": [
-        {
+    "matsui_plaques": [{
             "denom": "$20",
             "proof": "plaque_matsui_20.jpg",
             "name": {
                 "en": "twenty dollar plaque (Matsui)"
             },
             "color": "#FEDD00",
-            "variants": [
-                {
-                    "origin": "Matsui (2022)",
-                    "image": "plaque_matsui_20_v1.jpg",
-                    "material": "Plastic",
-                    "total": 141,
-                    "size": "82x57mm"
-                }
-            ]
+            "variants": [{
+                "origin": "Matsui (2022)",
+                "image": "plaque_matsui_20_v1.jpg",
+                "material": "Plastic",
+                "total": 141,
+                "size": "82x57mm"
+            }]
         },
         {
             "denom": "$100",
@@ -24,15 +21,13 @@
                 "en": "one hundred dollar plaque (Matsui)"
             },
             "color": "#333F48",
-            "variants": [
-                {
-                    "origin": "Matsui (2022)",
-                    "image": "plaque_matsui_100_v1.jpg",
-                    "material": "Plastic",
-                    "total": 201,
-                    "size": "95x66mm"
-                }
-            ]
+            "variants": [{
+                "origin": "Matsui (2022)",
+                "image": "plaque_matsui_100_v1.jpg",
+                "material": "Plastic",
+                "total": 201,
+                "size": "95x66mm"
+            }]
         },
         {
             "denom": "$500",
@@ -41,15 +36,13 @@
                 "en": "five hundred dollar plaque (Matsui)"
             },
             "color": "#7d26cd",
-            "variants": [
-                {
-                    "origin": "Matsui (2022)",
-                    "image": "plaque_matsui_500_v1.jpg",
-                    "material": "Plastic",
-                    "total": 73,
-                    "size": "102x70mm"
-                }
-            ]
+            "variants": [{
+                "origin": "Matsui (2022)",
+                "image": "plaque_matsui_500_v1.jpg",
+                "material": "Plastic",
+                "total": 73,
+                "size": "102x70mm"
+            }]
         },
         {
             "denom": "$1k",
@@ -58,15 +51,13 @@
                 "en": "one thousand dollar plaque (Matsui)"
             },
             "color": "#FEDD00",
-            "variants": [
-                {
-                    "origin": "Matsui (2022)",
-                    "image": "plaque_matsui_1k_v1.jpg",
-                    "material": "Plastic",
-                    "total": 54,
-                    "size": "108x75mm"
-                }
-            ]
+            "variants": [{
+                "origin": "Matsui (2022)",
+                "image": "plaque_matsui_1k_v1.jpg",
+                "material": "Plastic",
+                "total": 54,
+                "size": "108x75mm"
+            }]
         },
         {
             "denom": "$5k",
@@ -75,15 +66,13 @@
                 "en": "five thousand dollar plaque (Matsui)"
             },
             "color": "#FF8200",
-            "variants": [
-                {
-                    "origin": "Matsui (2022)",
-                    "image": "plaque_matsui_5k_v1.jpg",
-                    "material": "Plastic",
-                    "total": 28,
-                    "size": "119x82mm"
-                }
-            ]
+            "variants": [{
+                "origin": "Matsui (2022)",
+                "image": "plaque_matsui_5k_v1.jpg",
+                "material": "Plastic",
+                "total": 28,
+                "size": "119x82mm"
+            }]
         },
         {
             "denom": "$100k",
@@ -92,32 +81,27 @@
                 "en": "five hundred thousand dollar plaque (Matsui)"
             },
             "color": "#FFFFFF",
-            "variants": [
-                {
-                    "origin": "Matsui (2022)",
-                    "image": "plaque_matsui_500k_v1.jpg",
-                    "material": "Plastic",
-                    "total": 60,
-                    "size": "108x75mm"
-                }
-            ]
+            "variants": [{
+                "origin": "Matsui (2022)",
+                "image": "plaque_matsui_500k_v1.jpg",
+                "material": "Plastic",
+                "total": 60,
+                "size": "108x75mm"
+            }]
         }
     ],
-    "ceramic_plaques": [
-        {
+    "ceramic_plaques": [{
             "denom": "$10",
             "proof": "",
             "name": {
                 "en": "ten dollar plaque"
             },
             "color": "#F9D2AD",
-            "variants": [
-                {
-                    "origin": "Unknown",
-                    "image": "plaque_10dollar_v1.jpg",
-                    "material": "Ceramic"
-                }
-            ]
+            "variants": [{
+                "origin": "Unknown",
+                "image": "plaque_10dollar_v1.jpg",
+                "material": "Ceramic"
+            }]
         },
         {
             "denom": "$1k",
@@ -126,13 +110,11 @@
                 "en": "one thousand dollar plaque"
             },
             "color": "#F8CE51",
-            "variants": [
-                {
-                    "origin": "Sidepot",
-                    "image": "",
-                    "material": "Ceramic"
-                }
-            ]
+            "variants": [{
+                "origin": "Sidepot",
+                "image": "",
+                "material": "Ceramic"
+            }]
         },
         {
             "denom": "$5k",
@@ -141,13 +123,11 @@
                 "en": "five thousand dollar plaque"
             },
             "color": "#7F3E4F",
-            "variants": [
-                {
-                    "origin": "Sidepot",
-                    "image": "plaque_5k_v1.jpg",
-                    "material": "Ceramic"
-                }
-            ]
+            "variants": [{
+                "origin": "Sidepot",
+                "image": "plaque_5k_v1.jpg",
+                "material": "Ceramic"
+            }]
         },
         {
             "denom": "$25k",
@@ -156,13 +136,11 @@
                 "en": "twenty-five thousand dollar plaque"
             },
             "color": "#E88437",
-            "variants": [
-                {
-                    "origin": "Sidepot",
-                    "image": "plaque_25k_v1.jpg",
-                    "material": "Ceramic"
-                }
-            ]
+            "variants": [{
+                "origin": "Sidepot",
+                "image": "plaque_25k_v1.jpg",
+                "material": "Ceramic"
+            }]
         },
         {
             "denom": "$100k",
@@ -171,13 +149,11 @@
                 "en": "one hundred thousand dollar plaque"
             },
             "color": "#5991C5",
-            "variants": [
-                {
-                    "origin": "Sidepot",
-                    "image": "",
-                    "material": "Ceramic"
-                }
-            ]
+            "variants": [{
+                "origin": "Sidepot",
+                "image": "",
+                "material": "Ceramic"
+            }]
         },
         {
             "denom": "$500k",
@@ -186,13 +162,11 @@
                 "en": "five hundred thousand dollar plaque"
             },
             "color": "#68A05B",
-            "variants": [
-                {
-                    "origin": "Sidepot",
-                    "image": "",
-                    "material": "Ceramic"
-                }
-            ]
+            "variants": [{
+                "origin": "Sidepot",
+                "image": "",
+                "material": "Ceramic"
+            }]
         },
         {
             "denom": "$1m",
@@ -201,17 +175,14 @@
                 "en": "one million dollar plaque"
             },
             "color": "#424373",
-            "variants": [
-                {
-                    "origin": "Sidepot",
-                    "image": "",
-                    "material": "Ceramic"
-                }
-            ]
+            "variants": [{
+                "origin": "Sidepot",
+                "image": "",
+                "material": "Ceramic"
+            }]
         }
     ],
-    "buttons": [
-        {
+    "buttons": [{
             "proof": "",
             "name": {
                 "en": "dealer button"
@@ -304,31 +275,28 @@
         }
     ],
 
-    "chips": [
-        {
+    "chips": [{
             "denom": "5¢",
             "proof": "5cent_proof.jpg",
             "name": {
                 "en": "nickel"
             },
             "color": "#CE9CBA",
-            "variants": [
-                {
-                    "image": "5cent_v1.jpg",
-                    "group": "Supplemental",
-                    "rarity": 9,
-                    "notes": "Only variant",
-                    "clay_color": {
-                        "base": "Lilac",
-                        "spot": "Dark Purple",
-                        "notes": "Only variant"
-                    },
-                    "inlay": {
-                        "text_color": "Lilac",
-                        "text_size": "Normal"
-                    }
+            "variants": [{
+                "image": "5cent_v1.jpg",
+                "group": "Supplemental",
+                "rarity": 9,
+                "notes": "Only variant",
+                "clay_color": {
+                    "base": "Lilac",
+                    "spot": "Dark Purple",
+                    "notes": "Only variant"
+                },
+                "inlay": {
+                    "text_color": "Lilac",
+                    "text_size": "Normal"
                 }
-            ]
+            }]
         },
         {
             "denom": "10¢",
@@ -337,23 +305,21 @@
                 "en": "dime"
             },
             "color": "#63C774",
-            "variants": [
-                {
-                    "image": "10cent_v1.jpg",
-                    "group": "Supplemental",
-                    "rarity": 10,
-                    "notes": "Only variant",
-                    "clay_color": {
-                        "base": "Lime Green",
-                        "spot": "Yellow"
-                    },
-                    "inlay": {
-                        "text_color": "Lime Green",
-                        "text_size": "Normal",
-                        "notes": ""
-                    }
+            "variants": [{
+                "image": "10cent_v1.jpg",
+                "group": "Supplemental",
+                "rarity": 10,
+                "notes": "Only variant",
+                "clay_color": {
+                    "base": "Lime Green",
+                    "spot": "Yellow"
+                },
+                "inlay": {
+                    "text_color": "Lime Green",
+                    "text_size": "Normal",
+                    "notes": ""
                 }
-            ]
+            }]
         },
         {
             "denom": "25¢",
@@ -362,8 +328,7 @@
                 "en": "quarter"
             },
             "color": "#EDDAC7",
-            "variants": [
-                {
+            "variants": [{
                     "image": "25cent_v1.jpg",
                     "group": "Supplemental",
                     "rarity": 10,
@@ -492,23 +457,21 @@
                 "en": "half dollar"
             },
             "color": "#2F5288",
-            "variants": [
-                {
-                    "image": "50cent_v1.jpg",
-                    "group": "Supplemental",
-                    "rarity": 10,
-                    "notes": "Only variant",
-                    "clay_color": {
-                        "base": "Purple",
-                        "spot": "Pink"
-                    },
-                    "inlay": {
-                        "text_color": "Purple",
-                        "text_size": "Normal",
-                        "notes": ""
-                    }
+            "variants": [{
+                "image": "50cent_v1.jpg",
+                "group": "Supplemental",
+                "rarity": 10,
+                "notes": "Only variant",
+                "clay_color": {
+                    "base": "Purple",
+                    "spot": "Pink"
+                },
+                "inlay": {
+                    "text_color": "Purple",
+                    "text_size": "Normal",
+                    "notes": ""
                 }
-            ]
+            }]
         },
         {
             "denom": "$1",
@@ -517,8 +480,7 @@
                 "en": "dollar"
             },
             "color": "#4083B0",
-            "variants": [
-                {
+            "variants": [{
                     "image": "dollar_v1.jpg",
                     "group": "Primary",
                     "rarity": 2,
@@ -562,6 +524,21 @@
                         "text_size": "Large",
                         "notes": ""
                     }
+                },
+                {
+                    "image": "dollar_v4.jpg",
+                    "group": "Primary",
+                    "rarity": "9",
+                    "notes": "Slightly over diameter, otherwise ~v1",
+                    "clay_color": {
+                        "base": "Sky Blue",
+                        "spot": "White"
+                    },
+                    "inlay": {
+                        "text_color": "Blue",
+                        "text_size": "Normal",
+                        "notes": ""
+                    }
                 }
             ]
         },
@@ -572,23 +549,21 @@
                 "en": "two dollar"
             },
             "color": "#CBB18B",
-            "variants": [
-                {
-                    "image": "2dollar_v1.jpg",
-                    "group": "Supplemental",
-                    "rarity": 10,
-                    "notes": "Only variant",
-                    "clay_color": {
-                        "base": "Light Brown",
-                        "spot": "Dark Red"
-                    },
-                    "inlay": {
-                        "text_color": "Light Brown",
-                        "text_size": "Normal",
-                        "notes": ""
-                    }
+            "variants": [{
+                "image": "2dollar_v1.jpg",
+                "group": "Supplemental",
+                "rarity": 10,
+                "notes": "Only variant",
+                "clay_color": {
+                    "base": "Light Brown",
+                    "spot": "Dark Red"
+                },
+                "inlay": {
+                    "text_color": "Light Brown",
+                    "text_size": "Normal",
+                    "notes": ""
                 }
-            ]
+            }]
         },
         {
             "denom": "$2.5",
@@ -597,23 +572,21 @@
                 "en": "snapper"
             },
             "color": "#F2598D",
-            "variants": [
-                {
-                    "image": "snapper_v1.jpg",
-                    "group": "Supplemental",
-                    "rarity": 10,
-                    "notes": "Only variant",
-                    "clay_color": {
-                        "base": "Hot Pink",
-                        "spot": "Light Pink, Cherry Red"
-                    },
-                    "inlay": {
-                        "text_color": "Hot Pink",
-                        "text_size": "Normal",
-                        "notes": ""
-                    }
+            "variants": [{
+                "image": "snapper_v1.jpg",
+                "group": "Supplemental",
+                "rarity": 10,
+                "notes": "Only variant",
+                "clay_color": {
+                    "base": "Hot Pink",
+                    "spot": "Light Pink, Cherry Red"
+                },
+                "inlay": {
+                    "text_color": "Hot Pink",
+                    "text_size": "Normal",
+                    "notes": ""
                 }
-            ]
+            }]
         },
         {
             "denom": "$5",
@@ -622,8 +595,7 @@
                 "en": "five dollar"
             },
             "color": "#AD0F1F",
-            "variants": [
-                {
+            "variants": [{
                     "image": "5dollar_v1.jpg",
                     "group": "Primary",
                     "rarity": 6,
@@ -707,23 +679,21 @@
                 "en": "ten dollar"
             },
             "color": "#EF9450",
-            "variants": [
-                {
-                    "image": "10dollar_v1.jpg",
-                    "group": "Supplemental",
-                    "rarity": 10,
-                    "notes": "Only variant",
-                    "clay_color": {
-                        "base": "Orange",
-                        "spot": "Light Blue, Blue"
-                    },
-                    "inlay": {
-                        "text_color": "Blue",
-                        "text_size": "Normal",
-                        "notes": ""
-                    }
+            "variants": [{
+                "image": "10dollar_v1.jpg",
+                "group": "Supplemental",
+                "rarity": 10,
+                "notes": "Only variant",
+                "clay_color": {
+                    "base": "Orange",
+                    "spot": "Light Blue, Blue"
+                },
+                "inlay": {
+                    "text_color": "Blue",
+                    "text_size": "Normal",
+                    "notes": ""
                 }
-            ]
+            }]
         },
         {
             "denom": "$20",
@@ -732,8 +702,7 @@
                 "en": "twenty dollar"
             },
             "color": "#E6DAC4",
-            "variants": [
-                {
+            "variants": [{
                     "image": "20dollar_v1.jpg",
                     "group": "Supplemental",
                     "rarity": 8,
@@ -772,8 +741,7 @@
                 "en": "twenty-five dollar"
             },
             "color": "#417038",
-            "variants": [
-                {
+            "variants": [{
                     "image": "25dollar_v1.jpg",
                     "group": "Primary",
                     "rarity": 3,
@@ -857,23 +825,21 @@
                 "en": "fifty dollar"
             },
             "color": "#DBDACF",
-            "variants": [
-                {
-                    "image": "50dollar_v1.jpg",
-                    "group": "Supplemental",
-                    "rarity": 8,
-                    "notes": "Only variant",
-                    "clay_color": {
-                        "base": "Light Blue",
-                        "spot": "Dark Blue, Blue"
-                    },
-                    "inlay": {
-                        "text_color": "Light Blue",
-                        "text_size": "Normal",
-                        "notes": ""
-                    }
+            "variants": [{
+                "image": "50dollar_v1.jpg",
+                "group": "Supplemental",
+                "rarity": 8,
+                "notes": "Only variant",
+                "clay_color": {
+                    "base": "Light Blue",
+                    "spot": "Dark Blue, Blue"
+                },
+                "inlay": {
+                    "text_color": "Light Blue",
+                    "text_size": "Normal",
+                    "notes": ""
                 }
-            ]
+            }]
         },
         {
             "denom": "$100",
@@ -882,8 +848,7 @@
                 "en": "hundred dollar"
             },
             "color": "#36352F",
-            "variants": [
-                {
+            "variants": [{
                     "image": "100dollar_v1.jpg",
                     "group": "Primary",
                     "rarity": 1,
@@ -922,8 +887,7 @@
                 "en": "five-hundred dollar"
             },
             "color": "#7A58AF",
-            "variants": [
-                {
+            "variants": [{
                     "image": "500dollar_v1.jpg",
                     "group": "Primary",
                     "rarity": 2,
@@ -992,8 +956,7 @@
                 "en": "thousand dollar"
             },
             "color": "#E5B304",
-            "variants": [
-                {
+            "variants": [{
                     "image": "1000dollar_v1.jpg",
                     "group": "Primary",
                     "rarity": 8,
@@ -1077,8 +1040,7 @@
                 "en": "five thousand dollar"
             },
             "color": "#B1482D",
-            "variants": [
-                {
+            "variants": [{
                     "image": "5000dollar_v1.jpg",
                     "group": "Primary",
                     "rarity": 8,
@@ -1147,23 +1109,21 @@
                 "en": "twenty-five thousand dollar"
             },
             "color": "#F54C4E",
-            "variants": [
-                {
-                    "image": "25000dollar_v1.jpg",
-                    "group": "Supplemental",
-                    "rarity": 8,
-                    "notes": "67.7mm rack only",
-                    "clay_color": {
-                        "base": "Pink",
-                        "spot": "White, Red"
-                    },
-                    "inlay": {
-                        "text_color": "Pink",
-                        "text_size": "Normal",
-                        "notes": "Oversize"
-                    }
+            "variants": [{
+                "image": "25000dollar_v1.jpg",
+                "group": "Supplemental",
+                "rarity": 8,
+                "notes": "67.7mm rack only",
+                "clay_color": {
+                    "base": "Pink",
+                    "spot": "White, Red"
+                },
+                "inlay": {
+                    "text_color": "Pink",
+                    "text_size": "Normal",
+                    "notes": "Oversize"
                 }
-            ]
+            }]
         },
         {
             "denom": "$100k",
@@ -1172,23 +1132,21 @@
                 "en": "one hundred thousand dollar"
             },
             "color": "#0F1F41",
-            "variants": [
-                {
-                    "image": "100000dollar_v1.jpg",
-                    "group": "Supplemental",
-                    "rarity": 9,
-                    "notes": "67.7mm rack only",
-                    "clay_color": {
-                        "base": "Navy Blue",
-                        "spot": "White, Red"
-                    },
-                    "inlay": {
-                        "text_color": "Navy Blue",
-                        "text_size": "Normal",
-                        "notes": "Oversize"
-                    }
+            "variants": [{
+                "image": "100000dollar_v1.jpg",
+                "group": "Supplemental",
+                "rarity": 9,
+                "notes": "67.7mm rack only",
+                "clay_color": {
+                    "base": "Navy Blue",
+                    "spot": "White, Red"
+                },
+                "inlay": {
+                    "text_color": "Navy Blue",
+                    "text_size": "Normal",
+                    "notes": "Oversize"
                 }
-            ]
+            }]
         },
         {
             "denom": "Non-denom Orange",
@@ -1197,8 +1155,7 @@
                 "en": "non-denom orange"
             },
             "color": "#E77727",
-            "variants": [
-                {
+            "variants": [{
                     "image": "variable_orange_v1.jpg",
                     "group": "Primary",
                     "rarity": 6,
@@ -1252,23 +1209,21 @@
                 "en": "non-denom white"
             },
             "color": "#BDB2B6",
-            "variants": [
-                {
-                    "image": "variable_white_v1.jpg",
-                    "group": "Supplemental",
-                    "rarity": 10,
-                    "notes": "Only variant",
-                    "clay_color": {
-                        "base": "Pink tint",
-                        "spot": "Dark Red"
-                    },
-                    "inlay": {
-                        "text_color": "Pink",
-                        "text_size": "Normal",
-                        "notes": ""
-                    }
+            "variants": [{
+                "image": "variable_white_v1.jpg",
+                "group": "Supplemental",
+                "rarity": 10,
+                "notes": "Only variant",
+                "clay_color": {
+                    "base": "Pink tint",
+                    "spot": "Dark Red"
+                },
+                "inlay": {
+                    "text_color": "Pink",
+                    "text_size": "Normal",
+                    "notes": ""
                 }
-            ]
+            }]
         },
         {
             "denom": "Non-denom Blue",
@@ -1277,23 +1232,21 @@
                 "en": "non-denom blue"
             },
             "color": "#5FB2D8",
-            "variants": [
-                {
-                    "image": "variable_blue_v1.jpg",
-                    "group": "Supplemental",
-                    "rarity": 10,
-                    "notes": "Only variant",
-                    "clay_color": {
-                        "base": "Sky Blue",
-                        "spot": "White"
-                    },
-                    "inlay": {
-                        "text_color": "Sky Blue",
-                        "text_size": "Normal",
-                        "notes": ""
-                    }
+            "variants": [{
+                "image": "variable_blue_v1.jpg",
+                "group": "Supplemental",
+                "rarity": 10,
+                "notes": "Only variant",
+                "clay_color": {
+                    "base": "Sky Blue",
+                    "spot": "White"
+                },
+                "inlay": {
+                    "text_color": "Sky Blue",
+                    "text_size": "Normal",
+                    "notes": ""
                 }
-            ]
+            }]
         },
         {
             "denom": "Non-denom Red",
@@ -1302,23 +1255,21 @@
                 "en": "non-denom red"
             },
             "color": "#98303E",
-            "variants": [
-                {
-                    "image": "variable_red_v1.jpg",
-                    "group": "Supplemental",
-                    "rarity": 10,
-                    "notes": "Only variant",
-                    "clay_color": {
-                        "base": "Red",
-                        "spot": "Tan"
-                    },
-                    "inlay": {
-                        "text_color": "Red",
-                        "text_size": "Normal",
-                        "notes": ""
-                    }
+            "variants": [{
+                "image": "variable_red_v1.jpg",
+                "group": "Supplemental",
+                "rarity": 10,
+                "notes": "Only variant",
+                "clay_color": {
+                    "base": "Red",
+                    "spot": "Tan"
+                },
+                "inlay": {
+                    "text_color": "Red",
+                    "text_size": "Normal",
+                    "notes": ""
                 }
-            ]
+            }]
         },
         {
             "denom": "Non-denom Green",
@@ -1327,23 +1278,21 @@
                 "en": "non-denom green"
             },
             "color": "#31492F",
-            "variants": [
-                {
-                    "image": "variable_green_v1.jpg",
-                    "group": "Supplemental",
-                    "rarity": 10,
-                    "notes": "Only variant",
-                    "clay_color": {
-                        "base": "Deep Green",
-                        "spot": "Light Green, Dark Green"
-                    },
-                    "inlay": {
-                        "text_color": "Green",
-                        "text_size": "Normal",
-                        "notes": ""
-                    }
+            "variants": [{
+                "image": "variable_green_v1.jpg",
+                "group": "Supplemental",
+                "rarity": 10,
+                "notes": "Only variant",
+                "clay_color": {
+                    "base": "Deep Green",
+                    "spot": "Light Green, Dark Green"
+                },
+                "inlay": {
+                    "text_color": "Green",
+                    "text_size": "Normal",
+                    "notes": ""
                 }
-            ]
+            }]
         },
         {
             "denom": "Non-denom Black",
@@ -1352,23 +1301,21 @@
                 "en": "non-denom black"
             },
             "color": "#1D1B1C",
-            "variants": [
-                {
-                    "image": "variable_black_v1.jpg",
-                    "group": "Supplemental",
-                    "rarity": 10,
-                    "notes": "Only variant",
-                    "clay_color": {
-                        "base": "Black",
-                        "spot": "Purple, Green, Red"
-                    },
-                    "inlay": {
-                        "text_color": "Black",
-                        "text_size": "Normal",
-                        "notes": ""
-                    }
+            "variants": [{
+                "image": "variable_black_v1.jpg",
+                "group": "Supplemental",
+                "rarity": 10,
+                "notes": "Only variant",
+                "clay_color": {
+                    "base": "Black",
+                    "spot": "Purple, Green, Red"
+                },
+                "inlay": {
+                    "text_color": "Black",
+                    "text_size": "Normal",
+                    "notes": ""
                 }
-            ]
+            }]
         }
     ]
 }
