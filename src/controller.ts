@@ -51,4 +51,8 @@ export class Controller {
     static linkImage(imageName: string): string {
         return `${import.meta.env.BASE_URL}/images/${imageName}`;
     }
+
+    static linkPdf(pdfName: string): string {
+        return `${import.meta.env.BASE_URL}/${pdfName}.pdf`;
+    }
 }
