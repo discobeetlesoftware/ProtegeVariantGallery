@@ -7,33 +7,32 @@ import ChipTable from "@components/ChipTable.astro";
 import ButtonTable from "@components/ButtonTable.astro";
 import PlaqueTable from "@components/PlaqueTable.astro";
 import RarityScale from "@components/RarityScale.astro";
-import { Controller } from "../controller";
-import { rarityCounts, variants } from "src/variants";
+import { rarityCounts, protege } from "src/Variants";
 ---
 
 <Layout title="BCC Protégé Variants">
 	<main>
 		<Description />
 		<Info
-			denominationCount={variants.counts.chips}
-			plaqueCount={variants.plaquesTotal}
-			buttonCount={variants.counts.buttons}
-			variantCount={variantCount}
+			denominationCount={protege.count.chips.total}
+			plaqueCount={protege.count.plaques.total}
+			buttonCount={protege.count.buttons.total}
+			variantCount={protege.count.chips.variants}
 		/>
 		<Resources />
 		<RarityScale counts={rarityCounts} />
 		<div id="gallery-container">
-			<ChipTable chips={variants.chips} />
-			<ButtonTable buttons={variants.buttons} />
+			<ChipTable chips={protege.chips} />
+			<ButtonTable buttons={protege.buttons} />
 			<PlaqueTable
 				prefix="Ceramic"
 				isExtended={false}
-				plaques={variants.ceramicPlaques}
+				plaques={protege.ceramicPlaques}
 			/>
 			<PlaqueTable
 				prefix="Matsui"
 				isExtended={true}
-				plaques={variants.matsuiPlaques}
+				plaques={protege.matsuiPlaques}
 			/>
 		</div>
 	</main>

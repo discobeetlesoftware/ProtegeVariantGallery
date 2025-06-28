@@ -1,12 +1,12 @@
-import * as buttonVariants from '@data/buttons.json';
-import * as chipVariants from '@data/chips.json';
-import * as ceramicPlaqueVariants from '@data/plaques_ceramic.json';
-import * as matsuiPlaqueVariants from '@data/plaques_matsui.json';
+import { buttons } from '@data/buttons';
+import { chips } from '@data/chips';
+import { ceramicPlaques } from '@data/plaques_ceramic';
+import { matsuiPlaques } from '@data/plaques_matsui';
 import { Controller } from './controller';
 import type { Button, Chip, Plaque } from './models';
 
 export var rarityCounts = [0, 0, 0, 0];
-chipVariants.forEach(chip => {
+chips.forEach(chip => {
 	chip.variants.forEach(variant => {
 		let rarity = Controller.convertRarity(variant.rarity);
 		rarityCounts[rarity] += 1;
@@ -14,41 +14,48 @@ chipVariants.forEach(chip => {
 });
 
 var counts = {
-	chips: chipVariants.reduce((count, chip) => {
-		return count + chip.variants.length;
-	}, 0),
-	buttons: buttonVariants.reduce((count, button) => {
-		return count + button.variants.length;
-	}, 0),
-	plaque: {
-		ceramic: ceramicPlaqueVariants.length,
-		matsui: matsuiPlaqueVariants.length
+	chips: {
+		total: chips.length,
+		variants: chips.reduce((count, chip) => {
+			return count + chip.variants.length;
+		}, 0),
+	},
+	buttons: {
+		total: buttons.length,
+		variants: buttons.reduce((count, button) => {
+			return count + button.variants.length;
+		}, 0),
+	},
+	plaques: {
+		total: ceramicPlaques.length + matsuiPlaques.length,
+		variants: ceramicPlaques.length + matsuiPlaques.length
 	}
 };
 
-export type Variants = {
+export type Counts = {
+	total: number;
+	variants: number;
+};
+
+export type Protege = {
 	buttons: Button[];
 	chips: Chip[];
 	ceramicPlaques: Plaque[];
 	matsuiPlaques: Plaque[];
-	counts: {
-		chips: number;
-		buttons: number;
-		plaque: {
-			ceramic: number;
-			matsui: number;
-		};
+	count: {
+		chips: Counts;
+		buttons: Counts;
+		plaques: Counts;
 	};
-	total: number;
-	plaquesTotal: number;
 };
 
-export var variants: Variants = {
-	buttons: buttonVariants,
-	chips: chipVariants,
-	ceramicPlaques: ceramicPlaqueVariants,
-	matsuiPlaques: matsuiPlaqueVariants,
-	counts: counts,
-	total: counts.chips + counts.buttons + counts.plaque.ceramic + counts.plaque.matsui,
-	plaquesTotal: counts.plaque.ceramic + counts.plaque.matsui
+// count: count,
+// total: counts.chips + counts.buttons + counts.plaque.ceramic + counts.plaque.matsui,
+// plaquesTotal: counts.plaque.ceramic + counts.plaque.matsui
+export var protege: Protege = {
+	buttons: buttons,
+	chips: chips,
+	ceramicPlaques: ceramicPlaques,
+	matsuiPlaques: matsuiPlaques,
+	count: counts
 };
