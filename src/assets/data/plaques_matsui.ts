@@ -70,7 +70,7 @@ export const matsuiPlaques: Plaque[] = [
 		color: "#FEDD00",
 		variants: [
 			{
-				origin: "Matsu",
+				origin: "Matsui",
 				image: "plaque_matsui_1k_v1.jpg",
 				material: PlaqueMaterial.Plastic,
 				years: [2022, 2024],
