@@ -263,7 +263,7 @@ export const chips: Chip[] = [
 				image: "dollar_v4.jpg",
 				group: ChipGroup.Primary,
 				rarity: 9,
-				notes: "Slightly over diameter, otherwise ~v1",
+				notes: "Slightly over diameter, otherwise ≈v1",
 				clay_color: {
 					base: "Sky Blue",
 					spot: "White"
@@ -368,7 +368,7 @@ export const chips: Chip[] = [
 				image: "5dollar_v3.jpg",
 				group: ChipGroup.Primary,
 				rarity: 10,
-				notes: "67.7mm rack only. Otherwise ~v2",
+				notes: "67.7mm rack only. Otherwise ≈v2",
 				clay_color: {
 					base: "Deep Red",
 					spot: "Tan"
@@ -383,7 +383,7 @@ export const chips: Chip[] = [
 				image: "5dollar_v4.jpg",
 				group: ChipGroup.Primary,
 				rarity: 7,
-				notes: "Slightly over diameter, otherwise ~v1 (matching $20 v2)",
+				notes: "Slightly over diameter, otherwise ≈v1 (matching $20 v2)",
 				clay_color: {
 					base: "Red",
 					spot: "Tan"
@@ -838,7 +838,7 @@ export const chips: Chip[] = [
 				image: "5000dollar_v4.jpg",
 				group: ChipGroup.Primary,
 				rarity: 10,
-				notes: "Slightly over diameter, otherwise ~v3",
+				notes: "Slightly over diameter, otherwise ≈v3",
 				clay_color: {
 					base: "Brick",
 					spot: "Ivory"
