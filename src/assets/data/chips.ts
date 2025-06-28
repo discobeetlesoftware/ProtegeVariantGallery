@@ -953,6 +953,21 @@ export const chips: Chip[] = [
 					text_size: "Normal",
 					notes: ""
 				}
+			},
+			{
+				image: "variable_orange_v4.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 10,
+				notes: "Error color. Only 4 racks exist",
+				clay_color: {
+					base: "Dirty Orange",
+					spot: "Light Blue, Dark Blue"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Large",
+					notes: ""
+				}
 			}
 		]
 	},
