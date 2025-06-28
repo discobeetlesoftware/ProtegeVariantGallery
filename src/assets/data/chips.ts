@@ -1,4 +1,4 @@
-import { type Chip } from '../../models';
+import { type Chip, ChipGroup } from '../../models';
 
 export const chips: Chip[] = [
 	{
@@ -11,7 +11,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "5cent_v1.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 9,
 				notes: "Only variant",
 				clay_color: {
@@ -36,7 +36,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "10cent_v1.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 10,
 				notes: "Only variant",
 				clay_color: {
@@ -61,7 +61,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "25cent_v1.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 10,
 				notes: "",
 				clay_color: {
@@ -76,7 +76,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "25cent_v2.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 1,
 				notes: "",
 				clay_color: {
@@ -91,7 +91,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "25cent_v3.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 3,
 				notes: "",
 				clay_color: {
@@ -106,7 +106,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "25cent_v4.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 3,
 				notes: "",
 				clay_color: {
@@ -121,7 +121,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "25cent_v5.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 1,
 				notes: "",
 				clay_color: {
@@ -136,7 +136,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "25cent_v6.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 10,
 				notes: "",
 				clay_color: {
@@ -151,7 +151,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "25cent_v7.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 3,
 				notes: "",
 				clay_color: {
@@ -166,7 +166,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "25cent_v8.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 3,
 				notes: "67.7mm rack only. Otherwise v5",
 				clay_color: {
@@ -191,7 +191,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "50cent_v1.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 10,
 				notes: "Only variant",
 				clay_color: {
@@ -216,7 +216,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "dollar_v1.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 2,
 				notes: "",
 				clay_color: {
@@ -231,7 +231,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "dollar_v2.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 3,
 				notes: "",
 				clay_color: {
@@ -246,7 +246,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "dollar_v3.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 1,
 				notes: "",
 				clay_color: {
@@ -261,7 +261,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "dollar_v4.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 9,
 				notes: "Slightly over diameter, otherwise ~v1",
 				clay_color: {
@@ -286,7 +286,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "2dollar_v1.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 10,
 				notes: "Only variant",
 				clay_color: {
@@ -311,7 +311,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "snapper_v1.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 10,
 				notes: "Only variant",
 				clay_color: {
@@ -336,7 +336,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "5dollar_v1.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 6,
 				notes: "",
 				clay_color: {
@@ -351,7 +351,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "5dollar_v2.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 5,
 				notes: "Base color inconsistencies",
 				clay_color: {
@@ -366,7 +366,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "5dollar_v3.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 10,
 				notes: "67.7mm rack only. Otherwise ~v2",
 				clay_color: {
@@ -381,7 +381,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "5dollar_v4.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 7,
 				notes: "Slightly over diameter, otherwise ~v1 (matching $20 v2)",
 				clay_color: {
@@ -396,7 +396,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "5dollar_v5.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 9,
 				notes: "",
 				clay_color: {
@@ -421,7 +421,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "10dollar_v1.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 10,
 				notes: "Only variant",
 				clay_color: {
@@ -446,7 +446,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "20dollar_v1.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 8,
 				notes: "",
 				clay_color: {
@@ -461,7 +461,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "20dollar_v2.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 10,
 				notes: "Slightly over diameter (matching $5 v4)",
 				clay_color: {
@@ -486,7 +486,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "25dollar_v1.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 3,
 				notes: "",
 				clay_color: {
@@ -501,7 +501,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "25dollar_v2.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 1,
 				clay_color: {
 					base: "Green",
@@ -516,7 +516,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "25dollar_v3.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 1,
 				notes: "",
 				clay_color: {
@@ -531,7 +531,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "25dollar_v4.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 3,
 				notes: "Base color is slightly paler than v1",
 				clay_color: {
@@ -546,7 +546,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "25dollar_v5.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 8,
 				notes: "Slightly over diameter",
 				clay_color: {
@@ -571,7 +571,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "50dollar_v1.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 8,
 				notes: "Only variant",
 				clay_color: {
@@ -596,7 +596,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "100dollar_v1.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 1,
 				notes: "",
 				clay_color: {
@@ -611,7 +611,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "100dollar_v2.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 3,
 				notes: "",
 				clay_color: {
@@ -636,7 +636,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "500dollar_v1.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 2,
 				notes: "",
 				clay_color: {
@@ -651,7 +651,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "500dollar_v2.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 1,
 				notes: "",
 				clay_color: {
@@ -666,7 +666,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "500dollar_v3.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 6,
 				notes: "Slightly over diameter",
 				clay_color: {
@@ -681,7 +681,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "500dollar_v4.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 5,
 				notes: "",
 				clay_color: {
@@ -706,7 +706,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "1000dollar_v1.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 8,
 				notes: "",
 				clay_color: {
@@ -721,7 +721,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "1000dollar_v2.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 7,
 				notes: "Initial run",
 				clay_color: {
@@ -736,7 +736,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "1000dollar_v3.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 7,
 				notes: "",
 				clay_color: {
@@ -751,7 +751,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "1000dollar_v4.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 8,
 				notes: "Second production run",
 				clay_color: {
@@ -766,7 +766,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "1000dollar_v5.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 7,
 				notes: "",
 				clay_color: {
@@ -791,7 +791,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "5000dollar_v1.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 8,
 				notes: "Minor spot color inconsistencies",
 				clay_color: {
@@ -806,7 +806,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "5000dollar_v2.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 8,
 				notes: "Minor spot color inconsistencies",
 				clay_color: {
@@ -821,7 +821,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "5000dollar_v3.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 8,
 				notes: "Minor spot color inconsistencies",
 				clay_color: {
@@ -836,7 +836,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "5000dollar_v4.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 10,
 				notes: "Slightly over diameter, otherwise ~v3",
 				clay_color: {
@@ -861,7 +861,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "25000dollar_v1.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 8,
 				notes: "67.7mm rack only",
 				clay_color: {
@@ -886,7 +886,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "100000dollar_v1.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 9,
 				notes: "67.7mm rack only",
 				clay_color: {
@@ -911,7 +911,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "variable_orange_v1.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 6,
 				notes: "",
 				clay_color: {
@@ -926,7 +926,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "variable_orange_v2.jpg",
-				group: "Primary",
+				group: ChipGroup.Primary,
 				rarity: 6,
 				notes: "",
 				clay_color: {
@@ -941,7 +941,7 @@ export const chips: Chip[] = [
 			},
 			{
 				image: "variable_orange_v3.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 9,
 				notes: "Slightly over diameter",
 				clay_color: {
@@ -966,7 +966,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "variable_white_v1.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 10,
 				notes: "Only variant",
 				clay_color: {
@@ -991,7 +991,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "variable_blue_v1.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 10,
 				notes: "Only variant",
 				clay_color: {
@@ -1016,7 +1016,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "variable_red_v1.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 10,
 				notes: "Only variant",
 				clay_color: {
@@ -1041,7 +1041,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "variable_green_v1.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 10,
 				notes: "Only variant",
 				clay_color: {
@@ -1066,7 +1066,7 @@ export const chips: Chip[] = [
 		variants: [
 			{
 				image: "variable_black_v1.jpg",
-				group: "Supplemental",
+				group: ChipGroup.Supplemental,
 				rarity: 10,
 				notes: "Only variant",
 				clay_color: {

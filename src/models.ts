@@ -18,6 +18,11 @@ export enum Rarity {
     legendary,
 }
 
+export enum ChipGroup {
+    Primary = "Primary",
+    Supplemental = "Supplemental"
+}
+
 //// CHIP TYPES
 
 export type Chip = {
@@ -30,7 +35,7 @@ export type Chip = {
 
 export type ChipVariant = {
     image: ImageName;
-    group: string;
+    group: ChipGroup;
     rarity: number;
     notes?: string;
     clay_color: {
