@@ -98,6 +98,7 @@ export type PlaqueVariant = {
     origin: string;
     image: ImageName;
     material: PlaqueMaterial;
+    years?: number[];
     total?: number | number[];
     size?: string;
     mould?: string;

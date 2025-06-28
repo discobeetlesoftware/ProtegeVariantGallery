@@ -48,6 +48,22 @@ export class Controller {
         }
     }
 
+    static formatProductionList(
+        years: null | undefined | number[],
+        total: null | undefined | number | number[],
+    ): string {
+        if (!years || !total) {
+            return "Unknown";
+        }
+        var totalValues = Array.isArray(total) ? total : [total];
+
+        var rows = years.map((year, index) => {
+            return `<li>${year} → ${totalValues[index]}</li>`;
+        });
+
+        return `<ol>${rows.join("")}</ol>`;
+    }
+
     static linkImage(imageName: string): string {
         return `${import.meta.env.BASE_URL}/images/${imageName}`;
     }

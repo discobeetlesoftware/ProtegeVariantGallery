@@ -10,10 +10,11 @@ export const matsuiPlaques: Plaque[] = [
 		color: "#FEDD00",
 		variants: [
 			{
-				origin: "Matsui (2022)",
+				origin: "Matsui",
 				image: "plaque_matsui_20_v1.jpg",
 				material: PlaqueMaterial.Plastic,
-				total: 141,
+				years: [2022, 2024],
+				total: [141, 66],
 				size: "82x57x6mm",
 				mould: "CC450",
 				mfg_color: "P/T Yellow C"
@@ -29,10 +30,11 @@ export const matsuiPlaques: Plaque[] = [
 		color: "#333F48",
 		variants: [
 			{
-				origin: "Matsui (2022)",
+				origin: "Matsui",
 				image: "plaque_matsui_100_v1.jpg",
 				material: PlaqueMaterial.Plastic,
-				total: 201,
+				years: [2022, 2024],
+				total: [201, 88],
 				size: "95x66x6mm",
 				mould: "CC450",
 				mfg_color: "P/T 432 C"
@@ -48,10 +50,11 @@ export const matsuiPlaques: Plaque[] = [
 		color: "#7d26cd",
 		variants: [
 			{
-				origin: "Matsui (2022)",
+				origin: "Matsui",
 				image: "plaque_matsui_500_v1.jpg",
 				material: PlaqueMaterial.Plastic,
-				total: 73,
+				years: [2022, 2024],
+				total: [73, 21],
 				size: "102x70x6mm",
 				mould: "CC450",
 				mfg_color: "P/T 2088 C"
@@ -67,10 +70,11 @@ export const matsuiPlaques: Plaque[] = [
 		color: "#FEDD00",
 		variants: [
 			{
-				origin: "Matsui (2022)",
+				origin: "Matsu",
 				image: "plaque_matsui_1k_v1.jpg",
 				material: PlaqueMaterial.Plastic,
-				total: 54,
+				years: [2022, 2024],
+				total: [54, 47],
 				size: "108x75x6mm",
 				mould: "CC450",
 				mfg_color: "P/T Yellow C"
@@ -86,10 +90,11 @@ export const matsuiPlaques: Plaque[] = [
 		color: "#FF8200",
 		variants: [
 			{
-				origin: "Matsui (2022)",
+				origin: "Matsui",
 				image: "plaque_matsui_5k_v1.jpg",
 				material: PlaqueMaterial.Plastic,
-				total: 28,
+				years: [2022, 2024],
+				total: [28, 31],
 				size: "119x82x6mm",
 				mould: "CC450",
 				mfg_color: "P/T 151 C"
@@ -105,10 +110,11 @@ export const matsuiPlaques: Plaque[] = [
 		color: "#FFFFFF",
 		variants: [
 			{
-				origin: "Matsui (2022)",
+				origin: "Matsui",
 				image: "plaque_matsui_500k_v1.jpg",
 				material: PlaqueMaterial.Plastic,
-				total: 60,
+				years: [2022, 2024],
+				total: [60, 33],
 				size: "108x75x6mm",
 				mould: "CC450",
 				mfg_color: "White"
