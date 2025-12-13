@@ -58,7 +58,7 @@ export class Controller {
         var totalValues = Array.isArray(total) ? total : [total];
 
         var rows = years.map((year, index) => {
-            return `<li>${year} → ${totalValues[index]}</li>`;
+            return `<li><strong>${year}</strong>: ${totalValues[index]}</li>`;
         });
 
         return `<ol>${rows.join("")}</ol>`;
