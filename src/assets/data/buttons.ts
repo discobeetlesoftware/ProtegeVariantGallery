@@ -8,13 +8,16 @@ export const buttons: Button[] = [
 		},
 		variants: [
 			{
-				proof: "",
+				proof: "button_nit_proof.jpg",
 				color: "red",
 				origin: "Matsui (2024)",
-				image: "nit_button_v1.jpg",
+				image: "",
 				total: 43,
 				finish: ButtonFinish.PearlizedPlastic,
-				edge: EdgeAligment.Unaligned
+				edge: EdgeAligment.Unaligned,
+				size: "82x57x6mm",
+				mould: "CC450",
+				mfg_color: "P/T 1795 C"
 			}
 		]
 	},
@@ -25,13 +28,16 @@ export const buttons: Button[] = [
 		},
 		variants: [
 			{
-				proof: "",
+				proof: "button_bounty_proof.jpg",
 				color: "cyan",
 				origin: "Matsui (2024)",
-				image: "bounty_button_v1.jpg",
+				image: "",
 				total: 72,
 				finish: ButtonFinish.PearlizedPlastic,
-				edge: EdgeAligment.Unaligned
+				edge: EdgeAligment.Unaligned,
+				size: "82x57x6mm",
+				mould: "CC450",
+				mfg_color: "P/T 325 C"
 			}
 		]
 	},
