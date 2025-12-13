@@ -1,0 +1,1099 @@
+import { type Chip, ChipGroup } from '../../models';
+
+export const chips: Chip[] = [
+	{
+		denom: "5¢",
+		proof: "5cent_proof.jpg",
+		name: {
+			en: "nickel"
+		},
+		color: "#CE9CBA",
+		variants: [
+			{
+				image: "5cent_v1.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 9,
+				notes: "Only variant",
+				clay_color: {
+					base: "Lilac",
+					spot: "Dark Purple",
+					notes: "Only variant"
+				},
+				inlay: {
+					text_color: "Lilac",
+					text_size: "Normal"
+				}
+			}
+		]
+	},
+	{
+		denom: "10¢",
+		proof: "10cent_proof.jpg",
+		name: {
+			en: "dime"
+		},
+		color: "#63C774",
+		variants: [
+			{
+				image: "10cent_v1.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 10,
+				notes: "Only variant",
+				clay_color: {
+					base: "Lime Green",
+					spot: "Yellow"
+				},
+				inlay: {
+					text_color: "Lime Green",
+					text_size: "Normal",
+					notes: ""
+				}
+			}
+		]
+	},
+	{
+		denom: "25¢",
+		proof: "25cent_proof.jpg",
+		name: {
+			en: "quarter"
+		},
+		color: "#EDDAC7",
+		variants: [
+			{
+				image: "25cent_v1.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 10,
+				notes: "",
+				clay_color: {
+					base: "Pink tint",
+					spot: "Dark Red"
+				},
+				inlay: {
+					text_color: "Hot Pink",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "25cent_v2.jpg",
+				group: ChipGroup.Primary,
+				rarity: 1,
+				notes: "",
+				clay_color: {
+					base: "Pink tint",
+					spot: "Dark Red"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Large",
+					notes: "Light background"
+				}
+			},
+			{
+				image: "25cent_v3.jpg",
+				group: ChipGroup.Primary,
+				rarity: 3,
+				notes: "",
+				clay_color: {
+					base: "White",
+					spot: "Dark Red"
+				},
+				inlay: {
+					text_color: "Dark Pink",
+					text_size: "Normal",
+					notes: "Text color inconsistencies"
+				}
+			},
+			{
+				image: "25cent_v4.jpg",
+				group: ChipGroup.Primary,
+				rarity: 3,
+				notes: "",
+				clay_color: {
+					base: "Pink tint",
+					spot: "Dark Red"
+				},
+				inlay: {
+					text_color: "Dark Pink",
+					text_size: "Normal",
+					notes: "Text color inconsistencies"
+				}
+			},
+			{
+				image: "25cent_v5.jpg",
+				group: ChipGroup.Primary,
+				rarity: 1,
+				notes: "",
+				clay_color: {
+					base: "Pink tint",
+					spot: "Dark Red"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Large",
+					notes: "High contrast background"
+				}
+			},
+			{
+				image: "25cent_v6.jpg",
+				group: ChipGroup.Primary,
+				rarity: 10,
+				notes: "",
+				clay_color: {
+					base: "White",
+					spot: "Dark Red",
+					notes: "Under-diameter"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Large"
+				}
+			},
+			{
+				image: "25cent_v7.jpg",
+				group: ChipGroup.Primary,
+				rarity: 3,
+				notes: "",
+				clay_color: {
+					base: "White",
+					spot: "Dark Red"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Large",
+					notes: ""
+				}
+			},
+			{
+				image: "25cent_v8.jpg",
+				group: ChipGroup.Primary,
+				rarity: 3,
+				notes: "67.7mm rack only. Otherwise v5",
+				clay_color: {
+					base: "White",
+					spot: "Dark Red"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Large",
+					notes: ""
+				}
+			}
+		]
+	},
+	{
+		denom: "50¢",
+		proof: "50cent_proof.jpg",
+		name: {
+			en: "half dollar"
+		},
+		color: "#2F5288",
+		variants: [
+			{
+				image: "50cent_v1.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 10,
+				notes: "Only variant",
+				clay_color: {
+					base: "Purple",
+					spot: "Pink"
+				},
+				inlay: {
+					text_color: "Purple",
+					text_size: "Normal",
+					notes: ""
+				}
+			}
+		]
+	},
+	{
+		denom: "$1",
+		proof: "dollar_proof.jpg",
+		name: {
+			en: "dollar"
+		},
+		color: "#4083B0",
+		variants: [
+			{
+				image: "dollar_v1.jpg",
+				group: ChipGroup.Primary,
+				rarity: 2,
+				notes: "",
+				clay_color: {
+					base: "Sky Blue",
+					spot: "White"
+				},
+				inlay: {
+					text_color: "Blue",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "dollar_v2.jpg",
+				group: ChipGroup.Primary,
+				rarity: 3,
+				notes: "",
+				clay_color: {
+					base: "Sky Blue",
+					spot: "White"
+				},
+				inlay: {
+					text_color: "Dark Blue",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "dollar_v3.jpg",
+				group: ChipGroup.Primary,
+				rarity: 1,
+				notes: "",
+				clay_color: {
+					base: "Sky Blue",
+					spot: "White"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Large",
+					notes: ""
+				}
+			},
+			{
+				image: "dollar_v4.jpg",
+				group: ChipGroup.Primary,
+				rarity: 9,
+				notes: "Slightly over diameter, otherwise ≈v1",
+				clay_color: {
+					base: "Sky Blue",
+					spot: "White"
+				},
+				inlay: {
+					text_color: "Blue",
+					text_size: "Normal",
+					notes: ""
+				}
+			}
+		]
+	},
+	{
+		denom: "$2",
+		proof: "2dollar_proof.jpg",
+		name: {
+			en: "two dollar"
+		},
+		color: "#CBB18B",
+		variants: [
+			{
+				image: "2dollar_v1.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 10,
+				notes: "Only variant",
+				clay_color: {
+					base: "Light Brown",
+					spot: "Dark Red"
+				},
+				inlay: {
+					text_color: "Light Brown",
+					text_size: "Normal",
+					notes: ""
+				}
+			}
+		]
+	},
+	{
+		denom: "$2.5",
+		proof: "snapper_proof.jpg",
+		name: {
+			en: "snapper"
+		},
+		color: "#F2598D",
+		variants: [
+			{
+				image: "snapper_v1.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 10,
+				notes: "Only variant",
+				clay_color: {
+					base: "Hot Pink",
+					spot: "Light Pink, Cherry Red"
+				},
+				inlay: {
+					text_color: "Hot Pink",
+					text_size: "Normal",
+					notes: ""
+				}
+			}
+		]
+	},
+	{
+		denom: "$5",
+		proof: "5dollar_proof.jpg",
+		name: {
+			en: "five dollar"
+		},
+		color: "#AD0F1F",
+		variants: [
+			{
+				image: "5dollar_v1.jpg",
+				group: ChipGroup.Primary,
+				rarity: 6,
+				notes: "",
+				clay_color: {
+					base: "Red",
+					spot: "Tan"
+				},
+				inlay: {
+					text_color: "Red",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "5dollar_v2.jpg",
+				group: ChipGroup.Primary,
+				rarity: 5,
+				notes: "Base color inconsistencies",
+				clay_color: {
+					base: "Deep Red",
+					spot: "Tan"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Large",
+					notes: ""
+				}
+			},
+			{
+				image: "5dollar_v3.jpg",
+				group: ChipGroup.Primary,
+				rarity: 10,
+				notes: "67.7mm rack only. Otherwise ≈v2",
+				clay_color: {
+					base: "Deep Red",
+					spot: "Tan"
+				},
+				inlay: {
+					text_color: "Deep Red",
+					text_size: "Large",
+					notes: ""
+				}
+			},
+			{
+				image: "5dollar_v4.jpg",
+				group: ChipGroup.Primary,
+				rarity: 7,
+				notes: "Slightly over diameter, otherwise ≈v1 (matching $20 v2)",
+				clay_color: {
+					base: "Red",
+					spot: "Tan"
+				},
+				inlay: {
+					text_color: "Red",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "5dollar_v5.jpg",
+				group: ChipGroup.Primary,
+				rarity: 9,
+				notes: "",
+				clay_color: {
+					base: "Red",
+					spot: "Mud"
+				},
+				inlay: {
+					text_color: "Red",
+					text_size: "Normal",
+					notes: ""
+				}
+			}
+		]
+	},
+	{
+		denom: "$10",
+		proof: "10dollar_proof.jpg",
+		name: {
+			en: "ten dollar"
+		},
+		color: "#EF9450",
+		variants: [
+			{
+				image: "10dollar_v1.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 10,
+				notes: "Only variant",
+				clay_color: {
+					base: "Orange",
+					spot: "Light Blue, Blue"
+				},
+				inlay: {
+					text_color: "Blue",
+					text_size: "Normal",
+					notes: ""
+				}
+			}
+		]
+	},
+	{
+		denom: "$20",
+		proof: "20dollar_proof.jpg",
+		name: {
+			en: "twenty dollar"
+		},
+		color: "#E6DAC4",
+		variants: [
+			{
+				image: "20dollar_v1.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 8,
+				notes: "",
+				clay_color: {
+					base: "Green Tint",
+					spot: "Dark Green, Pink"
+				},
+				inlay: {
+					text_color: "Dark Green",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "20dollar_v2.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 10,
+				notes: "Slightly over diameter (matching $5 v4)",
+				clay_color: {
+					base: "Green Tint",
+					spot: "Dark Green, Pink"
+				},
+				inlay: {
+					text_color: "Dark Green",
+					text_size: "Normal",
+					notes: ""
+				}
+			}
+		]
+	},
+	{
+		denom: "$25",
+		proof: "25dollar_proof.jpg",
+		name: {
+			en: "twenty-five dollar"
+		},
+		color: "#417038",
+		variants: [
+			{
+				image: "25dollar_v1.jpg",
+				group: ChipGroup.Primary,
+				rarity: 3,
+				notes: "",
+				clay_color: {
+					base: "Green",
+					spot: "Light Green, Dark Green"
+				},
+				inlay: {
+					text_color: "Green",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "25dollar_v2.jpg",
+				group: ChipGroup.Primary,
+				rarity: 1,
+				clay_color: {
+					base: "Green",
+					spot: "Light Green, Dark Green",
+					notes: ""
+				},
+				inlay: {
+					text_color: "Dark Green",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "25dollar_v3.jpg",
+				group: ChipGroup.Primary,
+				rarity: 1,
+				notes: "",
+				clay_color: {
+					base: "Dark Green",
+					spot: "Light Green, Dark Green"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Large",
+					notes: ""
+				}
+			},
+			{
+				image: "25dollar_v4.jpg",
+				group: ChipGroup.Primary,
+				rarity: 3,
+				notes: "Base color is slightly paler than v1",
+				clay_color: {
+					base: "Green",
+					spot: "Light Green, Dark Green"
+				},
+				inlay: {
+					text_color: "Dark Green",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "25dollar_v5.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 8,
+				notes: "Slightly over diameter",
+				clay_color: {
+					base: "Deep Green",
+					spot: "Light Green, Dark Green"
+				},
+				inlay: {
+					text_color: "Bright Green",
+					text_size: "Normal",
+					notes: ""
+				}
+			}
+		]
+	},
+	{
+		denom: "$50",
+		proof: "50dollar_proof.jpg",
+		name: {
+			en: "fifty dollar"
+		},
+		color: "#DBDACF",
+		variants: [
+			{
+				image: "50dollar_v1.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 8,
+				notes: "Only variant",
+				clay_color: {
+					base: "Light Blue",
+					spot: "Dark Blue, Blue"
+				},
+				inlay: {
+					text_color: "Light Blue",
+					text_size: "Normal",
+					notes: ""
+				}
+			}
+		]
+	},
+	{
+		denom: "$100",
+		proof: "100dollar_proof.jpg",
+		name: {
+			en: "hundred dollar"
+		},
+		color: "#36352F",
+		variants: [
+			{
+				image: "100dollar_v1.jpg",
+				group: ChipGroup.Primary,
+				rarity: 1,
+				notes: "",
+				clay_color: {
+					base: "Black",
+					spot: "Red, Green, Purple"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "100dollar_v2.jpg",
+				group: ChipGroup.Primary,
+				rarity: 3,
+				notes: "",
+				clay_color: {
+					base: "Black",
+					spot: "Red, Green, Purple"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Large",
+					notes: "Minor inconsistencies"
+				}
+			}
+		]
+	},
+	{
+		denom: "$500",
+		proof: "500dollar_proof.jpg",
+		name: {
+			en: "five-hundred dollar"
+		},
+		color: "#7A58AF",
+		variants: [
+			{
+				image: "500dollar_v1.jpg",
+				group: ChipGroup.Primary,
+				rarity: 2,
+				notes: "",
+				clay_color: {
+					base: "Purple",
+					spot: "White, Orange"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "500dollar_v2.jpg",
+				group: ChipGroup.Primary,
+				rarity: 1,
+				notes: "",
+				clay_color: {
+					base: "Purple",
+					spot: "White, Orange"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Large",
+					notes: ""
+				}
+			},
+			{
+				image: "500dollar_v3.jpg",
+				group: ChipGroup.Primary,
+				rarity: 6,
+				notes: "Slightly over diameter",
+				clay_color: {
+					base: "Purple",
+					spot: "White, Orange"
+				},
+				inlay: {
+					text_color: "Hot Pink",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "500dollar_v4.jpg",
+				group: ChipGroup.Primary,
+				rarity: 5,
+				notes: "",
+				clay_color: {
+					base: "Bright Purple",
+					spot: "White, Orange"
+				},
+				inlay: {
+					text_color: "Hot Pink",
+					text_size: "Normal",
+					notes: ""
+				}
+			}
+		]
+	},
+	{
+		denom: "$1k",
+		proof: "1000dollar_proof.jpg",
+		name: {
+			en: "thousand dollar"
+		},
+		color: "#E5B304",
+		variants: [
+			{
+				image: "1000dollar_v1.jpg",
+				group: ChipGroup.Primary,
+				rarity: 8,
+				notes: "",
+				clay_color: {
+					base: "Pale Yellow",
+					spot: "Light Blue, Dark Blue"
+				},
+				inlay: {
+					text_color: "Gray Blue",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "1000dollar_v2.jpg",
+				group: ChipGroup.Primary,
+				rarity: 7,
+				notes: "Initial run",
+				clay_color: {
+					base: "Bold Yellow",
+					spot: "Light Blue, Dark Blue"
+				},
+				inlay: {
+					text_color: "Yellow",
+					text_size: "Normal",
+					notes: "Low contrast inlay; deemed 'error'"
+				}
+			},
+			{
+				image: "1000dollar_v3.jpg",
+				group: ChipGroup.Primary,
+				rarity: 7,
+				notes: "",
+				clay_color: {
+					base: "Yellow",
+					spot: "Light Blue, Dark Blue"
+				},
+				inlay: {
+					text_color: "Blue",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "1000dollar_v4.jpg",
+				group: ChipGroup.Primary,
+				rarity: 8,
+				notes: "Second production run",
+				clay_color: {
+					base: "Bold Yellow",
+					spot: "Light Blue, Dark Blue"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "1000dollar_v5.jpg",
+				group: ChipGroup.Primary,
+				rarity: 7,
+				notes: "",
+				clay_color: {
+					base: "Yellow",
+					spot: "Light Blue, Dark Blue"
+				},
+				inlay: {
+					text_color: "Blue",
+					text_size: "Normal",
+					notes: "White background"
+				}
+			}
+		]
+	},
+	{
+		denom: "$5k",
+		proof: "5000dollar_proof.jpg",
+		name: {
+			en: "five thousand dollar"
+		},
+		color: "#B1482D",
+		variants: [
+			{
+				image: "5000dollar_v1.jpg",
+				group: ChipGroup.Primary,
+				rarity: 8,
+				notes: "Minor spot color inconsistencies",
+				clay_color: {
+					base: "Brick",
+					spot: "Ivory"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Large",
+					notes: ""
+				}
+			},
+			{
+				image: "5000dollar_v2.jpg",
+				group: ChipGroup.Primary,
+				rarity: 8,
+				notes: "Minor spot color inconsistencies",
+				clay_color: {
+					base: "Brick",
+					spot: "Ivory"
+				},
+				inlay: {
+					text_color: "Dark Red",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "5000dollar_v3.jpg",
+				group: ChipGroup.Primary,
+				rarity: 8,
+				notes: "Minor spot color inconsistencies",
+				clay_color: {
+					base: "Brick",
+					spot: "Ivory"
+				},
+				inlay: {
+					text_color: "Light Brown",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "5000dollar_v4.jpg",
+				group: ChipGroup.Primary,
+				rarity: 10,
+				notes: "Slightly over diameter, otherwise ≈v3",
+				clay_color: {
+					base: "Brick",
+					spot: "Ivory"
+				},
+				inlay: {
+					text_color: "Light Brown",
+					text_size: "Normal",
+					notes: ""
+				}
+			}
+		]
+	},
+	{
+		denom: "$25k",
+		proof: "25000dollar_proof.jpg",
+		name: {
+			en: "twenty-five thousand dollar"
+		},
+		color: "#F54C4E",
+		variants: [
+			{
+				image: "25000dollar_v1.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 8,
+				notes: "67.7mm rack only",
+				clay_color: {
+					base: "Pink",
+					spot: "White, Red"
+				},
+				inlay: {
+					text_color: "Pink",
+					text_size: "Normal",
+					notes: "Oversize"
+				}
+			}
+		]
+	},
+	{
+		denom: "$100k",
+		proof: "100000dollar_proof.jpg",
+		name: {
+			en: "one hundred thousand dollar"
+		},
+		color: "#0F1F41",
+		variants: [
+			{
+				image: "100000dollar_v1.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 9,
+				notes: "67.7mm rack only",
+				clay_color: {
+					base: "Navy Blue",
+					spot: "White, Red"
+				},
+				inlay: {
+					text_color: "Navy Blue",
+					text_size: "Normal",
+					notes: "Oversize"
+				}
+			}
+		]
+	},
+	{
+		denom: "Non-denom Orange",
+		proof: "variable_orange_proof.jpg",
+		name: {
+			en: "non-denom orange"
+		},
+		color: "#E77727",
+		variants: [
+			{
+				image: "variable_orange_v1.jpg",
+				group: ChipGroup.Primary,
+				rarity: 6,
+				notes: "",
+				clay_color: {
+					base: "Bright Orange",
+					spot: "Light Blue, Dark Blue"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "variable_orange_v2.jpg",
+				group: ChipGroup.Primary,
+				rarity: 6,
+				notes: "",
+				clay_color: {
+					base: "Orange",
+					spot: "Light Blue, Dark Blue"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Large",
+					notes: ""
+				}
+			},
+			{
+				image: "variable_orange_v3.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 9,
+				notes: "Slightly over diameter",
+				clay_color: {
+					base: "Light Orange",
+					spot: "Light Blue, Dark Blue"
+				},
+				inlay: {
+					text_color: "Orange",
+					text_size: "Normal",
+					notes: ""
+				}
+			},
+			{
+				image: "variable_orange_v4.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 10,
+				notes: "Error color. Only 4 racks exist",
+				clay_color: {
+					base: "Dirty Orange",
+					spot: "Light Blue, Dark Blue"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Large",
+					notes: ""
+				}
+			}
+		]
+	},
+	{
+		denom: "Non-denom White",
+		proof: "variable_white_proof.jpg",
+		name: {
+			en: "non-denom white"
+		},
+		color: "#BDB2B6",
+		variants: [
+			{
+				image: "variable_white_v1.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 10,
+				notes: "Only variant",
+				clay_color: {
+					base: "Pink tint",
+					spot: "Dark Red"
+				},
+				inlay: {
+					text_color: "Pink",
+					text_size: "Normal",
+					notes: ""
+				}
+			}
+		]
+	},
+	{
+		denom: "Non-denom Blue",
+		proof: "variable_blue_proof.jpg",
+		name: {
+			en: "non-denom blue"
+		},
+		color: "#5FB2D8",
+		variants: [
+			{
+				image: "variable_blue_v1.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 10,
+				notes: "Only variant",
+				clay_color: {
+					base: "Sky Blue",
+					spot: "White"
+				},
+				inlay: {
+					text_color: "Sky Blue",
+					text_size: "Normal",
+					notes: ""
+				}
+			}
+		]
+	},
+	{
+		denom: "Non-denom Red",
+		proof: "variable_red_proof.jpg",
+		name: {
+			en: "non-denom red"
+		},
+		color: "#98303E",
+		variants: [
+			{
+				image: "variable_red_v1.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 10,
+				notes: "Only variant",
+				clay_color: {
+					base: "Red",
+					spot: "Tan"
+				},
+				inlay: {
+					text_color: "Red",
+					text_size: "Normal",
+					notes: ""
+				}
+			}
+		]
+	},
+	{
+		denom: "Non-denom Green",
+		proof: "variable_green_proof.jpg",
+		name: {
+			en: "non-denom green"
+		},
+		color: "#31492F",
+		variants: [
+			{
+				image: "variable_green_v1.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 10,
+				notes: "Only variant",
+				clay_color: {
+					base: "Deep Green",
+					spot: "Light Green, Dark Green"
+				},
+				inlay: {
+					text_color: "Green",
+					text_size: "Normal",
+					notes: ""
+				}
+			}
+		]
+	},
+	{
+		denom: "Non-denom Black",
+		proof: "variable_black_proof.jpg",
+		name: {
+			en: "non-denom black"
+		},
+		color: "#1D1B1C",
+		variants: [
+			{
+				image: "variable_black_v1.jpg",
+				group: ChipGroup.Supplemental,
+				rarity: 10,
+				notes: "Only variant",
+				clay_color: {
+					base: "Black",
+					spot: "Purple, Green, Red"
+				},
+				inlay: {
+					text_color: "Black",
+					text_size: "Normal",
+					notes: ""
+				}
+			}
+		]
+	}
+];

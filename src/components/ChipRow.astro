@@ -1,12 +1,12 @@
 ---
-import { type Chip, type Variant } from '../models';
+import { type Chip, type ChipVariant } from '../models';
 import LocalImage from './LocalImage.astro';
 import GalleryElement from './GalleryElement.astro';
 import { Controller } from '../controller';
 
 interface Props {
     chip: Chip;
-    variant: Variant;
+    variant: ChipVariant;
     index: number;
 }
 

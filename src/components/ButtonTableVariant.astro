@@ -1,0 +1,24 @@
+---
+import { type Button } from "../models";
+import ButtonTableRow from "@components/ButtonTableRow.astro";
+import ChipTableRowHeader from "./ChipTableRowHeader.astro";
+import { Controller } from "src/controller";
+
+interface Props {
+    button: Button;
+}
+
+const { button } = Astro.props;
+const headerButtons = [ "5¢", "50¢", "$10", "$500", "$25k" ];
+
+---
+
+<!-- {headerChips.includes(chip.denom) && <ChipTableRowHeader />} -->
+
+<tbody class={Controller.themeKey(button.name.en)}>
+    {
+        button.variants.map((variant, index) => (
+            <ButtonTableRow button={button} buttonVariant={variant} index={index + 1} />
+        ))
+    }
+</tbody>
