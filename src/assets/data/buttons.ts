@@ -2,7 +2,7 @@ import { type Button, ButtonType, ButtonFinish, EdgeAligment } from '../../model
 
 export const buttons: Button[] = [
 	{
-		type: ButtonType.nit,
+		type: ButtonType.Nit,
 		name: {
 			en: "nit"
 		},
@@ -22,7 +22,7 @@ export const buttons: Button[] = [
 		]
 	},
 	{
-		type: ButtonType.bounty,
+		type: ButtonType.Bounty,
 		name: {
 			en: "bounty"
 		},
@@ -42,7 +42,7 @@ export const buttons: Button[] = [
 		]
 	},
 	{
-		type: ButtonType.dealer,
+		type: ButtonType.Dealer,
 		name: {
 			en: "dealer"
 		},

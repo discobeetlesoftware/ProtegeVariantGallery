@@ -26,7 +26,7 @@ const { buttons } = Astro.props;
         </thead>
         {
             buttons.map((button, index) => (
-                <ButtonTableVariant button={button} index={index + 1} />
+                <ButtonTableVariant button={button} />
             ))
         }
     </table>

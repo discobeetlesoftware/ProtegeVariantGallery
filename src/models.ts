@@ -77,6 +77,9 @@ export type ButtonVariant = {
     finish: ButtonFinish;
     edge: EdgeAligment;
     total?: number | number[];
+    size?: string;
+    mould?: string;
+    mfg_color?: string;
 }
 
 export type Button = {

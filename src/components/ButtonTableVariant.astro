@@ -1,7 +1,6 @@
 ---
 import { type Button } from "../models";
 import ButtonTableRow from "@components/ButtonTableRow.astro";
-import ChipTableRowHeader from "./ChipTableRowHeader.astro";
 import { Controller } from "src/controller";
 
 interface Props {
@@ -9,7 +8,7 @@ interface Props {
 }
 
 const { button } = Astro.props;
-const headerButtons = [ "5¢", "50¢", "$10", "$500", "$25k" ];
+// const headerButtons = [ "5¢", "50¢", "$10", "$500", "$25k" ];
 
 ---
 
