@@ -1,34 +1,47 @@
 ---
-import { type Button } from '../models';
-import LocalImage from './LocalImage.astro';
-import GalleryElement from './GalleryElement.astro';
+import { type Button, type ButtonVariant } from "../models";
+import LocalImage from "./LocalImage.astro";
+import GalleryElement from "./GalleryElement.astro";
 
 interface Props {
     button: Button;
+    buttonVariant: ButtonVariant;
     index: number;
 }
 
-const { button, index } = Astro.props;
+const { button, buttonVariant, index } = Astro.props;
 const name = `${button.name.en} v${index}`;
-const anchor = name.replace(/[(]|[)]|[-]|\s/g, '_');
-const themeKey = button.name.en.replace(/[(]|[)]|[-]|\s/g, '');
+const anchor = name.replace(/[(]|[)]|[-]|\s/g, "_");
+const themeKey = button.name.en.replace(/[(]|[)]|[-]|\s/g, "");
 ---
 
 <tbody class={themeKey}>
     <tr id={anchor}>
         <td>{button.name.en}</td>
+        <td
+            ><LocalImage
+                subdir="proofs"
+                key={buttonVariant.proof ?? ''}
+                alt={`${name} proof`}
+                width={200}
+            /></td
+        >
+        <td><GalleryElement imageName={buttonVariant.image} variantName={name} /></td>
         <td><a href={`/ProtegeVariantGallery#${anchor}`}>v{index}</a></td>
-        <td><LocalImage subdir='proofs' key={button.proof} alt={`${name} proof`} width={200} /></td>
-        <td><GalleryElement imageName={button.image} variantName={name} /></td>
-        <td>{button.origin}</td>
-        <td>{button.finish}</td>
-        <td>{button.edge}</td>
-        <td>{button.total ?? 'Unknown'}</td>
+        <td>{buttonVariant.origin}</td>
+        <td>{buttonVariant.finish}</td>
+        <td>{buttonVariant.edge}</td>
+        <td>{buttonVariant.total ?? "Unknown"}</td>
     </tr>
 </tbody>
 
-<style define:vars={{ color: button.color }}>
-	  tbody :global(td:nth-child(1)) { 
-        background-image: linear-gradient(to right, var(--color) 0%, var(--color) 5%, white 100%); 
+<style define:vars={{ color: buttonVariant.color }}>
+    tbody :global(td:nth-child(1)) {
+        background-image: linear-gradient(
+            to right,
+            var(--color) 0%,
+            var(--color) 5%,
+            white 100%
+        );
     }
 </style>
