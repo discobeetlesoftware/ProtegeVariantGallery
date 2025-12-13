@@ -1,5 +1,5 @@
 ---
-import { Rarity } from '../models';
+import { Rarity } from "../models";
 
 interface Props {
     counts: number[];
@@ -11,24 +11,25 @@ const { counts } = Astro.props;
 <div>
     <h2>Rarities</h2>
     <p>
-        The rarity for a given variant is an estimate based on known collections and observed sales.
+        The rarity for a given variant is an estimate based on known collections
+        and observed sales. It does not reflect desirability.
     </p>
-    <div id='rarity_scale'>
-        <div class='rarity_common'>
-            <div class='rarity_title'>Common</div>
-            <div class='detail'>{counts[Rarity.common]} variants</div>
+    <div id="rarity_scale">
+        <div class="rarity_common">
+            <div class="rarity_title">Common</div>
+            <div class="detail">{counts[Rarity.common]} variants</div>
         </div>
-        <div class='rarity_uncommon'>
-            <div class='rarity_title'>Uncommon</div>
-            <div class='detail'>{counts[Rarity.uncommon]} variants</div>
+        <div class="rarity_uncommon">
+            <div class="rarity_title">Uncommon</div>
+            <div class="detail">{counts[Rarity.uncommon]} variants</div>
         </div>
-        <div class='rarity_rare'>
-            <div class='rarity_title'>Rare</div>
-            <div class='detail'>{counts[Rarity.rare]} variants</div>
+        <div class="rarity_rare">
+            <div class="rarity_title">Rare</div>
+            <div class="detail">{counts[Rarity.rare]} variants</div>
         </div>
-        <div class='rarity_legendary'>
-            <div class='rarity_title'>Legendary</div>
-            <div class='detail'>{counts[Rarity.legendary]} variants</div>
+        <div class="rarity_legendary">
+            <div class="rarity_title">Legendary</div>
+            <div class="detail">{counts[Rarity.legendary]} variants</div>
         </div>
     </div>
 </div>
@@ -44,7 +45,7 @@ const { counts } = Astro.props;
         padding: 5px;
     }
 
-    #rarity_scale>div {
+    #rarity_scale > div {
         text-align: center;
     }
 

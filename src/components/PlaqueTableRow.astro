@@ -20,21 +20,21 @@ const anchor = Controller.anchor(name);
     <tr id={anchor}>
         <td>{plaque.denom} plaque</td>
         <td><a href={`#${anchor}`}>v{index}</a></td>
-        <td
-            ><LocalImage
+        <td>
+            <LocalImage
                 subdir="proofs"
                 key={plaque.proof}
                 alt={`${name} proof`}
                 width={250}
-            /></td
-        >
-        <td
-            ><GalleryElement
+            />
+        </td>
+        <td>
+            <GalleryElement
                 imageName={variant.image}
                 variantName={`${plaque.denom} plaque (${variant.material}) v${index}`}
                 width={250}
-            /></td
-        >
+            />
+        </td>
         <td>{variant.origin}</td>
         {
             isExtended && (
