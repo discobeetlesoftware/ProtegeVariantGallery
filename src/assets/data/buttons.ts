@@ -13,7 +13,7 @@ export const buttons: Button[] = [
 				origin: "Matsui (2024)",
 				image: "nit_button_v1.jpg",
 				total: 43,
-				finish: ButtonFinish["Pearlized Plastic"],
+				finish: ButtonFinish.PearlizedPlastic,
 				edge: EdgeAligment.Unaligned
 			}
 		]
@@ -30,7 +30,7 @@ export const buttons: Button[] = [
 				origin: "Matsui (2024)",
 				image: "bounty_button_v1.jpg",
 				total: 72,
-				finish: ButtonFinish["Pearlized Plastic"],
+				finish: ButtonFinish.PearlizedPlastic,
 				edge: EdgeAligment.Unaligned
 			}
 		]
@@ -87,7 +87,7 @@ export const buttons: Button[] = [
 				origin: "Matsui (2022, 2024)",
 				image: "dealer_button_v6.jpg",
 				total: [70, 34],
-				finish: ButtonFinish["Pearlized Plastic"],
+				finish: ButtonFinish.PearlizedPlastic,
 				edge: EdgeAligment.Uniform
 			},
 			{

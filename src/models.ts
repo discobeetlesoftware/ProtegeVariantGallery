@@ -53,16 +53,21 @@ export type ChipVariant = {
 //// BUTTON TYPES
 
 export enum EdgeAligment {
-    'Unaligned', 'Aligned', 'Uniform'
+    Unaligned = 'Unaligned',
+    Aligned = 'Aligned',
+    Uniform = 'Uniform'
 };
 
 export enum ButtonType {
-    dealer, bounty, nit
+    Dealer = 'Dealer',
+    Bounty = 'Bounty',
+    Nit = 'Nit'
 };
 
 export enum ButtonFinish {
-    "Matte", "Pearlized Plastic"
-}
+    Matte = "Matte",
+    PearlizedPlastic = "Pearlized Plastic"
+};
 
 export type ButtonVariant = {
     proof?: ImageName;
