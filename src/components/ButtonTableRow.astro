@@ -31,7 +31,7 @@ const themeKey = button.name.en.replace(/[(]|[)]|[-]|\s/g, "");
         <td>{buttonVariant.origin}</td>
         <td>{buttonVariant.finish}</td>
         <td>{buttonVariant.edge}</td>
-        <td>{buttonVariant.total ?? "Unknown"}</td>
+        <td>{[buttonVariant.total ?? "Unknown"].flat().join(', ')}</td>
     </tr>
 </tbody>
 
